@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.log
+tests_failed.log
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/

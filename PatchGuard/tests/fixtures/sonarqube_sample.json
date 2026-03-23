@@ -1,0 +1,187 @@
+{
+  "total": 5,
+  "p": 1,
+  "ps": 100,
+  "paging": {
+    "pageIndex": 1,
+    "pageSize": 100,
+    "total": 5
+  },
+  "issues": [
+    {
+      "key": "AZrN_test001",
+      "rule": "csharpsquid:S3649",
+      "severity": "CRITICAL",
+      "component": "TestProject:Controllers/UserController.cs",
+      "project": "TestProject",
+      "line": 42,
+      "hash": "abc123def456",
+      "textRange": {
+        "startLine": 42,
+        "endLine": 42,
+        "startOffset": 16,
+        "endOffset": 50
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure this SQL injection is safe here.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "",
+      "tags": ["sql", "cwe", "owasp-a1", "sans-top25-insecure"],
+      "type": "VULNERABILITY",
+      "branch": "main",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "AZrN_test002",
+      "rule": "csharpsquid:S2092",
+      "severity": "CRITICAL",
+      "component": "TestProject:Middleware/AuthMiddleware.cs",
+      "project": "TestProject",
+      "line": 28,
+      "hash": "def789ghi012",
+      "textRange": {
+        "startLine": 28,
+        "endLine": 28,
+        "startOffset": 12,
+        "endOffset": 45
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure creating this cookie without the \"secure\" flag is safe.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "",
+      "tags": ["cwe", "owasp-a3", "security"],
+      "type": "VULNERABILITY",
+      "branch": "main",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "AZrN_test003",
+      "rule": "csharpsquid:S1854",
+      "severity": "BLOCKER",
+      "component": "TestProject:Services/DataService.cs",
+      "project": "TestProject",
+      "line": 105,
+      "hash": "ghi345jkl678",
+      "textRange": {
+        "startLine": 105,
+        "endLine": 105,
+        "startOffset": 8,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this useless assignment to local variable 'result'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": ["unused", "cert"],
+      "type": "BUG",
+      "branch": "main",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "AZrN_test004",
+      "rule": "csharpsquid:S125",
+      "severity": "MAJOR",
+      "component": "TestProject:Helpers/StringHelper.cs",
+      "project": "TestProject",
+      "line": 67,
+      "hash": "jkl901mno234",
+      "textRange": {
+        "startLine": 67,
+        "endLine": 67,
+        "startOffset": 8,
+        "endOffset": 45
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this commented out code.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": ["unused"],
+      "type": "CODE_SMELL",
+      "branch": "main",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "AZrN_test005",
+      "rule": "csharpsquid:S1481",
+      "severity": "MINOR",
+      "component": "TestProject:Utils/FileUtils.cs",
+      "project": "TestProject",
+      "line": 89,
+      "hash": "mno567pqr890",
+      "textRange": {
+        "startLine": 89,
+        "endLine": 89,
+        "startOffset": 16,
+        "endOffset": 32
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove the unused local variable 'tempFile'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": ["unused"],
+      "type": "BUG",
+      "branch": "main",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    }
+  ]
+}

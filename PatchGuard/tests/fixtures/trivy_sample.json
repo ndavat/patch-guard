@@ -1,0 +1,90 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "test-image:latest",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "debian",
+      "Name": "12.13"
+    }
+  },
+  "Results": [
+    {
+      "Target": "test-image:latest (debian 12.13)",
+      "Class": "os-pkgs",
+      "Type": "debian",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2024-38816",
+          "PkgName": "curl",
+          "InstalledVersion": "7.81.0-1ubuntu1.15",
+          "FixedVersion": "7.81.0-1ubuntu1.16",
+          "Severity": "CRITICAL",
+          "Title": "curl: HSTS subdomain overwrites parent cache entry",
+          "Description": "A vulnerability in curl allows HSTS subdomain to overwrite parent cache entry",
+          "CVSS": {
+            "nvd": {
+              "V3Score": 9.1
+            }
+          }
+        },
+        {
+          "VulnerabilityID": "CVE-2024-12345",
+          "PkgName": "openssl",
+          "InstalledVersion": "3.0.2-0ubuntu1.10",
+          "FixedVersion": "3.0.2-0ubuntu1.12",
+          "Severity": "HIGH",
+          "Title": "openssl: Memory corruption in SSL handshake",
+          "Description": "OpenSSL memory corruption vulnerability during SSL handshake",
+          "CVSS": {
+            "nvd": {
+              "V3Score": 7.5
+            }
+          }
+        },
+        {
+          "VulnerabilityID": "CVE-2024-23456",
+          "PkgName": "libssl3",
+          "InstalledVersion": "3.0.2-0ubuntu1.10",
+          "FixedVersion": "3.0.2-0ubuntu1.12",
+          "Severity": "MEDIUM",
+          "Title": "libssl3: Information disclosure vulnerability",
+          "Description": "Information disclosure in libssl3 library",
+          "CVSS": {
+            "nvd": {
+              "V3Score": 5.3
+            }
+          }
+        },
+        {
+          "VulnerabilityID": "CVE-2024-34567",
+          "PkgName": "zlib1g",
+          "InstalledVersion": "1.2.11.dfsg-2ubuntu9.2",
+          "FixedVersion": "1.2.11.dfsg-2ubuntu9.3",
+          "Severity": "LOW",
+          "Title": "zlib1g: Minor buffer overflow",
+          "Description": "Minor buffer overflow in zlib compression library",
+          "CVSS": {
+            "nvd": {
+              "V3Score": 3.1
+            }
+          }
+        },
+        {
+          "VulnerabilityID": "CVE-2024-45678",
+          "PkgName": "libc6",
+          "InstalledVersion": "2.35-0ubuntu3.4",
+          "FixedVersion": "",
+          "Severity": "CRITICAL",
+          "Title": "libc6: Remote code execution vulnerability",
+          "Description": "Critical RCE vulnerability in libc6 with no fix available yet",
+          "CVSS": {
+            "nvd": {
+              "V3Score": 9.8
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

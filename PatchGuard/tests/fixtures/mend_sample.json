@@ -1,0 +1,137 @@
+{
+  "alerts": [
+    {
+      "vulnerabilityId": "CVE-2024-99999",
+      "libraryName": "system.drawing.common.4.7.0.nupkg",
+      "product": "TestProduct",
+      "project": "TestProject",
+      "severity": "CRITICAL",
+      "cvssType": "CVSS_3",
+      "cvssScore": "9.8",
+      "status": "ACTIVE",
+      "libraryType": "Nuget",
+      "creationDate": "2026-03-01 10:00:00",
+      "modifiedDate": "2026-03-01 10:00:00",
+      "topFix": {
+        "vulnerability": "CVE-2024-99999",
+        "type": "UPGRADE_VERSION",
+        "origin": "WHITESOURCE_EXPERT",
+        "url": "https://github.com/advisories/GHSA-test-critical",
+        "fixResolution": "Upgrade to version System.Drawing.Common - 8.0.1",
+        "date": "2024-12-15 10:00:00",
+        "message": "Upgrade to version"
+      },
+      "confidenceScore": 0.95,
+      "exploitAvailable": "POC_CODE"
+    },
+    {
+      "vulnerabilityId": "CVE-2024-30105",
+      "libraryName": "system.text.json.7.0.0.nupkg",
+      "product": "TestProduct",
+      "project": "TestProject",
+      "severity": "HIGH",
+      "cvssType": "CVSS_3",
+      "cvssScore": "7.5",
+      "status": "ACTIVE",
+      "libraryType": "Nuget",
+      "creationDate": "2026-02-12 07:29:27",
+      "modifiedDate": "2026-02-12 07:29:27",
+      "topFix": {
+        "vulnerability": "CVE-2024-30105",
+        "type": "UPGRADE_VERSION",
+        "origin": "WHITESOURCE_EXPERT",
+        "url": "https://github.com/advisories/GHSA-hh2w-p6rv-4g7w",
+        "fixResolution": "Upgrade to version System.Text.Json - 8.0.4",
+        "date": "2024-07-09 17:02:41",
+        "message": "Upgrade to version"
+      },
+      "confidenceScore": 0.01793,
+      "exploitAvailable": "UNPROVEN"
+    },
+    {
+      "vulnerabilityId": "CVE-2024-35255",
+      "libraryName": "azure.identity.1.10.3.nupkg",
+      "product": "TestProduct",
+      "project": "TestProject",
+      "severity": "MEDIUM",
+      "cvssType": "CVSS_3",
+      "cvssScore": "5.5",
+      "status": "ACTIVE",
+      "libraryType": "Nuget",
+      "creationDate": "2026-02-12 07:29:27",
+      "modifiedDate": "2026-02-12 07:29:27",
+      "topFix": {
+        "vulnerability": "CVE-2024-35255",
+        "type": "UPGRADE_VERSION",
+        "origin": "WHITESOURCE_EXPERT",
+        "url": "https://github.com/advisories/GHSA-m5vv-6r4h-3vj9",
+        "fixResolution": "Upgrade to version Azure.Identity - 1.11.4",
+        "date": "2024-06-11 16:59:47",
+        "message": "Upgrade to version"
+      },
+      "confidenceScore": 0.00221,
+      "exploitAvailable": "UNPROVEN"
+    },
+    {
+      "vulnerabilityId": "CVE-2024-27086",
+      "libraryName": "microsoft.identity.client.4.56.0.nupkg",
+      "product": "TestProduct",
+      "project": "TestProject",
+      "severity": "LOW",
+      "cvssType": "CVSS_3",
+      "cvssScore": "3.9",
+      "status": "ACTIVE",
+      "libraryType": "Nuget",
+      "creationDate": "2026-02-12 07:29:27",
+      "modifiedDate": "2026-02-12 07:29:27",
+      "topFix": {
+        "vulnerability": "CVE-2024-27086",
+        "type": "UPGRADE_VERSION",
+        "origin": "WHITESOURCE_EXPERT",
+        "url": "https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/security/advisories/GHSA-x674-v45j-fwxw",
+        "fixResolution": "Upgrade to version Microsoft.Identity.Client - 4.59.1",
+        "date": "2024-04-16 21:34:25",
+        "message": "Upgrade to version"
+      },
+      "confidenceScore": 5.3E-4
+    },
+    {
+      "vulnerabilityId": "CVE-2024-88888",
+      "libraryName": "newtonsoft.json.12.0.3.nupkg",
+      "product": "TestProduct",
+      "project": "TestProject",
+      "severity": "HIGH",
+      "cvssType": "CVSS_3",
+      "cvssScore": "8.1",
+      "status": "INACTIVE",
+      "libraryType": "Nuget",
+      "creationDate": "2026-01-15 08:00:00",
+      "modifiedDate": "2026-03-01 12:00:00",
+      "topFix": {
+        "vulnerability": "CVE-2024-88888",
+        "type": "UPGRADE_VERSION",
+        "origin": "WHITESOURCE_EXPERT",
+        "url": "https://github.com/advisories/GHSA-test-inactive",
+        "fixResolution": "Upgrade to version Newtonsoft.Json - 13.0.3",
+        "date": "2024-11-20 10:00:00",
+        "message": "Upgrade to version"
+      },
+      "confidenceScore": 0.85
+    },
+    {
+      "vulnerabilityId": "CVE-2024-77777",
+      "libraryName": "log4net.2.0.12.nupkg",
+      "product": "TestProduct",
+      "project": "TestProject",
+      "severity": "CRITICAL",
+      "cvssType": "CVSS_3",
+      "cvssScore": "9.1",
+      "status": "ACTIVE",
+      "libraryType": "Nuget",
+      "creationDate": "2026-02-20 09:00:00",
+      "modifiedDate": "2026-02-20 09:00:00",
+      "confidenceScore": 0.75,
+      "exploitAvailable": "POC_CODE"
+    }
+  ]
+}
