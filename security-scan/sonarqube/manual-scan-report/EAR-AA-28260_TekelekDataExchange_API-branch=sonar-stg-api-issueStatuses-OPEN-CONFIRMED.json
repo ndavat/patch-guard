@@ -1,0 +1,3989 @@
+{
+    "total": 157,
+    "p": 2,
+    "ps": 100,
+    "paging": {
+        "pageIndex": 2,
+        "pageSize": 100,
+        "total": 157
+    },
+    "effortTotal": 979,
+    "issues": [
+        {
+            "key": "28a04ad6-6e4e-4efd-887b-0971176727c6",
+            "rule": "csharpsquid:S125",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/FileHelper.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 25,
+            "hash": "359c7ba352964c3b67b16af74719f2fa",
+            "textRange": {
+                "startLine": 25,
+                "endLine": 25,
+                "startOffset": 8,
+                "endOffset": 174
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "f421927c-bd6e-446d-9467-8e891298f2d4",
+            "rule": "csharpsquid:S125",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/FileHelper.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 43,
+            "hash": "ec179a10b95144021f45ebc882c8c68b",
+            "textRange": {
+                "startLine": 43,
+                "endLine": 43,
+                "startOffset": 16,
+                "endOffset": 63
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "111e0b22-82dd-4143-8934-0e97b6de84e3",
+            "rule": "csharpsquid:S1481",
+            "severity": "MINOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/FileHelper.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 57,
+            "hash": "dee100c72c0b42bee6fd68430d138930",
+            "textRange": {
+                "startLine": 57,
+                "endLine": 57,
+                "startOffset": 23,
+                "endOffset": 39
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the unused local variable \u0027uploadFileStream\u0027.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "adc75097-9749-4d05-9dc6-b3affc5b08c7",
+            "rule": "csharpsquid:S2629",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/FileHelper.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 62,
+            "hash": "698936a21cf0aa2d1c00562f68f8e158",
+            "textRange": {
+                "startLine": 62,
+                "endLine": 62,
+                "startOffset": 35,
+                "endOffset": 102
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Don\u0027t use string concatenation in logging message templates.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "performance",
+                "logging"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "EFFICIENT",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "1d3d0309-6c16-42d9-9ff2-edc85b624ec7",
+            "rule": "csharpsquid:S2325",
+            "severity": "MINOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/FileHelper.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 66,
+            "hash": "46550d8066f1773829c09c1e528b18e5",
+            "textRange": {
+                "startLine": 66,
+                "endLine": 66,
+                "startOffset": 22,
+                "endOffset": 46
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Make \u0027GenerateStreamFromString\u0027 a static method.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "pitfall"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "0854ae22-f2c3-443c-ac63-0c12ab99c603",
+            "rule": "csharpsquid:S6664",
+            "severity": "MINOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/FileHelper.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 78,
+            "hash": "7cc5c36a5f8dd54cecb5c5298d7dc157",
+            "textRange": {
+                "startLine": 78,
+                "endLine": 78,
+                "startOffset": 16,
+                "endOffset": 39
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/FileHelper.cs",
+                            "textRange": {
+                                "startLine": 80,
+                                "endLine": 80,
+                                "startOffset": 16,
+                                "endOffset": 76
+                            },
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/FileHelper.cs",
+                            "textRange": {
+                                "startLine": 88,
+                                "endLine": 88,
+                                "startOffset": 16,
+                                "endOffset": 39
+                            },
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Reduce the number of Information logging calls within this code block from 3 to the 2 allowed.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "logging"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FOCUSED",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "3d5fd562-f884-4249-b0eb-3574dcf2f5a6",
+            "rule": "csharpsquid:S125",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/FileHelper.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 99,
+            "hash": "c92bdf85d30f6235f441092c4a68e37c",
+            "textRange": {
+                "startLine": 99,
+                "endLine": 99,
+                "startOffset": 24,
+                "endOffset": 68
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "ccd1e5d0-da13-4a5d-a2d5-3d2b64de06f6",
+            "rule": "csharpsquid:S2629",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/FileHelper.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 114,
+            "hash": "4657256ccafa5bdad9ae1273cf38005b",
+            "textRange": {
+                "startLine": 114,
+                "endLine": 114,
+                "startOffset": 35,
+                "endOffset": 94
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Don\u0027t use string concatenation in logging message templates.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "performance",
+                "logging"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "EFFICIENT",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "adda7f40-e19c-4ec2-91b6-15f8ffdd0116",
+            "rule": "csharpsquid:S125",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/RuggedApiClient.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 27,
+            "hash": "550fbc7a133bd26a5937900a2333b24a",
+            "textRange": {
+                "startLine": 27,
+                "endLine": 27,
+                "startOffset": 8,
+                "endOffset": 127
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "91b61ec4-fb02-4113-a83a-455b451f4031",
+            "rule": "csharpsquid:S2629",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/RuggedApiClient.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 57,
+            "hash": "d725540451d506b3ba999410cf1a592b",
+            "textRange": {
+                "startLine": 57,
+                "endLine": 57,
+                "startOffset": 35,
+                "endOffset": 75
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Don\u0027t use string concatenation in logging message templates.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "performance",
+                "logging"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "EFFICIENT",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "de4c487c-82e5-4b25-9075-ebb8c9a7b4a8",
+            "rule": "csharpsquid:S6664",
+            "severity": "MINOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/RuggedApiClient.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 62,
+            "hash": "68eb675406ab920e68e6bceb199fc59d",
+            "textRange": {
+                "startLine": 62,
+                "endLine": 62,
+                "startOffset": 12,
+                "endOffset": 54
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/RuggedApiClient.cs",
+                            "textRange": {
+                                "startLine": 64,
+                                "endLine": 64,
+                                "startOffset": 12,
+                                "endOffset": 57
+                            },
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/RuggedApiClient.cs",
+                            "textRange": {
+                                "startLine": 67,
+                                "endLine": 68,
+                                "startOffset": 12,
+                                "endOffset": 69
+                            },
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Reduce the number of Information logging calls within this code block from 3 to the 2 allowed.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "logging"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FOCUSED",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "ed7b442a-5a03-4fcc-b85b-f4c0095d732c",
+            "rule": "csharpsquid:S2629",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/RuggedApiClient.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 67,
+            "hash": "9f1d74d3465d822072e1d8207291e2e3",
+            "textRange": {
+                "startLine": 67,
+                "endLine": 68,
+                "startOffset": 31,
+                "endOffset": 45
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Don\u0027t use string concatenation in logging message templates.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "performance",
+                "logging"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "EFFICIENT",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "a2d9a2f1-bc9a-46d1-9092-be3e355314fe",
+            "rule": "csharpsquid:S112",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/RuggedApiClient.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 76,
+            "hash": "a31a14896d8fcb398b7064aa218aec52",
+            "textRange": {
+                "startLine": 76,
+                "endLine": 76,
+                "startOffset": 22,
+                "endOffset": 49
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "\u0027System.Exception\u0027 should not be thrown by user code.",
+            "effort": "20min",
+            "debt": "20min",
+            "author": "",
+            "tags": [
+                "cwe",
+                "error-handling"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "7e3d417a-064e-481a-8d29-dbb7be1fa6fa",
+            "rule": "csharpsquid:S2629",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/RuggedApiClient.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 97,
+            "hash": "9f1d74d3465d822072e1d8207291e2e3",
+            "textRange": {
+                "startLine": 97,
+                "endLine": 98,
+                "startOffset": 31,
+                "endOffset": 45
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Don\u0027t use string concatenation in logging message templates.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "performance",
+                "logging"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "EFFICIENT",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "00e60c88-e824-4844-9581-ae8283ca9dd8",
+            "rule": "csharpsquid:S112",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/RuggedApiClient.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 106,
+            "hash": "a31a14896d8fcb398b7064aa218aec52",
+            "textRange": {
+                "startLine": 106,
+                "endLine": 106,
+                "startOffset": 22,
+                "endOffset": 49
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "\u0027System.Exception\u0027 should not be thrown by user code.",
+            "effort": "20min",
+            "debt": "20min",
+            "author": "",
+            "tags": [
+                "cwe",
+                "error-handling"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "bc85603f-39d2-4371-ab72-298c143310a5",
+            "rule": "csharpsquid:S2629",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/RuggedApiClient.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 110,
+            "hash": "27487d910a08cf39dd60b12b3448844b",
+            "textRange": {
+                "startLine": 110,
+                "endLine": 110,
+                "startOffset": 35,
+                "endOffset": 90
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Don\u0027t use string concatenation in logging message templates.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "performance",
+                "logging"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "EFFICIENT",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "17d85a77-68f0-403b-9634-772870f19e05",
+            "rule": "csharpsquid:S2629",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/RuggedApiClient.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 115,
+            "hash": "3504e7651f0bae06199e3cabcee12906",
+            "textRange": {
+                "startLine": 115,
+                "endLine": 115,
+                "startOffset": 29,
+                "endOffset": 97
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Don\u0027t use string concatenation in logging message templates.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "performance",
+                "logging"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "EFFICIENT",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "f1b6dec6-b6fd-46f7-846e-b6e65edc5653",
+            "rule": "csharpsquid:S125",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/RuggedApiClient.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 131,
+            "hash": "04740f735cdd90d99d23b421a0c19e74",
+            "textRange": {
+                "startLine": 131,
+                "endLine": 131,
+                "startOffset": 16,
+                "endOffset": 96
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "8dcefc57-8fad-4582-986a-db5960e70056",
+            "rule": "csharpsquid:S2629",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/RuggedApiClient.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 132,
+            "hash": "91f578faf91bf1f8e1a631c79d513852",
+            "textRange": {
+                "startLine": 132,
+                "endLine": 132,
+                "startOffset": 35,
+                "endOffset": 103
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Don\u0027t use string concatenation in logging message templates.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "performance",
+                "logging"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "EFFICIENT",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "0d7e7a91-5922-41ad-a9f3-bd8d32172cf8",
+            "rule": "csharpsquid:S125",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/RuggedApiClient.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 135,
+            "hash": "af3ba550c98ef931ba3c14d121c99b28",
+            "textRange": {
+                "startLine": 135,
+                "endLine": 135,
+                "startOffset": 16,
+                "endOffset": 19
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "1b1d11eb-7dcd-410e-a9fc-d7e3aac12a5e",
+            "rule": "csharpsquid:S2629",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/RuggedApiClient.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 167,
+            "hash": "92c19b44128b1c4ce4852b04b5f63d98",
+            "textRange": {
+                "startLine": 167,
+                "endLine": 167,
+                "startOffset": 29,
+                "endOffset": 105
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Don\u0027t use string concatenation in logging message templates.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "performance",
+                "logging"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "EFFICIENT",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "d88e578f-7151-4646-9beb-dc21568a37fe",
+            "rule": "csharpsquid:S1144",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/RuggedApiClient.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 172,
+            "hash": "884c5c8b37e6a2a17cc65a650a970bac",
+            "textRange": {
+                "startLine": 172,
+                "endLine": 172,
+                "startOffset": 23,
+                "endOffset": 44
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the unused private method \u0027InitializeDevRabbitMQ\u0027.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "f7195e21-cea1-43e7-90fc-269d5d44f5f8",
+            "rule": "csharpsquid:S1172",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/RuggedApiClient.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 172,
+            "hash": "884c5c8b37e6a2a17cc65a650a970bac",
+            "textRange": {
+                "startLine": 172,
+                "endLine": 172,
+                "startOffset": 60,
+                "endOffset": 82
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this parameter \u0027connection\u0027, whose value is ignored in the method.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "66ab17d2-b671-4c58-b357-eee9194bb5ae",
+            "rule": "csharpsquid:S125",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/RuggedApiClient.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 175,
+            "hash": "30d18c6fd1a28dbc20ab2c184c7562ae",
+            "textRange": {
+                "startLine": 175,
+                "endLine": 175,
+                "startOffset": 12,
+                "endOffset": 180
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "3a927d58-ae21-4f90-ab8c-d6637742878a",
+            "rule": "csharpsquid:S125",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/RuggedApiClient.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 185,
+            "hash": "4f35bc9a4c9f9f02f0b5077d992cc9c3",
+            "textRange": {
+                "startLine": 185,
+                "endLine": 185,
+                "startOffset": 12,
+                "endOffset": 195
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "39d1c38c-1cc1-4e4f-ba36-5f0cbf8ff67e",
+            "rule": "csharpsquid:S1854",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/RuggedApiClient.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 186,
+            "hash": "4c6ad541ea77ef8d7b6733b4a07c26aa",
+            "textRange": {
+                "startLine": 186,
+                "endLine": 186,
+                "startOffset": 13,
+                "endOffset": 30
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this useless assignment to local variable \u0027connection\u0027.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "",
+            "tags": [
+                "cwe",
+                "unused"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "c68c7f8f-b463-4d46-975d-94c9ab98009f",
+            "rule": "external_roslyn:CS0168",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/RuggedApiClient.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 193,
+            "hash": "a4845f153dd4410e2a031da86c1d4566",
+            "textRange": {
+                "startLine": 193,
+                "endLine": 193,
+                "startOffset": 29,
+                "endOffset": 31
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "The variable \u0027ex\u0027 is declared but never used",
+            "effort": "0min",
+            "debt": "0min",
+            "author": "",
+            "tags": [],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "externalRuleEngine": "roslyn",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "0a175ae6-3835-49d4-a489-016e477a643b",
+            "rule": "csharpsquid:S101",
+            "severity": "MINOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/SharedAPIClient.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 17,
+            "hash": "50cde867b84f1b7d84fe99a1265e412d",
+            "textRange": {
+                "startLine": 17,
+                "endLine": 17,
+                "startOffset": 17,
+                "endOffset": 32
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename class \u0027SharedAPIClient\u0027 to match pascal case naming rules, consider using \u0027SharedApiClient\u0027.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "IDENTIFIABLE",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "2d6173b4-e67e-4eb8-9ec6-05dbb4a7300b",
+            "rule": "csharpsquid:S2629",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/SharedAPIClient.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 49,
+            "hash": "1761f144f1fe3983db9bd314a906a6ae",
+            "textRange": {
+                "startLine": 49,
+                "endLine": 50,
+                "startOffset": 31,
+                "endOffset": 45
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Don\u0027t use string concatenation in logging message templates.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "performance",
+                "logging"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "EFFICIENT",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "d16b9ddd-d693-446b-ad9d-a3d46392cc81",
+            "rule": "csharpsquid:S112",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/SharedAPIClient.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 57,
+            "hash": "a31a14896d8fcb398b7064aa218aec52",
+            "textRange": {
+                "startLine": 57,
+                "endLine": 57,
+                "startOffset": 22,
+                "endOffset": 49
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "\u0027System.Exception\u0027 should not be thrown by user code.",
+            "effort": "20min",
+            "debt": "20min",
+            "author": "",
+            "tags": [
+                "cwe",
+                "error-handling"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "d0ea6204-a1f0-4631-9a77-641d1a4e9348",
+            "rule": "csharpsquid:S6664",
+            "severity": "MINOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/SharedAPIClient.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 68,
+            "hash": "7a2c602868beb7d63c1097d70e5062d8",
+            "textRange": {
+                "startLine": 68,
+                "endLine": 68,
+                "startOffset": 12,
+                "endOffset": 55
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/SharedAPIClient.cs",
+                            "textRange": {
+                                "startLine": 72,
+                                "endLine": 72,
+                                "startOffset": 12,
+                                "endOffset": 64
+                            },
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/SharedAPIClient.cs",
+                            "textRange": {
+                                "startLine": 83,
+                                "endLine": 84,
+                                "startOffset": 12,
+                                "endOffset": 69
+                            },
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Reduce the number of Information logging calls within this code block from 3 to the 2 allowed.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "logging"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FOCUSED",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "2242e66a-6dc5-4ada-a058-4255b343b587",
+            "rule": "csharpsquid:S125",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/SharedAPIClient.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 75,
+            "hash": "433b4d33ba50e68a37104b944b04cb2c",
+            "textRange": {
+                "startLine": 75,
+                "endLine": 75,
+                "startOffset": 12,
+                "endOffset": 90
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "3e9cda78-cda9-4e8c-9195-ec87836c5112",
+            "rule": "csharpsquid:S2629",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/SharedAPIClient.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 83,
+            "hash": "9f1d74d3465d822072e1d8207291e2e3",
+            "textRange": {
+                "startLine": 83,
+                "endLine": 84,
+                "startOffset": 31,
+                "endOffset": 45
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Don\u0027t use string concatenation in logging message templates.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "performance",
+                "logging"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "EFFICIENT",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "ce035fd0-5a1f-44eb-bb87-b25b4778acc5",
+            "rule": "csharpsquid:S112",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/SharedAPIClient.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 91,
+            "hash": "a31a14896d8fcb398b7064aa218aec52",
+            "textRange": {
+                "startLine": 91,
+                "endLine": 91,
+                "startOffset": 22,
+                "endOffset": 49
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "\u0027System.Exception\u0027 should not be thrown by user code.",
+            "effort": "20min",
+            "debt": "20min",
+            "author": "",
+            "tags": [
+                "cwe",
+                "error-handling"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "a2935dad-6511-41c9-9377-58f30647c84d",
+            "rule": "csharpsquid:S6966",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlBulkCopyRepository.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 30,
+            "hash": "904a9b6643c377a272c13665be4def12",
+            "textRange": {
+                "startLine": 30,
+                "endLine": 30,
+                "startOffset": 16,
+                "endOffset": 33
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Await OpenAsync instead.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "async-await"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "6f2ce79f-cd0a-4d62-a8b4-3f674acedeaa",
+            "rule": "csharpsquid:S3400",
+            "severity": "MINOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlBulkCopyRepository.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 62,
+            "hash": "5e94ab3179e411462fc8c74388a7d6af",
+            "textRange": {
+                "startLine": 62,
+                "endLine": 62,
+                "startOffset": 20,
+                "endOffset": 41
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this method and declare a constant for this value.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "confusing"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "f45ff9fe-fb46-4160-a57c-89127ce50923",
+            "rule": "csharpsquid:S2325",
+            "severity": "MINOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlBulkCopyRepository.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 62,
+            "hash": "5e94ab3179e411462fc8c74388a7d6af",
+            "textRange": {
+                "startLine": 62,
+                "endLine": 62,
+                "startOffset": 20,
+                "endOffset": 41
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Make \u0027RetrieveTimeoutConfig\u0027 a static method.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "pitfall"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "289d2299-caf8-4989-aa36-b0d0a65afa6c",
+            "rule": "csharpsquid:S1192",
+            "severity": "MINOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlDbRepository.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 56,
+            "hash": "7363c8d13498ab4d8cfbf415ca406a47",
+            "textRange": {
+                "startLine": 56,
+                "endLine": 56,
+                "startOffset": 20,
+                "endOffset": 49
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlDbRepository.cs",
+                            "textRange": {
+                                "startLine": 63,
+                                "endLine": 63,
+                                "startOffset": 20,
+                                "endOffset": 49
+                            },
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlDbRepository.cs",
+                            "textRange": {
+                                "startLine": 88,
+                                "endLine": 88,
+                                "startOffset": 20,
+                                "endOffset": 49
+                            },
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlDbRepository.cs",
+                            "textRange": {
+                                "startLine": 93,
+                                "endLine": 93,
+                                "startOffset": 20,
+                                "endOffset": 49
+                            },
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlDbRepository.cs",
+                            "textRange": {
+                                "startLine": 117,
+                                "endLine": 117,
+                                "startOffset": 20,
+                                "endOffset": 49
+                            },
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlDbRepository.cs",
+                            "textRange": {
+                                "startLine": 122,
+                                "endLine": 122,
+                                "startOffset": 20,
+                                "endOffset": 49
+                            },
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of using this literal \u0027ExecutionID: {@ExecutionID}\u0027 6 times.",
+            "effort": "4min",
+            "debt": "4min",
+            "author": "",
+            "tags": [
+                "design"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "60ae6851-f2b1-4598-af3c-c5071832cfb1",
+            "rule": "csharpsquid:S2139",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlDbRepository.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 60,
+            "hash": "a4845f153dd4410e2a031da86c1d4566",
+            "textRange": {
+                "startLine": 60,
+                "endLine": 60,
+                "startOffset": 29,
+                "endOffset": 31
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlDbRepository.cs",
+                            "textRange": {
+                                "startLine": 62,
+                                "endLine": 63,
+                                "startOffset": 16,
+                                "endOffset": 73
+                            },
+                            "msg": "Logging statement.",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlDbRepository.cs",
+                            "textRange": {
+                                "startLine": 65,
+                                "endLine": 65,
+                                "startOffset": 16,
+                                "endOffset": 25
+                            },
+                            "msg": "Thrown exception.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Either log this exception and handle it, or rethrow it with some contextual information.",
+            "effort": "15min",
+            "debt": "15min",
+            "author": "",
+            "tags": [
+                "error-handling",
+                "logging"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "83e072d0-1368-480b-a113-69e1f0062539",
+            "rule": "csharpsquid:S2629",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlDbRepository.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 62,
+            "hash": "e054bac3fe0325278b615097cac0f34f",
+            "textRange": {
+                "startLine": 62,
+                "endLine": 63,
+                "startOffset": 33,
+                "endOffset": 49
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Don\u0027t use string concatenation in logging message templates.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "performance",
+                "logging"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "EFFICIENT",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "ae125208-a965-4427-a2ba-f98205965fe6",
+            "rule": "csharpsquid:S3445",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlDbRepository.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 65,
+            "hash": "a652da59e2966389a9a2c080018de388",
+            "textRange": {
+                "startLine": 65,
+                "endLine": 65,
+                "startOffset": 16,
+                "endOffset": 25
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Consider using \u0027throw;\u0027 to preserve the stack trace.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "error-handling",
+                "confusing"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "132b031c-a201-49cd-bc13-97fe2f9ed765",
+            "rule": "csharpsquid:S6966",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlDbRepository.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 78,
+            "hash": "cb0c11d56e594aff4181896cf7f28cca",
+            "textRange": {
+                "startLine": 78,
+                "endLine": 78,
+                "startOffset": 16,
+                "endOffset": 37
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Await OpenAsync instead.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "async-await"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "6b5c24de-0bd6-4a9d-bf70-0d69c61bde0c",
+            "rule": "csharpsquid:S2139",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlDbRepository.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 90,
+            "hash": "a4845f153dd4410e2a031da86c1d4566",
+            "textRange": {
+                "startLine": 90,
+                "endLine": 90,
+                "startOffset": 29,
+                "endOffset": 31
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlDbRepository.cs",
+                            "textRange": {
+                                "startLine": 92,
+                                "endLine": 93,
+                                "startOffset": 16,
+                                "endOffset": 73
+                            },
+                            "msg": "Logging statement.",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlDbRepository.cs",
+                            "textRange": {
+                                "startLine": 95,
+                                "endLine": 95,
+                                "startOffset": 16,
+                                "endOffset": 25
+                            },
+                            "msg": "Thrown exception.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Either log this exception and handle it, or rethrow it with some contextual information.",
+            "effort": "15min",
+            "debt": "15min",
+            "author": "",
+            "tags": [
+                "error-handling",
+                "logging"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "c86715bb-0cf5-44df-9da0-9c42535b6814",
+            "rule": "csharpsquid:S2629",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlDbRepository.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 92,
+            "hash": "947666f844cdd1b3271ea107edf1cb81",
+            "textRange": {
+                "startLine": 92,
+                "endLine": 93,
+                "startOffset": 33,
+                "endOffset": 49
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Don\u0027t use string concatenation in logging message templates.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "performance",
+                "logging"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "EFFICIENT",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "7ca01a6f-4e31-4985-8ddf-23faefc6ee5a",
+            "rule": "csharpsquid:S3445",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlDbRepository.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 95,
+            "hash": "a652da59e2966389a9a2c080018de388",
+            "textRange": {
+                "startLine": 95,
+                "endLine": 95,
+                "startOffset": 16,
+                "endOffset": 25
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Consider using \u0027throw;\u0027 to preserve the stack trace.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "error-handling",
+                "confusing"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "17da5ab0-9dbd-4cf7-baa1-d9922db027f7",
+            "rule": "csharpsquid:S2139",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlDbRepository.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 119,
+            "hash": "a4845f153dd4410e2a031da86c1d4566",
+            "textRange": {
+                "startLine": 119,
+                "endLine": 119,
+                "startOffset": 29,
+                "endOffset": 31
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlDbRepository.cs",
+                            "textRange": {
+                                "startLine": 121,
+                                "endLine": 122,
+                                "startOffset": 16,
+                                "endOffset": 73
+                            },
+                            "msg": "Logging statement.",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlDbRepository.cs",
+                            "textRange": {
+                                "startLine": 124,
+                                "endLine": 124,
+                                "startOffset": 16,
+                                "endOffset": 25
+                            },
+                            "msg": "Thrown exception.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Either log this exception and handle it, or rethrow it with some contextual information.",
+            "effort": "15min",
+            "debt": "15min",
+            "author": "",
+            "tags": [
+                "error-handling",
+                "logging"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "29e948f3-80d8-4bdb-85a1-2d57b8aa88a6",
+            "rule": "csharpsquid:S2629",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlDbRepository.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 121,
+            "hash": "71ef25b2c3db140cb414746ff51e590f",
+            "textRange": {
+                "startLine": 121,
+                "endLine": 122,
+                "startOffset": 33,
+                "endOffset": 49
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Don\u0027t use string concatenation in logging message templates.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "performance",
+                "logging"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "EFFICIENT",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "104ba6ce-8371-41fe-9c7c-e0d82ed7e3e2",
+            "rule": "csharpsquid:S3445",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlDbRepository.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 124,
+            "hash": "a652da59e2966389a9a2c080018de388",
+            "textRange": {
+                "startLine": 124,
+                "endLine": 124,
+                "startOffset": 16,
+                "endOffset": 25
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Consider using \u0027throw;\u0027 to preserve the stack trace.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "error-handling",
+                "confusing"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "a7e96645-53d8-4b08-bfa6-fa318196502e",
+            "rule": "csharpsquid:S3963",
+            "severity": "MINOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Presentation/Runner/Program.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 15,
+            "hash": "d6afdc4d0135b5caac2419d67d8c90c5",
+            "textRange": {
+                "startLine": 15,
+                "endLine": 15,
+                "startOffset": 15,
+                "endOffset": 22
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Initialize all \u0027static fields\u0027 inline and remove the \u0027static constructor\u0027.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "EFFICIENT",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "961f9f1f-6a73-45f4-abb6-b2dd61378339",
+            "rule": "secrets:S6703",
+            "severity": "BLOCKER",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Presentation/Runner/appsettings.ProductionOFC.json",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 8,
+            "hash": "496672dee5a46a41cbfbe4ef785b705d",
+            "textRange": {
+                "startLine": 8,
+                "endLine": 8,
+                "startOffset": 158,
+                "endOffset": 179
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Make sure this database password gets changed and removed from the code.",
+            "effort": "30min",
+            "debt": "30min",
+            "author": "",
+            "tags": [
+                "cwe"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "VULNERABILITY",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "TRUSTWORTHY",
+            "cleanCodeAttributeCategory": "RESPONSIBLE",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "BLOCKER"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "7c50e7fd-017e-4bd1-a42b-17d6ddcade97",
+            "rule": "secrets:S6338",
+            "severity": "BLOCKER",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Presentation/Runner/appsettings.QualityAssurance.json",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 9,
+            "hash": "060c2ed64ce646b9dad5fdb9fa5cb06c",
+            "textRange": {
+                "startLine": 9,
+                "endLine": 9,
+                "startOffset": 100,
+                "endOffset": 188
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Make sure this Azure Storage Account Key gets revoked, changed, and removed from the code.",
+            "effort": "30min",
+            "debt": "30min",
+            "author": "",
+            "tags": [
+                "cwe"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "VULNERABILITY",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "TRUSTWORTHY",
+            "cleanCodeAttributeCategory": "RESPONSIBLE",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "BLOCKER"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "2a2928cc-fc8b-4772-af19-e34e06947e38",
+            "rule": "secrets:S6703",
+            "severity": "BLOCKER",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Presentation/Runner/appsettings.Staging.json",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 8,
+            "hash": "e0b578018a4ada01a908ee94af16b8aa",
+            "textRange": {
+                "startLine": 8,
+                "endLine": 8,
+                "startOffset": 158,
+                "endOffset": 179
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Make sure this database password gets changed and removed from the code.",
+            "effort": "30min",
+            "debt": "30min",
+            "author": "",
+            "tags": [
+                "cwe"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "VULNERABILITY",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "TRUSTWORTHY",
+            "cleanCodeAttributeCategory": "RESPONSIBLE",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "BLOCKER"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "029e6395-f5e1-40df-b14f-dbbc32163c02",
+            "rule": "secrets:S6703",
+            "severity": "BLOCKER",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Presentation/Runner/appsettings.json",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 8,
+            "hash": "6fa7f221632e468089c6f25c436e37bb",
+            "textRange": {
+                "startLine": 8,
+                "endLine": 8,
+                "startOffset": 176,
+                "endOffset": 191
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Make sure this database password gets changed and removed from the code.",
+            "effort": "30min",
+            "debt": "30min",
+            "author": "",
+            "tags": [
+                "cwe"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "VULNERABILITY",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "TRUSTWORTHY",
+            "cleanCodeAttributeCategory": "RESPONSIBLE",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "BLOCKER"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "bfca7267-4e70-43a8-b8b8-a45002024b59",
+            "rule": "secrets:S6338",
+            "severity": "BLOCKER",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Presentation/Runner/appsettings.json",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 21,
+            "hash": "060c2ed64ce646b9dad5fdb9fa5cb06c",
+            "textRange": {
+                "startLine": 21,
+                "endLine": 21,
+                "startOffset": 100,
+                "endOffset": 188
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Make sure this Azure Storage Account Key gets revoked, changed, and removed from the code.",
+            "effort": "30min",
+            "debt": "30min",
+            "author": "",
+            "tags": [
+                "cwe"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "VULNERABILITY",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "TRUSTWORTHY",
+            "cleanCodeAttributeCategory": "RESPONSIBLE",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "BLOCKER"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "0af08ad2-fc82-4c80-8774-0874eb946769",
+            "rule": "plsql:SingleLineCommentsSyntaxCheck",
+            "severity": "MINOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:SQL Server/Tables/TekelekDataExchange_Logs.sql",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 1,
+            "hash": "e1cdda9146108b838ae486b614a29f02",
+            "textRange": {
+                "startLine": 1,
+                "endLine": 1,
+                "startOffset": 0,
+                "endOffset": 100
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "This single line comment should use the single line comment syntax \"--\"",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "f213d36a-9523-4630-82f8-0ff61035dcad",
+            "rule": "csharpsquid:S2699",
+            "severity": "BLOCKER",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Tests/DataAccess.Tests/Clients/AuthorizationClientTests.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 33,
+            "hash": "a33e4503ed4d07be9f6c05f2c6ee8de9",
+            "textRange": {
+                "startLine": 33,
+                "endLine": 33,
+                "startOffset": 26,
+                "endOffset": 102
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add at least one assertion to this test case.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "",
+            "tags": [
+                "tests"
+            ],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "scope": "TEST",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "TESTED",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "BLOCKER"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "2f906c39-5170-4ce8-aa6b-2f7ae597e98f",
+            "rule": "external_roslyn:CS4014",
+            "severity": "MAJOR",
+            "component": "EAR-AA-28260_TekelekDataExchange_API:Tests/DataAccess.Tests/Clients/AuthorizationClientTests.cs",
+            "project": "EAR-AA-28260_TekelekDataExchange_API",
+            "line": 142,
+            "hash": "9ca12a95b66be44caf95fdbc841b417f",
+            "textRange": {
+                "startLine": 142,
+                "endLine": 142,
+                "startOffset": 12,
+                "endOffset": 80
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Because this call is not awaited, execution of the current method continues before the call is completed. Consider applying the \u0027await\u0027 operator to the result of the call.",
+            "effort": "0min",
+            "debt": "0min",
+            "author": "",
+            "tags": [],
+            "transitions": [
+                "accept",
+                "falsepositive",
+                "confirm",
+                "resolve",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2026-03-11T07:28:41+0000",
+            "updateDate": "2026-03-11T07:28:41+0000",
+            "type": "CODE_SMELL",
+            "branch": "sonar-stg-api",
+            "externalRuleEngine": "roslyn",
+            "scope": "TEST",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        }
+    ],
+    "components": [
+        {
+            "key": "EAR-AA-28260_TekelekDataExchange_API:Presentation/Runner/appsettings.Staging.json",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "appsettings.Staging.json",
+            "longName": "Presentation/Runner/appsettings.Staging.json",
+            "path": "Presentation/Runner/appsettings.Staging.json",
+            "branch": "sonar-stg-api"
+        },
+        {
+            "key": "EAR-AA-28260_TekelekDataExchange_API",
+            "enabled": true,
+            "qualifier": "TRK",
+            "name": "CHX_AssetManagment_TekelekDataExchange_API",
+            "longName": "CHX_AssetManagment_TekelekDataExchange_API",
+            "branch": "sonar-stg-api"
+        },
+        {
+            "key": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/SharedAPIClient.cs",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "SharedAPIClient.cs",
+            "longName": "Infrastructure/DataAccess/Clients/SharedAPIClient.cs",
+            "path": "Infrastructure/DataAccess/Clients/SharedAPIClient.cs",
+            "branch": "sonar-stg-api"
+        },
+        {
+            "key": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlDbRepository.cs",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "SqlDbRepository.cs",
+            "longName": "Infrastructure/DataAccess/Repositories/SqlDbRepository.cs",
+            "path": "Infrastructure/DataAccess/Repositories/SqlDbRepository.cs",
+            "branch": "sonar-stg-api"
+        },
+        {
+            "key": "EAR-AA-28260_TekelekDataExchange_API:Presentation/Runner/appsettings.json",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "appsettings.json",
+            "longName": "Presentation/Runner/appsettings.json",
+            "path": "Presentation/Runner/appsettings.json",
+            "branch": "sonar-stg-api"
+        },
+        {
+            "key": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/FileHelper.cs",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "FileHelper.cs",
+            "longName": "Infrastructure/DataAccess/Clients/FileHelper.cs",
+            "path": "Infrastructure/DataAccess/Clients/FileHelper.cs",
+            "branch": "sonar-stg-api"
+        },
+        {
+            "key": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Repositories/SqlBulkCopyRepository.cs",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "SqlBulkCopyRepository.cs",
+            "longName": "Infrastructure/DataAccess/Repositories/SqlBulkCopyRepository.cs",
+            "path": "Infrastructure/DataAccess/Repositories/SqlBulkCopyRepository.cs",
+            "branch": "sonar-stg-api"
+        },
+        {
+            "key": "EAR-AA-28260_TekelekDataExchange_API:Presentation/Runner/Program.cs",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "Program.cs",
+            "longName": "Presentation/Runner/Program.cs",
+            "path": "Presentation/Runner/Program.cs",
+            "branch": "sonar-stg-api"
+        },
+        {
+            "key": "EAR-AA-28260_TekelekDataExchange_API:Tests/DataAccess.Tests/Clients/AuthorizationClientTests.cs",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "AuthorizationClientTests.cs",
+            "longName": "Tests/DataAccess.Tests/Clients/AuthorizationClientTests.cs",
+            "path": "Tests/DataAccess.Tests/Clients/AuthorizationClientTests.cs",
+            "branch": "sonar-stg-api"
+        },
+        {
+            "key": "EAR-AA-28260_TekelekDataExchange_API:Infrastructure/DataAccess/Clients/RuggedApiClient.cs",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "RuggedApiClient.cs",
+            "longName": "Infrastructure/DataAccess/Clients/RuggedApiClient.cs",
+            "path": "Infrastructure/DataAccess/Clients/RuggedApiClient.cs",
+            "branch": "sonar-stg-api"
+        },
+        {
+            "key": "EAR-AA-28260_TekelekDataExchange_API:Presentation/Runner/appsettings.QualityAssurance.json",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "appsettings.QualityAssurance.json",
+            "longName": "Presentation/Runner/appsettings.QualityAssurance.json",
+            "path": "Presentation/Runner/appsettings.QualityAssurance.json",
+            "branch": "sonar-stg-api"
+        },
+        {
+            "key": "EAR-AA-28260_TekelekDataExchange_API:SQL Server/Tables/TekelekDataExchange_Logs.sql",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "TekelekDataExchange_Logs.sql",
+            "longName": "SQL Server/Tables/TekelekDataExchange_Logs.sql",
+            "path": "SQL Server/Tables/TekelekDataExchange_Logs.sql",
+            "branch": "sonar-stg-api"
+        },
+        {
+            "key": "EAR-AA-28260_TekelekDataExchange_API:Presentation/Runner/appsettings.ProductionOFC.json",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "appsettings.ProductionOFC.json",
+            "longName": "Presentation/Runner/appsettings.ProductionOFC.json",
+            "path": "Presentation/Runner/appsettings.ProductionOFC.json",
+            "branch": "sonar-stg-api"
+        }
+    ],
+    "rules": [
+        {
+            "key": "external_roslyn:CS0168",
+            "name": "Variable is declared but never used",
+            "lang": "",
+            "status": "READY"
+        },
+        {
+            "key": "external_roslyn:CS4014",
+            "name": "Because this call is not awaited, execution of the current method continues before the call is completed",
+            "lang": "",
+            "status": "READY"
+        },
+        {
+            "key": "plsql:SingleLineCommentsSyntaxCheck",
+            "name": "Single line comments should start with \"--\"",
+            "lang": "plsql",
+            "status": "READY",
+            "langName": "PL/SQL"
+        },
+        {
+            "key": "csharpsquid:S6966",
+            "name": "Awaitable method should be used",
+            "lang": "cs",
+            "status": "READY",
+            "langName": "C#"
+        },
+        {
+            "key": "csharpsquid:S2629",
+            "name": "Logging templates should be constant",
+            "lang": "cs",
+            "status": "READY",
+            "langName": "C#"
+        },
+        {
+            "key": "csharpsquid:S2139",
+            "name": "Exceptions should be either logged or rethrown but not both",
+            "lang": "cs",
+            "status": "READY",
+            "langName": "C#"
+        },
+        {
+            "key": "csharpsquid:S3400",
+            "name": "Methods should not return constants",
+            "lang": "cs",
+            "status": "READY",
+            "langName": "C#"
+        },
+        {
+            "key": "csharpsquid:S1192",
+            "name": "String literals should not be duplicated",
+            "lang": "cs",
+            "status": "READY",
+            "langName": "C#"
+        },
+        {
+            "key": "csharpsquid:S101",
+            "name": "Types should be named in PascalCase",
+            "lang": "cs",
+            "status": "READY",
+            "langName": "C#"
+        },
+        {
+            "key": "csharpsquid:S3963",
+            "name": "\"static\" fields should be initialized inline",
+            "lang": "cs",
+            "status": "READY",
+            "langName": "C#"
+        },
+        {
+            "key": "csharpsquid:S112",
+            "name": "General or reserved exceptions should never be thrown",
+            "lang": "cs",
+            "status": "READY",
+            "langName": "C#"
+        },
+        {
+            "key": "csharpsquid:S125",
+            "name": "Sections of code should not be commented out",
+            "lang": "cs",
+            "status": "READY",
+            "langName": "C#"
+        },
+        {
+            "key": "csharpsquid:S1172",
+            "name": "Unused method parameters should be removed",
+            "lang": "cs",
+            "status": "READY",
+            "langName": "C#"
+        },
+        {
+            "key": "csharpsquid:S1854",
+            "name": "Unused assignments should be removed",
+            "lang": "cs",
+            "status": "READY",
+            "langName": "C#"
+        },
+        {
+            "key": "csharpsquid:S1481",
+            "name": "Unused local variables should be removed",
+            "lang": "cs",
+            "status": "READY",
+            "langName": "C#"
+        },
+        {
+            "key": "csharpsquid:S2699",
+            "name": "Tests should include assertions",
+            "lang": "cs",
+            "status": "READY",
+            "langName": "C#"
+        },
+        {
+            "key": "csharpsquid:S2325",
+            "name": "Methods and properties that don\u0027t access instance data should be static",
+            "lang": "cs",
+            "status": "READY",
+            "langName": "C#"
+        },
+        {
+            "key": "csharpsquid:S1144",
+            "name": "Unused private types or members should be removed",
+            "lang": "cs",
+            "status": "READY",
+            "langName": "C#"
+        },
+        {
+            "key": "csharpsquid:S3445",
+            "name": "Exceptions should not be explicitly rethrown",
+            "lang": "cs",
+            "status": "READY",
+            "langName": "C#"
+        },
+        {
+            "key": "secrets:S6338",
+            "name": "Azure Storage Account Keys should not be disclosed",
+            "lang": "secrets",
+            "status": "READY",
+            "langName": "Secrets"
+        },
+        {
+            "key": "secrets:S6703",
+            "name": "Database passwords should not be disclosed",
+            "lang": "secrets",
+            "status": "READY",
+            "langName": "Secrets"
+        },
+        {
+            "key": "csharpsquid:S6664",
+            "name": "The code block contains too many logging calls",
+            "lang": "cs",
+            "status": "READY",
+            "langName": "C#"
+        }
+    ],
+    "users": [
+        {
+            "login": "nandkumar41142",
+            "name": "Nandkumar",
+            "avatar": "09c8d884cf50826d4293a8083e4295e5",
+            "active": true
+        }
+    ],
+    "languages": [
+        {
+            "key": "cs",
+            "name": "C#"
+        },
+        {
+            "key": "plsql",
+            "name": "PL/SQL"
+        },
+        {
+            "key": "java",
+            "name": "Java"
+        },
+        {
+            "key": "xml",
+            "name": "XML"
+        },
+        {
+            "key": "swift",
+            "name": "Swift"
+        },
+        {
+            "key": "c",
+            "name": "C"
+        },
+        {
+            "key": "cpp",
+            "name": "C++"
+        },
+        {
+            "key": "objc",
+            "name": "Objective-C"
+        },
+        {
+            "key": "py",
+            "name": "Python"
+        },
+        {
+            "key": "ipynb",
+            "name": "IPython Notebooks"
+        },
+        {
+            "key": "vbnet",
+            "name": "VB.NET"
+        },
+        {
+            "key": "vb",
+            "name": "Vb"
+        },
+        {
+            "key": "apex",
+            "name": "Apex"
+        },
+        {
+            "key": "js",
+            "name": "JavaScript"
+        },
+        {
+            "key": "ts",
+            "name": "TypeScript"
+        },
+        {
+            "key": "css",
+            "name": "CSS"
+        },
+        {
+            "key": "grvy",
+            "name": "Groovy"
+        },
+        {
+            "key": "abap",
+            "name": "ABAP"
+        },
+        {
+            "key": "ansible",
+            "name": "Ansible"
+        },
+        {
+            "key": "terraform",
+            "name": "Terraform"
+        },
+        {
+            "key": "cloudformation",
+            "name": "CloudFormation"
+        },
+        {
+            "key": "kubernetes",
+            "name": "Kubernetes"
+        },
+        {
+            "key": "docker",
+            "name": "Docker"
+        },
+        {
+            "key": "azureresourcemanager",
+            "name": "AzureResourceManager"
+        },
+        {
+            "key": "yaml",
+            "name": "YAML"
+        },
+        {
+            "key": "json",
+            "name": "JSON"
+        },
+        {
+            "key": "scala",
+            "name": "Scala"
+        },
+        {
+            "key": "dart",
+            "name": "Dart"
+        },
+        {
+            "key": "jcl",
+            "name": "JCL"
+        },
+        {
+            "key": "web",
+            "name": "HTML"
+        },
+        {
+            "key": "jsp",
+            "name": "JSP"
+        },
+        {
+            "key": "flex",
+            "name": "Flex"
+        },
+        {
+            "key": "cf",
+            "name": "ColdFusion"
+        },
+        {
+            "key": "go",
+            "name": "Go"
+        },
+        {
+            "key": "kotlin",
+            "name": "Kotlin"
+        },
+        {
+            "key": "rpg",
+            "name": "RPG"
+        },
+        {
+            "key": "pli",
+            "name": "PL/I"
+        },
+        {
+            "key": "tsql",
+            "name": "T-SQL"
+        },
+        {
+            "key": "ruby",
+            "name": "Ruby"
+        },
+        {
+            "key": "secrets",
+            "name": "Secrets"
+        },
+        {
+            "key": "text",
+            "name": "Text"
+        },
+        {
+            "key": "cobol",
+            "name": "COBOL"
+        },
+        {
+            "key": "php",
+            "name": "PHP"
+        }
+    ],
+    "facets": []
+}

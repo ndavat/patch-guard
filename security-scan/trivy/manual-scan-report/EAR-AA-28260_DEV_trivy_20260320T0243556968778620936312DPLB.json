@@ -1,0 +1,2589 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.69.3"
+  },
+  "ReportID": "019d0920-e912-72b7-b684-ff3dde4652ce",
+  "CreatedAt": "2026-03-20T02:44:05.010179254Z",
+  "ArtifactID": "sha256:3de42fcf289f95eb899de03bc082976a2ec89f79f1e953473b668e66e4f3a03f",
+  "ArtifactName": "chevronclient:cicd-devops-20260320.1",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "Size": 127720448,
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.23.3"
+    },
+    "ImageID": "sha256:10dd5c4d13e0418fb3b6077ca8af29cf7e4e2a85afd7b8ba6f00d92054d17ae0",
+    "DiffIDs": [
+      "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e",
+      "sha256:4cb51ab6d71c9899c5dc417e9912482b7902011866b89a0f6dcf40e974af1120",
+      "sha256:c8aa5e256cf15b4bcf5457616013601d8ac8c342438968e7a5c6b68f68329820",
+      "sha256:357370a34278bea2dde73a60cf673a1bb950dfcf010135f7d21bb2348da6fd35",
+      "sha256:c0d0918202d1e986fcdb8c1606ab20a411f7e13ec86144ca5c64b822cc12cd2f",
+      "sha256:4d89a3f33f6b3e4aacf12cbd63e5960b19787be3db1211b25ba13e79a5792015",
+      "sha256:2bb1f249e02559229dc12e1ec38478b2903c091a4ce16b4d77254bedc06c8201",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "sha256:44d695d6c8e66af84d20debc8831a6c3ac2e4e1baa9821c2b6b2ee19034e3dd0",
+      "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "sha256:b0855faa3db6ca28d34ad20dce66a743053f8755b0ec09cc8fa13c6788aba6d3"
+    ],
+    "RepoTags": [
+      "chevronclient:cicd-devops-20260320.1"
+    ],
+    "Reference": "chevronclient:cicd-devops-20260320.1",
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2026-03-20T02:43:33.627008578Z",
+      "history": [
+        {
+          "created": "2026-01-28T01:18:04Z",
+          "created_by": "ADD alpine-minirootfs-3.23.3-x86_64.tar.gz / # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-01-28T01:18:04Z",
+          "created_by": "CMD [\"/bin/sh\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-03-17T02:29:46Z",
+          "created_by": "ENV APP_UID=1654 ASPNETCORE_HTTP_PORTS=8080 DOTNET_RUNNING_IN_CONTAINER=true DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-03-17T02:29:46Z",
+          "created_by": "RUN /bin/sh -c apk add --upgrade --no-cache         ca-certificates-bundle                 libgcc         libssl3         libstdc++         zlib # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-03-17T02:29:48Z",
+          "created_by": "RUN /bin/sh -c addgroup         --gid=$APP_UID         app     \u0026\u0026 adduser         --uid=$APP_UID         --ingroup=app         --disabled-password         app # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-03-17T02:30:04Z",
+          "created_by": "ENV DOTNET_VERSION=8.0.25",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-03-17T02:30:04Z",
+          "created_by": "COPY /dotnet /usr/share/dotnet # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-03-17T02:30:05Z",
+          "created_by": "RUN /bin/sh -c ln -s /usr/share/dotnet/dotnet /usr/bin/dotnet # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-03-17T02:30:39Z",
+          "created_by": "ENV ASPNET_VERSION=8.0.25",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-03-17T02:30:39Z",
+          "created_by": "COPY /dotnet /usr/share/dotnet # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-03-20T02:43:13Z",
+          "created_by": "WORKDIR /app",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-03-20T02:43:13Z",
+          "created_by": "EXPOSE map[8080/tcp:{}]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-03-20T02:43:13Z",
+          "created_by": "WORKDIR /app",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-03-20T02:43:16Z",
+          "created_by": "RUN /bin/sh -c apk add --no-cache curl procps # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-03-20T02:43:33Z",
+          "created_by": "COPY /app/publish . # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-03-20T02:43:33Z",
+          "created_by": "COPY /app/publish/appsettings*.json ./ # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-03-20T02:43:33Z",
+          "created_by": "RUN /bin/sh -c adduser -D -s /bin/sh appuser \u0026\u0026 chown -R appuser /app # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-03-20T02:43:33Z",
+          "created_by": "USER appuser",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-03-20T02:43:33Z",
+          "created_by": "ENV DOTNET_ENVIRONMENT=Production",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-03-20T02:43:33Z",
+          "created_by": "ENTRYPOINT [\"dotnet\" \"ChevronMqttConsumer.dll\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e",
+          "sha256:4cb51ab6d71c9899c5dc417e9912482b7902011866b89a0f6dcf40e974af1120",
+          "sha256:c8aa5e256cf15b4bcf5457616013601d8ac8c342438968e7a5c6b68f68329820",
+          "sha256:357370a34278bea2dde73a60cf673a1bb950dfcf010135f7d21bb2348da6fd35",
+          "sha256:c0d0918202d1e986fcdb8c1606ab20a411f7e13ec86144ca5c64b822cc12cd2f",
+          "sha256:4d89a3f33f6b3e4aacf12cbd63e5960b19787be3db1211b25ba13e79a5792015",
+          "sha256:2bb1f249e02559229dc12e1ec38478b2903c091a4ce16b4d77254bedc06c8201",
+          "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+          "sha256:44d695d6c8e66af84d20debc8831a6c3ac2e4e1baa9821c2b6b2ee19034e3dd0",
+          "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808",
+          "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+          "sha256:b0855faa3db6ca28d34ad20dce66a743053f8755b0ec09cc8fa13c6788aba6d3"
+        ]
+      },
+      "config": {
+        "Entrypoint": [
+          "dotnet",
+          "ChevronMqttConsumer.dll"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "APP_UID=1654",
+          "ASPNETCORE_HTTP_PORTS=8080",
+          "DOTNET_RUNNING_IN_CONTAINER=true",
+          "DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true",
+          "DOTNET_VERSION=8.0.25",
+          "ASPNET_VERSION=8.0.25",
+          "DOTNET_ENVIRONMENT=Production"
+        ],
+        "Labels": {
+          "com.azure.dev.image.build.buildnumber": "20260320.1",
+          "com.azure.dev.image.build.builduri": "vstfs:///Build/Build/137409",
+          "com.azure.dev.image.build.definitionname": "ChevronClient-Docker-TrivyScan",
+          "com.azure.dev.image.build.repository.name": "Chevronclient",
+          "com.azure.dev.image.build.repository.uri": "https://ChampionXEnterprise-DevOPS@dev.azure.com/ChampionXEnterprise-DevOPS/myChampionX%20Platform/_git/Chevronclient",
+          "com.azure.dev.image.build.sourcebranchname": "cicd-devops",
+          "com.azure.dev.image.build.sourceversion": "4b43820363b950bf9c087d8e3e2a0b05192c5223",
+          "com.azure.dev.image.system.teamfoundationcollectionuri": "https://dev.azure.com/ChampionXEnterprise-DevOPS/",
+          "com.azure.dev.image.system.teamproject": "myChampionX Platform",
+          "image.base.digest": "sha256:354c2fcfb3c23abc60d98f0380cdb403fba844a62a123b6343a8c9611209995c",
+          "image.base.ref.name": "mcr.microsoft.com/dotnet/aspnet:8.0-alpine"
+        },
+        "User": "appuser",
+        "WorkingDir": "/app",
+        "ExposedPorts": {
+          "8080/tcp": {}
+        }
+      }
+    },
+    "Layers": [
+      {
+        "Size": 8724480,
+        "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+      },
+      {
+        "Size": 3118592,
+        "DiffID": "sha256:4cb51ab6d71c9899c5dc417e9912482b7902011866b89a0f6dcf40e974af1120"
+      },
+      {
+        "Size": 10752,
+        "DiffID": "sha256:c8aa5e256cf15b4bcf5457616013601d8ac8c342438968e7a5c6b68f68329820"
+      },
+      {
+        "Size": 72549376,
+        "DiffID": "sha256:357370a34278bea2dde73a60cf673a1bb950dfcf010135f7d21bb2348da6fd35"
+      },
+      {
+        "Size": 2560,
+        "DiffID": "sha256:c0d0918202d1e986fcdb8c1606ab20a411f7e13ec86144ca5c64b822cc12cd2f"
+      },
+      {
+        "Size": 24239104,
+        "DiffID": "sha256:4d89a3f33f6b3e4aacf12cbd63e5960b19787be3db1211b25ba13e79a5792015"
+      },
+      {
+        "Size": 1536,
+        "DiffID": "sha256:2bb1f249e02559229dc12e1ec38478b2903c091a4ce16b4d77254bedc06c8201"
+      },
+      {
+        "Size": 1024,
+        "DiffID": "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+      },
+      {
+        "Size": 7088640,
+        "DiffID": "sha256:44d695d6c8e66af84d20debc8831a6c3ac2e4e1baa9821c2b6b2ee19034e3dd0"
+      },
+      {
+        "Size": 5986816,
+        "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+      },
+      {
+        "Size": 1024,
+        "DiffID": "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+      },
+      {
+        "Size": 5996544,
+        "DiffID": "sha256:b0855faa3db6ca28d34ad20dce66a743053f8755b0ec09cc8fa13c6788aba6d3"
+      }
+    ]
+  },
+  "Results": [
+    {
+      "Target": "chevronclient:cicd-devops-20260320.1 (alpine 3.23.3)",
+      "Class": "os-pkgs",
+      "Type": "alpine",
+      "Packages": [
+        {
+          "ID": "alpine-baselayout@3.7.1-r8",
+          "Name": "alpine-baselayout",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/alpine-baselayout@3.7.1-r8?arch=x86_64\u0026distro=3.23.3",
+            "UID": "dc092fc47b5d9e05"
+          },
+          "Version": "3.7.1-r8",
+          "Arch": "x86_64",
+          "SrcName": "alpine-baselayout",
+          "SrcVersion": "3.7.1-r8",
+          "Licenses": [
+            "GPL-2.0-only"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "alpine-baselayout-data@3.7.1-r8",
+            "busybox-binsh@1.37.0-r30"
+          ],
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:9a137c3c8e738bcabac13326c9fc5472fa58aaf4",
+          "InstalledFiles": [
+            "etc/motd",
+            "etc/crontabs/root",
+            "etc/modprobe.d/aliases.conf",
+            "etc/modprobe.d/blacklist.conf",
+            "etc/modprobe.d/i386.conf",
+            "etc/profile.d/20locale.sh",
+            "etc/profile.d/README",
+            "etc/profile.d/color_prompt.sh.disabled",
+            "usr/lib/sysctl.d/00-alpine.conf",
+            "var/lock",
+            "var/run",
+            "var/spool/mail",
+            "var/spool/cron/crontabs"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "alpine-baselayout-data@3.7.1-r8",
+          "Name": "alpine-baselayout-data",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/alpine-baselayout-data@3.7.1-r8?arch=x86_64\u0026distro=3.23.3",
+            "UID": "6542463feabe92df"
+          },
+          "Version": "3.7.1-r8",
+          "Arch": "x86_64",
+          "SrcName": "alpine-baselayout",
+          "SrcVersion": "3.7.1-r8",
+          "Licenses": [
+            "GPL-2.0-only"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:9a60b0edb4559ab279cf004b7e685cfd78dd0c15",
+          "InstalledFiles": [
+            "etc/fstab",
+            "etc/group",
+            "etc/hostname",
+            "etc/hosts",
+            "etc/inittab",
+            "etc/modules",
+            "etc/mtab",
+            "etc/nsswitch.conf",
+            "etc/passwd",
+            "etc/profile",
+            "etc/protocols",
+            "etc/services",
+            "etc/shadow",
+            "etc/shells",
+            "etc/sysctl.conf"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "alpine-keys@2.6-r0",
+          "Name": "alpine-keys",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/alpine-keys@2.6-r0?arch=x86_64\u0026distro=3.23.3",
+            "UID": "2c7cb90de388aa7d"
+          },
+          "Version": "2.6-r0",
+          "Arch": "x86_64",
+          "SrcName": "alpine-keys",
+          "SrcVersion": "2.6-r0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:5c45a821cd6b84d543bbd7ff12a7de1855c5cd13",
+          "InstalledFiles": [
+            "etc/apk/keys/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub",
+            "etc/apk/keys/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub",
+            "etc/apk/keys/alpine-devel@lists.alpinelinux.org-6165ee59.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58cbb476.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58e4f17d.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5e69ca50.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-60ac2099.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-6165ee59.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-61666e3f.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616a9724.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616abc23.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616ac3bc.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616adfeb.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616ae350.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616db30d.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-66ba20fe.rsa.pub",
+            "usr/share/apk/keys/aarch64/alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub",
+            "usr/share/apk/keys/aarch64/alpine-devel@lists.alpinelinux.org-616ae350.rsa.pub",
+            "usr/share/apk/keys/armhf/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub",
+            "usr/share/apk/keys/armhf/alpine-devel@lists.alpinelinux.org-616a9724.rsa.pub",
+            "usr/share/apk/keys/armv7/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub",
+            "usr/share/apk/keys/armv7/alpine-devel@lists.alpinelinux.org-616adfeb.rsa.pub",
+            "usr/share/apk/keys/loongarch64/alpine-devel@lists.alpinelinux.org-66ba20fe.rsa.pub",
+            "usr/share/apk/keys/mips64/alpine-devel@lists.alpinelinux.org-5e69ca50.rsa.pub",
+            "usr/share/apk/keys/ppc64le/alpine-devel@lists.alpinelinux.org-58cbb476.rsa.pub",
+            "usr/share/apk/keys/ppc64le/alpine-devel@lists.alpinelinux.org-616abc23.rsa.pub",
+            "usr/share/apk/keys/riscv64/alpine-devel@lists.alpinelinux.org-60ac2099.rsa.pub",
+            "usr/share/apk/keys/riscv64/alpine-devel@lists.alpinelinux.org-616db30d.rsa.pub",
+            "usr/share/apk/keys/s390x/alpine-devel@lists.alpinelinux.org-58e4f17d.rsa.pub",
+            "usr/share/apk/keys/s390x/alpine-devel@lists.alpinelinux.org-616ac3bc.rsa.pub",
+            "usr/share/apk/keys/x86/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub",
+            "usr/share/apk/keys/x86/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub",
+            "usr/share/apk/keys/x86/alpine-devel@lists.alpinelinux.org-61666e3f.rsa.pub",
+            "usr/share/apk/keys/x86_64/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub",
+            "usr/share/apk/keys/x86_64/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub",
+            "usr/share/apk/keys/x86_64/alpine-devel@lists.alpinelinux.org-6165ee59.rsa.pub"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "alpine-release@3.23.3-r0",
+          "Name": "alpine-release",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/alpine-release@3.23.3-r0?arch=x86_64\u0026distro=3.23.3",
+            "UID": "4820d6f0afb6a834"
+          },
+          "Version": "3.23.3-r0",
+          "Arch": "x86_64",
+          "SrcName": "alpine-base",
+          "SrcVersion": "3.23.3-r0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "alpine-keys@2.6-r0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:e71144a1a35c4844507cd1a3281a7189049f3522",
+          "InstalledFiles": [
+            "etc/alpine-release",
+            "etc/issue",
+            "etc/os-release",
+            "etc/secfixes.d/alpine",
+            "usr/lib/os-release"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "apk-tools@3.0.3-r1",
+          "Name": "apk-tools",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/apk-tools@3.0.3-r1?arch=x86_64\u0026distro=3.23.3",
+            "UID": "8f4eb96bcc70fcbd"
+          },
+          "Version": "3.0.3-r1",
+          "Arch": "x86_64",
+          "SrcName": "apk-tools",
+          "SrcVersion": "3.0.3-r1",
+          "Licenses": [
+            "GPL-2.0-only"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "ca-certificates-bundle@20251003-r0",
+            "libapk@3.0.3-r1",
+            "libcrypto3@3.5.5-r0",
+            "musl@1.2.5-r21",
+            "zlib@1.3.2-r0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:b2f877e6c9fb945c185cf36ed546064b8b374245",
+          "InstalledFiles": [
+            "sbin/apk"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "brotli-libs@1.2.0-r0",
+          "Name": "brotli-libs",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/brotli-libs@1.2.0-r0?arch=x86_64\u0026distro=3.23.3",
+            "UID": "18708ffc8b6c1544"
+          },
+          "Version": "1.2.0-r0",
+          "Arch": "x86_64",
+          "SrcName": "brotli",
+          "SrcVersion": "1.2.0-r0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Maintainer": "prspkt \u003cprspkt@protonmail.com\u003e",
+          "DependsOn": [
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:44d695d6c8e66af84d20debc8831a6c3ac2e4e1baa9821c2b6b2ee19034e3dd0"
+          },
+          "Digest": "sha1:0814694602f35d2741e916fdcb4c9a1e0ec50b42",
+          "InstalledFiles": [
+            "usr/lib/libbrotlicommon.so.1",
+            "usr/lib/libbrotlicommon.so.1.2.0",
+            "usr/lib/libbrotlidec.so.1",
+            "usr/lib/libbrotlidec.so.1.2.0",
+            "usr/lib/libbrotlienc.so.1",
+            "usr/lib/libbrotlienc.so.1.2.0"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "busybox@1.37.0-r30",
+          "Name": "busybox",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/busybox@1.37.0-r30?arch=x86_64\u0026distro=3.23.3",
+            "UID": "1701a73d4be0e35a"
+          },
+          "Version": "1.37.0-r30",
+          "Arch": "x86_64",
+          "SrcName": "busybox",
+          "SrcVersion": "1.37.0-r30",
+          "Licenses": [
+            "GPL-2.0-only"
+          ],
+          "Maintainer": "Sören Tempel \u003csoeren+alpine@soeren-tempel.net\u003e",
+          "DependsOn": [
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:f1347801bb96b1aa40d17f82237c3f4ff02a4725",
+          "InstalledFiles": [
+            "bin/busybox",
+            "etc/securetty",
+            "etc/busybox-paths.d/busybox",
+            "etc/logrotate.d/acpid",
+            "etc/network/if-up.d/dad",
+            "etc/udhcpc/udhcpc.conf",
+            "usr/share/udhcpc/default.script"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "busybox-binsh@1.37.0-r30",
+          "Name": "busybox-binsh",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/busybox-binsh@1.37.0-r30?arch=x86_64\u0026distro=3.23.3",
+            "UID": "3e18d05d46a6f46f"
+          },
+          "Version": "1.37.0-r30",
+          "Arch": "x86_64",
+          "SrcName": "busybox",
+          "SrcVersion": "1.37.0-r30",
+          "Licenses": [
+            "GPL-2.0-only"
+          ],
+          "Maintainer": "Sören Tempel \u003csoeren+alpine@soeren-tempel.net\u003e",
+          "DependsOn": [
+            "busybox@1.37.0-r30"
+          ],
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:188d2d0110afa58e8a3e3e5fd424b2d996df7a09",
+          "InstalledFiles": [
+            "bin/sh"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "c-ares@1.34.6-r0",
+          "Name": "c-ares",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/c-ares@1.34.6-r0?arch=x86_64\u0026distro=3.23.3",
+            "UID": "2fc69dd6afab16ae"
+          },
+          "Version": "1.34.6-r0",
+          "Arch": "x86_64",
+          "SrcName": "c-ares",
+          "SrcVersion": "1.34.6-r0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Maintainer": "Carlo Landmeter \u003cclandmeter@alpinelinux.org\u003e",
+          "DependsOn": [
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:44d695d6c8e66af84d20debc8831a6c3ac2e4e1baa9821c2b6b2ee19034e3dd0"
+          },
+          "Digest": "sha1:e3bb3ff47a277ff9409b8c4bb825099cfe2bcbe2",
+          "InstalledFiles": [
+            "usr/lib/libcares.so.2",
+            "usr/lib/libcares.so.2.19.5"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "ca-certificates-bundle@20251003-r0",
+          "Name": "ca-certificates-bundle",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/ca-certificates-bundle@20251003-r0?arch=x86_64\u0026distro=3.23.3",
+            "UID": "f667a2210d1d97c1"
+          },
+          "Version": "20251003-r0",
+          "Arch": "x86_64",
+          "SrcName": "ca-certificates",
+          "SrcVersion": "20251003-r0",
+          "Licenses": [
+            "MPL-2.0",
+            "MIT"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:63ebe72ba79f548b6cdc8a9894e16a90d80f42b0",
+          "InstalledFiles": [
+            "etc/ssl/cert.pem",
+            "etc/ssl/certs/ca-certificates.crt",
+            "etc/ssl1.1/cert.pem",
+            "etc/ssl1.1/certs"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "curl@8.17.0-r1",
+          "Name": "curl",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/curl@8.17.0-r1?arch=x86_64\u0026distro=3.23.3",
+            "UID": "fcc5af1baec29b0e"
+          },
+          "Version": "8.17.0-r1",
+          "Arch": "x86_64",
+          "SrcName": "curl",
+          "SrcVersion": "8.17.0-r1",
+          "Licenses": [
+            "curl"
+          ],
+          "Maintainer": "Achill Gilgenast \u003cachill@achill.org\u003e",
+          "DependsOn": [
+            "libcurl@8.17.0-r1",
+            "musl@1.2.5-r21",
+            "zlib@1.3.2-r0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:44d695d6c8e66af84d20debc8831a6c3ac2e4e1baa9821c2b6b2ee19034e3dd0"
+          },
+          "Digest": "sha1:c467d4938a8ffc55afe3b1a6223787e0ecd60036",
+          "InstalledFiles": [
+            "usr/bin/curl",
+            "usr/bin/wcurl"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "libapk@3.0.3-r1",
+          "Name": "libapk",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/libapk@3.0.3-r1?arch=x86_64\u0026distro=3.23.3",
+            "UID": "a3fb0db85d29fe47"
+          },
+          "Version": "3.0.3-r1",
+          "Arch": "x86_64",
+          "SrcName": "apk-tools",
+          "SrcVersion": "3.0.3-r1",
+          "Licenses": [
+            "GPL-2.0-only"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "libcrypto3@3.5.5-r0",
+            "libssl3@3.5.5-r0",
+            "musl@1.2.5-r21",
+            "zlib@1.3.2-r0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:17d0c18e379eb411aaa3e07392343a2dd6e098cc",
+          "InstalledFiles": [
+            "usr/lib/libapk.so.3.0.0"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "libcrypto3@3.5.5-r0",
+          "Name": "libcrypto3",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/libcrypto3@3.5.5-r0?arch=x86_64\u0026distro=3.23.3",
+            "UID": "6778a588f2cebd48"
+          },
+          "Version": "3.5.5-r0",
+          "Arch": "x86_64",
+          "SrcName": "openssl",
+          "SrcVersion": "3.5.5-r0",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:9ebf6995e814bacff0c04a868b0b27c3e82090f4",
+          "InstalledFiles": [
+            "etc/ssl/ct_log_list.cnf",
+            "etc/ssl/ct_log_list.cnf.dist",
+            "etc/ssl/openssl.cnf",
+            "etc/ssl/openssl.cnf.dist",
+            "usr/lib/libcrypto.so.3",
+            "usr/lib/engines-3/afalg.so",
+            "usr/lib/engines-3/capi.so",
+            "usr/lib/engines-3/loader_attic.so",
+            "usr/lib/engines-3/padlock.so",
+            "usr/lib/ossl-modules/legacy.so"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "libcurl@8.17.0-r1",
+          "Name": "libcurl",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/libcurl@8.17.0-r1?arch=x86_64\u0026distro=3.23.3",
+            "UID": "7c55d144a3ccb564"
+          },
+          "Version": "8.17.0-r1",
+          "Arch": "x86_64",
+          "SrcName": "curl",
+          "SrcVersion": "8.17.0-r1",
+          "Licenses": [
+            "curl"
+          ],
+          "Maintainer": "Achill Gilgenast \u003cachill@achill.org\u003e",
+          "DependsOn": [
+            "brotli-libs@1.2.0-r0",
+            "c-ares@1.34.6-r0",
+            "ca-certificates-bundle@20251003-r0",
+            "libcrypto3@3.5.5-r0",
+            "libidn2@2.3.8-r0",
+            "libpsl@0.21.5-r3",
+            "libssl3@3.5.5-r0",
+            "musl@1.2.5-r21",
+            "nghttp2-libs@1.68.0-r0",
+            "nghttp3@1.13.1-r0",
+            "zlib@1.3.2-r0",
+            "zstd-libs@1.5.7-r2"
+          ],
+          "Layer": {
+            "DiffID": "sha256:44d695d6c8e66af84d20debc8831a6c3ac2e4e1baa9821c2b6b2ee19034e3dd0"
+          },
+          "Digest": "sha1:4018e686de80aa87659e95c1e62a3539c1d2542f",
+          "InstalledFiles": [
+            "usr/lib/libcurl.so.4",
+            "usr/lib/libcurl.so.4.8.0"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "libgcc@15.2.0-r2",
+          "Name": "libgcc",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/libgcc@15.2.0-r2?arch=x86_64\u0026distro=3.23.3",
+            "UID": "fe01204cb80c388d"
+          },
+          "Version": "15.2.0-r2",
+          "Arch": "x86_64",
+          "SrcName": "gcc",
+          "SrcVersion": "15.2.0-r2",
+          "Licenses": [
+            "GPL-2.0-or-later",
+            "LGPL-2.1-or-later"
+          ],
+          "Maintainer": "Ariadne Conill \u003cariadne@dereferenced.org\u003e",
+          "DependsOn": [
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:4cb51ab6d71c9899c5dc417e9912482b7902011866b89a0f6dcf40e974af1120"
+          },
+          "Digest": "sha1:57fccbe9eebf23f2c4f38ee2a24f8b0bdd508ff7",
+          "InstalledFiles": [
+            "usr/lib/libgcc_s.so.1"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "libidn2@2.3.8-r0",
+          "Name": "libidn2",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/libidn2@2.3.8-r0?arch=x86_64\u0026distro=3.23.3",
+            "UID": "e2fcbba2f74d78bf"
+          },
+          "Version": "2.3.8-r0",
+          "Arch": "x86_64",
+          "SrcName": "libidn2",
+          "SrcVersion": "2.3.8-r0",
+          "Licenses": [
+            "GPL-2.0-or-later",
+            "LGPL-3.0-or-later"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "libunistring@1.4.1-r0",
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:44d695d6c8e66af84d20debc8831a6c3ac2e4e1baa9821c2b6b2ee19034e3dd0"
+          },
+          "Digest": "sha1:b8c5bfa365da5c360a01230db4d71e65af94af3d",
+          "InstalledFiles": [
+            "usr/lib/libidn2.so.0",
+            "usr/lib/libidn2.so.0.4.0"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "libintl@0.24.1-r1",
+          "Name": "libintl",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/libintl@0.24.1-r1?arch=x86_64\u0026distro=3.23.3",
+            "UID": "c90c10550691ca73"
+          },
+          "Version": "0.24.1-r1",
+          "Arch": "x86_64",
+          "SrcName": "gettext",
+          "SrcVersion": "0.24.1-r1",
+          "Licenses": [
+            "LGPL-2.1-or-later"
+          ],
+          "Maintainer": "Carlo Landmeter \u003cclandmeter@alpinelinux.org\u003e",
+          "DependsOn": [
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:44d695d6c8e66af84d20debc8831a6c3ac2e4e1baa9821c2b6b2ee19034e3dd0"
+          },
+          "Digest": "sha1:0222324bb4dfd35e8a3ec821c86eb5afbd43a3af",
+          "InstalledFiles": [
+            "usr/lib/libintl.so.8",
+            "usr/lib/libintl.so.8.4.3"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "libncursesw@6.5_p20251123-r0",
+          "Name": "libncursesw",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/libncursesw@6.5_p20251123-r0?arch=x86_64\u0026distro=3.23.3",
+            "UID": "6a5d130d9eac3aa5"
+          },
+          "Version": "6.5_p20251123-r0",
+          "Arch": "x86_64",
+          "SrcName": "ncurses",
+          "SrcVersion": "6.5_p20251123-r0",
+          "Licenses": [
+            "X-11"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "musl@1.2.5-r21",
+            "ncurses-terminfo-base@6.5_p20251123-r0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:44d695d6c8e66af84d20debc8831a6c3ac2e4e1baa9821c2b6b2ee19034e3dd0"
+          },
+          "Digest": "sha1:649d3041c52b80620fb50a98f5979d25ebbe1523",
+          "InstalledFiles": [
+            "usr/lib/libncursesw.so.6",
+            "usr/lib/libncursesw.so.6.5"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "libproc2@4.0.5-r0",
+          "Name": "libproc2",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/libproc2@4.0.5-r0?arch=x86_64\u0026distro=3.23.3",
+            "UID": "2b0f2e6e7c7bfcb8"
+          },
+          "Version": "4.0.5-r0",
+          "Arch": "x86_64",
+          "SrcName": "procps-ng",
+          "SrcVersion": "4.0.5-r0",
+          "Licenses": [
+            "GPL-2.0-or-later",
+            "LGPL-2.1-or-later"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "musl@1.2.5-r21",
+            "utmps-libs@0.1.3.1-r0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:44d695d6c8e66af84d20debc8831a6c3ac2e4e1baa9821c2b6b2ee19034e3dd0"
+          },
+          "Digest": "sha1:06de98d317d886db529997f71c177198ddefede5",
+          "InstalledFiles": [
+            "usr/lib/libproc2.so.1",
+            "usr/lib/libproc2.so.1.0.0"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "libpsl@0.21.5-r3",
+          "Name": "libpsl",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/libpsl@0.21.5-r3?arch=x86_64\u0026distro=3.23.3",
+            "UID": "9fb5bd2254e54a0"
+          },
+          "Version": "0.21.5-r3",
+          "Arch": "x86_64",
+          "SrcName": "libpsl",
+          "SrcVersion": "0.21.5-r3",
+          "Licenses": [
+            "MIT"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "libidn2@2.3.8-r0",
+            "libunistring@1.4.1-r0",
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:44d695d6c8e66af84d20debc8831a6c3ac2e4e1baa9821c2b6b2ee19034e3dd0"
+          },
+          "Digest": "sha1:b663c00f920a93be49c825555aa1a212e4287393",
+          "InstalledFiles": [
+            "usr/lib/libpsl.so.5",
+            "usr/lib/libpsl.so.5.3.5"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "libssl3@3.5.5-r0",
+          "Name": "libssl3",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/libssl3@3.5.5-r0?arch=x86_64\u0026distro=3.23.3",
+            "UID": "bca2260902e2ef48"
+          },
+          "Version": "3.5.5-r0",
+          "Arch": "x86_64",
+          "SrcName": "openssl",
+          "SrcVersion": "3.5.5-r0",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "libcrypto3@3.5.5-r0",
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:12234895b6577cddcbe3450406f357600e8a6951",
+          "InstalledFiles": [
+            "usr/lib/libssl.so.3"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "libstdc++@15.2.0-r2",
+          "Name": "libstdc++",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/libstdc%2B%2B@15.2.0-r2?arch=x86_64\u0026distro=3.23.3",
+            "UID": "45c1717355985287"
+          },
+          "Version": "15.2.0-r2",
+          "Arch": "x86_64",
+          "SrcName": "gcc",
+          "SrcVersion": "15.2.0-r2",
+          "Licenses": [
+            "GPL-2.0-or-later",
+            "LGPL-2.1-or-later"
+          ],
+          "Maintainer": "Ariadne Conill \u003cariadne@dereferenced.org\u003e",
+          "DependsOn": [
+            "libgcc@15.2.0-r2",
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:4cb51ab6d71c9899c5dc417e9912482b7902011866b89a0f6dcf40e974af1120"
+          },
+          "Digest": "sha1:528d77417a16706468af852f2859ad00f176e266",
+          "InstalledFiles": [
+            "usr/lib/libstdc++.so.6",
+            "usr/lib/libstdc++.so.6.0.34"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "libunistring@1.4.1-r0",
+          "Name": "libunistring",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/libunistring@1.4.1-r0?arch=x86_64\u0026distro=3.23.3",
+            "UID": "4e0ee8fa7d9a5823"
+          },
+          "Version": "1.4.1-r0",
+          "Arch": "x86_64",
+          "SrcName": "libunistring",
+          "SrcVersion": "1.4.1-r0",
+          "Licenses": [
+            "GPL-2.0-or-later",
+            "LGPL-3.0-or-later"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:44d695d6c8e66af84d20debc8831a6c3ac2e4e1baa9821c2b6b2ee19034e3dd0"
+          },
+          "Digest": "sha1:6e56562bde456bee5971787d3d95c34e84ced797",
+          "InstalledFiles": [
+            "usr/lib/libunistring.so.5",
+            "usr/lib/libunistring.so.5.2.1"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "musl@1.2.5-r21",
+          "Name": "musl",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/musl@1.2.5-r21?arch=x86_64\u0026distro=3.23.3",
+            "UID": "750ab06f52f2bfe9"
+          },
+          "Version": "1.2.5-r21",
+          "Arch": "x86_64",
+          "SrcName": "musl",
+          "SrcVersion": "1.2.5-r21",
+          "Licenses": [
+            "MIT"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:d05a75ec13e1a7a8bab56ce7cd3dc79bd727e698",
+          "InstalledFiles": [
+            "lib/ld-musl-x86_64.so.1",
+            "lib/libc.musl-x86_64.so.1"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "musl-utils@1.2.5-r21",
+          "Name": "musl-utils",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/musl-utils@1.2.5-r21?arch=x86_64\u0026distro=3.23.3",
+            "UID": "9dadd6d4093981ad"
+          },
+          "Version": "1.2.5-r21",
+          "Arch": "x86_64",
+          "SrcName": "musl",
+          "SrcVersion": "1.2.5-r21",
+          "Licenses": [
+            "MIT",
+            "BSD-2-Clause",
+            "GPL-2.0-or-later"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "musl@1.2.5-r21",
+            "scanelf@1.3.8-r2"
+          ],
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:daa79528d2cf877f6d656207a818d43c8dea9a30",
+          "InstalledFiles": [
+            "sbin/ldconfig",
+            "usr/bin/getconf",
+            "usr/bin/getent",
+            "usr/bin/iconv",
+            "usr/bin/ldd"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "ncurses-terminfo-base@6.5_p20251123-r0",
+          "Name": "ncurses-terminfo-base",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/ncurses-terminfo-base@6.5_p20251123-r0?arch=x86_64\u0026distro=3.23.3",
+            "UID": "5acf10991828fa7a"
+          },
+          "Version": "6.5_p20251123-r0",
+          "Arch": "x86_64",
+          "SrcName": "ncurses",
+          "SrcVersion": "6.5_p20251123-r0",
+          "Licenses": [
+            "X-11"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "Layer": {
+            "DiffID": "sha256:44d695d6c8e66af84d20debc8831a6c3ac2e4e1baa9821c2b6b2ee19034e3dd0"
+          },
+          "Digest": "sha1:57bd1d8124ec957eefea2314bdf45b0ed1068cee",
+          "InstalledFiles": [
+            "etc/terminfo/a/alacritty",
+            "etc/terminfo/a/ansi",
+            "etc/terminfo/d/dumb",
+            "etc/terminfo/g/gnome",
+            "etc/terminfo/g/gnome-256color",
+            "etc/terminfo/k/konsole",
+            "etc/terminfo/k/konsole-256color",
+            "etc/terminfo/k/konsole-linux",
+            "etc/terminfo/l/linux",
+            "etc/terminfo/p/putty",
+            "etc/terminfo/p/putty-256color",
+            "etc/terminfo/r/rxvt",
+            "etc/terminfo/r/rxvt-256color",
+            "etc/terminfo/s/screen",
+            "etc/terminfo/s/screen-256color",
+            "etc/terminfo/s/st-0.6",
+            "etc/terminfo/s/st-0.7",
+            "etc/terminfo/s/st-0.8",
+            "etc/terminfo/s/st-0.8.5",
+            "etc/terminfo/s/st-16color",
+            "etc/terminfo/s/st-256color",
+            "etc/terminfo/s/st-direct",
+            "etc/terminfo/s/sun",
+            "etc/terminfo/t/terminator",
+            "etc/terminfo/t/terminology",
+            "etc/terminfo/t/terminology-0.6.1",
+            "etc/terminfo/t/terminology-1.0.0",
+            "etc/terminfo/t/terminology-1.8.1",
+            "etc/terminfo/t/tmux",
+            "etc/terminfo/t/tmux-256color",
+            "etc/terminfo/v/vt100",
+            "etc/terminfo/v/vt102",
+            "etc/terminfo/v/vt200",
+            "etc/terminfo/v/vt220",
+            "etc/terminfo/v/vt52",
+            "etc/terminfo/v/vte",
+            "etc/terminfo/v/vte-256color",
+            "etc/terminfo/x/xterm",
+            "etc/terminfo/x/xterm-256color",
+            "etc/terminfo/x/xterm-color",
+            "etc/terminfo/x/xterm-xfree86"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "nghttp2-libs@1.68.0-r0",
+          "Name": "nghttp2-libs",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/nghttp2-libs@1.68.0-r0?arch=x86_64\u0026distro=3.23.3",
+            "UID": "802c936f9e7891b2"
+          },
+          "Version": "1.68.0-r0",
+          "Arch": "x86_64",
+          "SrcName": "nghttp2",
+          "SrcVersion": "1.68.0-r0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Maintainer": "Francesco Colista \u003cfcolista@alpinelinux.org\u003e",
+          "DependsOn": [
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:44d695d6c8e66af84d20debc8831a6c3ac2e4e1baa9821c2b6b2ee19034e3dd0"
+          },
+          "Digest": "sha1:584b6a1b0aed58a3f543bfd77729b0d8a8b1745b",
+          "InstalledFiles": [
+            "usr/lib/libnghttp2.so.14",
+            "usr/lib/libnghttp2.so.14.29.2"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "nghttp3@1.13.1-r0",
+          "Name": "nghttp3",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/nghttp3@1.13.1-r0?arch=x86_64\u0026distro=3.23.3",
+            "UID": "7999d360d1276f40"
+          },
+          "Version": "1.13.1-r0",
+          "Arch": "x86_64",
+          "SrcName": "nghttp3",
+          "SrcVersion": "1.13.1-r0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Maintainer": "Jakub Jirutka \u003cjakub@jirutka.cz\u003e",
+          "DependsOn": [
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:44d695d6c8e66af84d20debc8831a6c3ac2e4e1baa9821c2b6b2ee19034e3dd0"
+          },
+          "Digest": "sha1:e48fcb3e81f7e46a42e3926d8513c83b7798774b",
+          "InstalledFiles": [
+            "usr/lib/libnghttp3.so.9",
+            "usr/lib/libnghttp3.so.9.5.1"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "procps-ng@4.0.5-r0",
+          "Name": "procps-ng",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/procps-ng@4.0.5-r0?arch=x86_64\u0026distro=3.23.3",
+            "UID": "70a9d10bb05ca056"
+          },
+          "Version": "4.0.5-r0",
+          "Arch": "x86_64",
+          "SrcName": "procps-ng",
+          "SrcVersion": "4.0.5-r0",
+          "Licenses": [
+            "GPL-2.0-or-later",
+            "LGPL-2.1-or-later"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "libintl@0.24.1-r1",
+            "libncursesw@6.5_p20251123-r0",
+            "libproc2@4.0.5-r0",
+            "musl@1.2.5-r21",
+            "utmps-libs@0.1.3.1-r0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:44d695d6c8e66af84d20debc8831a6c3ac2e4e1baa9821c2b6b2ee19034e3dd0"
+          },
+          "Digest": "sha1:475002748f145d15159e475308f44bd441ae6488",
+          "InstalledFiles": [
+            "bin/hugetop",
+            "bin/pidof",
+            "bin/pidwait",
+            "bin/ps",
+            "bin/slabtop",
+            "bin/tload",
+            "bin/vmstat",
+            "bin/w",
+            "bin/watch",
+            "sbin/sysctl",
+            "usr/bin/free",
+            "usr/bin/pgrep",
+            "usr/bin/pkill",
+            "usr/bin/pmap",
+            "usr/bin/pwdx",
+            "usr/bin/top",
+            "usr/bin/uptime"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "scanelf@1.3.8-r2",
+          "Name": "scanelf",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/scanelf@1.3.8-r2?arch=x86_64\u0026distro=3.23.3",
+            "UID": "948b35f6525ae462"
+          },
+          "Version": "1.3.8-r2",
+          "Arch": "x86_64",
+          "SrcName": "pax-utils",
+          "SrcVersion": "1.3.8-r2",
+          "Licenses": [
+            "GPL-2.0-only"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:6ea36dd44ef9f6364f0cdfabe09ea15d2fdbe229",
+          "InstalledFiles": [
+            "usr/bin/scanelf"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "skalibs-libs@2.14.4.0-r0",
+          "Name": "skalibs-libs",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/skalibs-libs@2.14.4.0-r0?arch=x86_64\u0026distro=3.23.3",
+            "UID": "86da47ec2ff915b3"
+          },
+          "Version": "2.14.4.0-r0",
+          "Arch": "x86_64",
+          "SrcName": "skalibs",
+          "SrcVersion": "2.14.4.0-r0",
+          "Licenses": [
+            "ISC"
+          ],
+          "Maintainer": "Laurent Bercot \u003cska-devel@skarnet.org\u003e",
+          "DependsOn": [
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:44d695d6c8e66af84d20debc8831a6c3ac2e4e1baa9821c2b6b2ee19034e3dd0"
+          },
+          "Digest": "sha1:ba2d0ace9fa1948f2f39f3cbf939887add78b207",
+          "InstalledFiles": [
+            "usr/lib/libskarnet.so.2.14",
+            "usr/lib/libskarnet.so.2.14.4.0"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "ssl_client@1.37.0-r30",
+          "Name": "ssl_client",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/ssl_client@1.37.0-r30?arch=x86_64\u0026distro=3.23.3",
+            "UID": "260f15056a81cadb"
+          },
+          "Version": "1.37.0-r30",
+          "Arch": "x86_64",
+          "SrcName": "busybox",
+          "SrcVersion": "1.37.0-r30",
+          "Licenses": [
+            "GPL-2.0-only"
+          ],
+          "Maintainer": "Sören Tempel \u003csoeren+alpine@soeren-tempel.net\u003e",
+          "DependsOn": [
+            "libcrypto3@3.5.5-r0",
+            "libssl3@3.5.5-r0",
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:5b6ec0939cfc9be47d9677a3152c547cc18b5edd",
+          "InstalledFiles": [
+            "usr/bin/ssl_client"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "utmps-libs@0.1.3.1-r0",
+          "Name": "utmps-libs",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/utmps-libs@0.1.3.1-r0?arch=x86_64\u0026distro=3.23.3",
+            "UID": "7a038362ff497464"
+          },
+          "Version": "0.1.3.1-r0",
+          "Arch": "x86_64",
+          "SrcName": "utmps",
+          "SrcVersion": "0.1.3.1-r0",
+          "Licenses": [
+            "ISC"
+          ],
+          "Maintainer": "Laurent Bercot \u003cska-devel@skarnet.org\u003e",
+          "DependsOn": [
+            "musl@1.2.5-r21",
+            "skalibs-libs@2.14.4.0-r0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:44d695d6c8e66af84d20debc8831a6c3ac2e4e1baa9821c2b6b2ee19034e3dd0"
+          },
+          "Digest": "sha1:d0e176370cd60eb0555c6bff49eda1955f355ad4",
+          "InstalledFiles": [
+            "usr/lib/libutmps.so.0.1",
+            "usr/lib/libutmps.so.0.1.3.1"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "zlib@1.3.2-r0",
+          "Name": "zlib",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/zlib@1.3.2-r0?arch=x86_64\u0026distro=3.23.3",
+            "UID": "e0a250c2c0d9f392"
+          },
+          "Version": "1.3.2-r0",
+          "Arch": "x86_64",
+          "SrcName": "zlib",
+          "SrcVersion": "1.3.2-r0",
+          "Licenses": [
+            "Zlib"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:4cb51ab6d71c9899c5dc417e9912482b7902011866b89a0f6dcf40e974af1120"
+          },
+          "Digest": "sha1:68bb97ea5255e77aa974e65476d64832ad56288a",
+          "InstalledFiles": [
+            "usr/lib/libz.so.1",
+            "usr/lib/libz.so.1.3.2"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "zstd-libs@1.5.7-r2",
+          "Name": "zstd-libs",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/zstd-libs@1.5.7-r2?arch=x86_64\u0026distro=3.23.3",
+            "UID": "8146f1dd71a6e601"
+          },
+          "Version": "1.5.7-r2",
+          "Arch": "x86_64",
+          "SrcName": "zstd",
+          "SrcVersion": "1.5.7-r2",
+          "Licenses": [
+            "BSD-3-Clause",
+            "GPL-2.0-or-later"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:44d695d6c8e66af84d20debc8831a6c3ac2e4e1baa9821c2b6b2ee19034e3dd0"
+          },
+          "Digest": "sha1:d507b8ac3c4335a40405ac20e49bac9d43642be6",
+          "InstalledFiles": [
+            "usr/lib/libzstd.so.1",
+            "usr/lib/libzstd.so.1.5.7"
+          ],
+          "AnalyzedBy": "apk"
+        }
+      ]
+    },
+    {
+      "Target": "app/ChevronMqttConsumer.deps.json",
+      "Class": "lang-pkgs",
+      "Type": "dotnet-core",
+      "Packages": [
+        {
+          "ID": "ChevronMqttConsumer/1.0.0",
+          "Name": "ChevronMqttConsumer",
+          "Identifier": {
+            "PURL": "pkg:nuget/ChevronMqttConsumer@1.0.0",
+            "UID": "e1f87ed9d6828f84"
+          },
+          "Version": "1.0.0",
+          "Relationship": "root",
+          "DependsOn": [
+            "MQTTnet/4.3.4.1084",
+            "Microsoft.Extensions.Configuration/8.0.0",
+            "Microsoft.Extensions.Configuration.Json/8.0.0",
+            "Microsoft.Extensions.Hosting/8.0.0",
+            "Microsoft.Extensions.Logging.Console/8.0.0",
+            "Newtonsoft.Json/13.0.3",
+            "RabbitMQ.Client/6.8.1",
+            "Azure.Identity/1.12.1",
+            "Azure.Security.KeyVault.Secrets/4.6.0",
+            "MQTTnet.Extensions.ManagedClient/4.3.4.1084",
+            "Microsoft.Extensions.Configuration.Binder/8.0.0",
+            "Microsoft.Extensions.Diagnostics.HealthChecks/8.0.0",
+            "Microsoft.Extensions.Logging/8.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 618,
+              "EndLine": 622
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Azure.Identity/1.12.1",
+          "Name": "Azure.Identity",
+          "Identifier": {
+            "PURL": "pkg:nuget/Azure.Identity@1.12.1",
+            "UID": "9004a5de09e18149"
+          },
+          "Version": "1.12.1",
+          "Relationship": "direct",
+          "DependsOn": [
+            "System.Security.Cryptography.ProtectedData/4.7.0",
+            "Azure.Core/1.40.0",
+            "Microsoft.Identity.Client/4.65.0",
+            "Microsoft.Identity.Client.Extensions.Msal/4.65.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 630,
+              "EndLine": 636
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Azure.Security.KeyVault.Secrets/4.6.0",
+          "Name": "Azure.Security.KeyVault.Secrets",
+          "Identifier": {
+            "PURL": "pkg:nuget/Azure.Security.KeyVault.Secrets@4.6.0",
+            "UID": "55d3efa36e23e620"
+          },
+          "Version": "4.6.0",
+          "Relationship": "direct",
+          "DependsOn": [
+            "Azure.Core/1.40.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 637,
+              "EndLine": 643
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "MQTTnet/4.3.4.1084",
+          "Name": "MQTTnet",
+          "Identifier": {
+            "PURL": "pkg:nuget/MQTTnet@4.3.4.1084",
+            "UID": "dfef8347020fd04a"
+          },
+          "Version": "4.3.4.1084",
+          "Relationship": "direct",
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 875,
+              "EndLine": 881
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "MQTTnet.Extensions.ManagedClient/4.3.4.1084",
+          "Name": "MQTTnet.Extensions.ManagedClient",
+          "Identifier": {
+            "PURL": "pkg:nuget/MQTTnet.Extensions.ManagedClient@4.3.4.1084",
+            "UID": "c24dfb5d36a3997"
+          },
+          "Version": "4.3.4.1084",
+          "Relationship": "direct",
+          "DependsOn": [
+            "MQTTnet/4.3.4.1084"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 882,
+              "EndLine": 888
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.Configuration/8.0.0",
+          "Name": "Microsoft.Extensions.Configuration",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.Configuration@8.0.0",
+            "UID": "a4f9db1985a7d9b2"
+          },
+          "Version": "8.0.0",
+          "Relationship": "direct",
+          "DependsOn": [
+            "Microsoft.Extensions.Configuration.Abstractions/8.0.0",
+            "Microsoft.Extensions.Primitives/8.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 651,
+              "EndLine": 657
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.Configuration.Binder/8.0.0",
+          "Name": "Microsoft.Extensions.Configuration.Binder",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.Configuration.Binder@8.0.0",
+            "UID": "d793aa547560b44a"
+          },
+          "Version": "8.0.0",
+          "Relationship": "direct",
+          "DependsOn": [
+            "Microsoft.Extensions.Configuration.Abstractions/8.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 665,
+              "EndLine": 671
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.Configuration.Json/8.0.0",
+          "Name": "Microsoft.Extensions.Configuration.Json",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.Configuration.Json@8.0.0",
+            "UID": "fde7377ff81ceef4"
+          },
+          "Version": "8.0.0",
+          "Relationship": "direct",
+          "DependsOn": [
+            "Microsoft.Extensions.Configuration/8.0.0",
+            "Microsoft.Extensions.Configuration.Abstractions/8.0.0",
+            "Microsoft.Extensions.Configuration.FileExtensions/8.0.0",
+            "Microsoft.Extensions.FileProviders.Abstractions/8.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 693,
+              "EndLine": 699
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.Diagnostics.HealthChecks/8.0.0",
+          "Name": "Microsoft.Extensions.Diagnostics.HealthChecks",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.Diagnostics.HealthChecks@8.0.0",
+            "UID": "4a61c1863217e4e0"
+          },
+          "Version": "8.0.0",
+          "Relationship": "direct",
+          "DependsOn": [
+            "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions/8.0.0",
+            "Microsoft.Extensions.Hosting.Abstractions/8.0.0",
+            "Microsoft.Extensions.Logging.Abstractions/8.0.0",
+            "Microsoft.Extensions.Options/8.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 735,
+              "EndLine": 741
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.Hosting/8.0.0",
+          "Name": "Microsoft.Extensions.Hosting",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.Hosting@8.0.0",
+            "UID": "ade65a99ae723426"
+          },
+          "Version": "8.0.0",
+          "Relationship": "direct",
+          "DependsOn": [
+            "Microsoft.Extensions.Hosting.Abstractions/8.0.0",
+            "Microsoft.Extensions.Logging.Debug/8.0.0",
+            "Microsoft.Extensions.Configuration.Json/8.0.0",
+            "Microsoft.Extensions.FileProviders.Abstractions/8.0.0",
+            "Microsoft.Extensions.Logging/8.0.0",
+            "Microsoft.Extensions.Logging.Abstractions/8.0.0",
+            "Microsoft.Extensions.Logging.Configuration/8.0.0",
+            "Microsoft.Extensions.Logging.EventSource/8.0.0",
+            "Microsoft.Extensions.Options/8.0.0",
+            "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0",
+            "Microsoft.Extensions.FileProviders.Physical/8.0.0",
+            "Microsoft.Extensions.Configuration.CommandLine/8.0.0",
+            "Microsoft.Extensions.Configuration.EnvironmentVariables/8.0.0",
+            "Microsoft.Extensions.Configuration.FileExtensions/8.0.0",
+            "Microsoft.Extensions.Logging.Console/8.0.0",
+            "Microsoft.Extensions.Logging.EventLog/8.0.0",
+            "Microsoft.Extensions.Configuration/8.0.0",
+            "Microsoft.Extensions.Configuration.Abstractions/8.0.0",
+            "Microsoft.Extensions.Configuration.Binder/8.0.0",
+            "Microsoft.Extensions.Configuration.UserSecrets/8.0.0",
+            "Microsoft.Extensions.DependencyInjection/8.0.0",
+            "Microsoft.Extensions.Diagnostics/8.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 770,
+              "EndLine": 776
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.Logging/8.0.0",
+          "Name": "Microsoft.Extensions.Logging",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.Logging@8.0.0",
+            "UID": "1c7a05b29da423c9"
+          },
+          "Version": "8.0.0",
+          "Relationship": "direct",
+          "DependsOn": [
+            "Microsoft.Extensions.DependencyInjection/8.0.0",
+            "Microsoft.Extensions.Logging.Abstractions/8.0.0",
+            "Microsoft.Extensions.Options/8.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 784,
+              "EndLine": 790
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.Logging.Console/8.0.0",
+          "Name": "Microsoft.Extensions.Logging.Console",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.Logging.Console@8.0.0",
+            "UID": "7d16c65b87242779"
+          },
+          "Version": "8.0.0",
+          "Relationship": "direct",
+          "DependsOn": [
+            "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0",
+            "Microsoft.Extensions.Logging/8.0.0",
+            "Microsoft.Extensions.Logging.Abstractions/8.0.0",
+            "Microsoft.Extensions.Logging.Configuration/8.0.0",
+            "Microsoft.Extensions.Options/8.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 805,
+              "EndLine": 811
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Newtonsoft.Json/13.0.3",
+          "Name": "Newtonsoft.Json",
+          "Identifier": {
+            "PURL": "pkg:nuget/Newtonsoft.Json@13.0.3",
+            "UID": "9862d0a97e9259d8"
+          },
+          "Version": "13.0.3",
+          "Relationship": "direct",
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 889,
+              "EndLine": 895
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "RabbitMQ.Client/6.8.1",
+          "Name": "RabbitMQ.Client",
+          "Identifier": {
+            "PURL": "pkg:nuget/RabbitMQ.Client@6.8.1",
+            "UID": "c73bf3c63ae9e752"
+          },
+          "Version": "6.8.1",
+          "Relationship": "direct",
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 896,
+              "EndLine": 902
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Azure.Core/1.40.0",
+          "Name": "Azure.Core",
+          "Identifier": {
+            "PURL": "pkg:nuget/Azure.Core@1.40.0",
+            "UID": "86beabbf8e3505e7"
+          },
+          "Version": "1.40.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.Bcl.AsyncInterfaces/1.1.1",
+            "System.ClientModel/1.0.0",
+            "System.Memory.Data/1.0.2"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 623,
+              "EndLine": 629
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Bcl.AsyncInterfaces/1.1.1",
+          "Name": "Microsoft.Bcl.AsyncInterfaces",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Bcl.AsyncInterfaces@1.1.1",
+            "UID": "a943bfde955e0233"
+          },
+          "Version": "1.1.1",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 644,
+              "EndLine": 650
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.Configuration.Abstractions/8.0.0",
+          "Name": "Microsoft.Extensions.Configuration.Abstractions",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@8.0.0",
+            "UID": "7924dfe5c0f8fda3"
+          },
+          "Version": "8.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.Extensions.Primitives/8.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 658,
+              "EndLine": 664
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.Configuration.CommandLine/8.0.0",
+          "Name": "Microsoft.Extensions.Configuration.CommandLine",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.Configuration.CommandLine@8.0.0",
+            "UID": "f3f2bcb9dd302348"
+          },
+          "Version": "8.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.Extensions.Configuration/8.0.0",
+            "Microsoft.Extensions.Configuration.Abstractions/8.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 672,
+              "EndLine": 678
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.Configuration.EnvironmentVariables/8.0.0",
+          "Name": "Microsoft.Extensions.Configuration.EnvironmentVariables",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.Configuration.EnvironmentVariables@8.0.0",
+            "UID": "16d6c8181843a05b"
+          },
+          "Version": "8.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.Extensions.Configuration/8.0.0",
+            "Microsoft.Extensions.Configuration.Abstractions/8.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 679,
+              "EndLine": 685
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.Configuration.FileExtensions/8.0.0",
+          "Name": "Microsoft.Extensions.Configuration.FileExtensions",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.Configuration.FileExtensions@8.0.0",
+            "UID": "777dd9311ff5bab0"
+          },
+          "Version": "8.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.Extensions.Configuration/8.0.0",
+            "Microsoft.Extensions.Configuration.Abstractions/8.0.0",
+            "Microsoft.Extensions.FileProviders.Abstractions/8.0.0",
+            "Microsoft.Extensions.FileProviders.Physical/8.0.0",
+            "Microsoft.Extensions.Primitives/8.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 686,
+              "EndLine": 692
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.Configuration.UserSecrets/8.0.0",
+          "Name": "Microsoft.Extensions.Configuration.UserSecrets",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.Configuration.UserSecrets@8.0.0",
+            "UID": "f63c5cf0e5c4be54"
+          },
+          "Version": "8.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.Extensions.FileProviders.Abstractions/8.0.0",
+            "Microsoft.Extensions.FileProviders.Physical/8.0.0",
+            "Microsoft.Extensions.Configuration.Abstractions/8.0.0",
+            "Microsoft.Extensions.Configuration.Json/8.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 700,
+              "EndLine": 706
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.DependencyInjection/8.0.0",
+          "Name": "Microsoft.Extensions.DependencyInjection",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.DependencyInjection@8.0.0",
+            "UID": "57cab201c05c29a4"
+          },
+          "Version": "8.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 707,
+              "EndLine": 713
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0",
+          "Name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@8.0.0",
+            "UID": "655d5c67345b8173"
+          },
+          "Version": "8.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 714,
+              "EndLine": 720
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.Diagnostics/8.0.0",
+          "Name": "Microsoft.Extensions.Diagnostics",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.Diagnostics@8.0.0",
+            "UID": "a77ccbfbb5d0b3f"
+          },
+          "Version": "8.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.Extensions.Configuration/8.0.0",
+            "Microsoft.Extensions.Diagnostics.Abstractions/8.0.0",
+            "Microsoft.Extensions.Options.ConfigurationExtensions/8.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 721,
+              "EndLine": 727
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.Diagnostics.Abstractions/8.0.0",
+          "Name": "Microsoft.Extensions.Diagnostics.Abstractions",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.Diagnostics.Abstractions@8.0.0",
+            "UID": "86c844e3bfda6571"
+          },
+          "Version": "8.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0",
+            "Microsoft.Extensions.Options/8.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 728,
+              "EndLine": 734
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions/8.0.0",
+          "Name": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions@8.0.0",
+            "UID": "4e8869eb55860343"
+          },
+          "Version": "8.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 742,
+              "EndLine": 748
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.FileProviders.Abstractions/8.0.0",
+          "Name": "Microsoft.Extensions.FileProviders.Abstractions",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.FileProviders.Abstractions@8.0.0",
+            "UID": "c15ff8137874e39b"
+          },
+          "Version": "8.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.Extensions.Primitives/8.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 749,
+              "EndLine": 755
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.FileProviders.Physical/8.0.0",
+          "Name": "Microsoft.Extensions.FileProviders.Physical",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.FileProviders.Physical@8.0.0",
+            "UID": "df1c08de8f0329c6"
+          },
+          "Version": "8.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.Extensions.Primitives/8.0.0",
+            "Microsoft.Extensions.FileProviders.Abstractions/8.0.0",
+            "Microsoft.Extensions.FileSystemGlobbing/8.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 756,
+              "EndLine": 762
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.FileSystemGlobbing/8.0.0",
+          "Name": "Microsoft.Extensions.FileSystemGlobbing",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.FileSystemGlobbing@8.0.0",
+            "UID": "385aeb244c5ae7ae"
+          },
+          "Version": "8.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 763,
+              "EndLine": 769
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.Hosting.Abstractions/8.0.0",
+          "Name": "Microsoft.Extensions.Hosting.Abstractions",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.Hosting.Abstractions@8.0.0",
+            "UID": "1bbeae395500af"
+          },
+          "Version": "8.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0",
+            "Microsoft.Extensions.Diagnostics.Abstractions/8.0.0",
+            "Microsoft.Extensions.FileProviders.Abstractions/8.0.0",
+            "Microsoft.Extensions.Logging.Abstractions/8.0.0",
+            "Microsoft.Extensions.Configuration.Abstractions/8.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 777,
+              "EndLine": 783
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.Logging.Abstractions/8.0.0",
+          "Name": "Microsoft.Extensions.Logging.Abstractions",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@8.0.0",
+            "UID": "2b3bd0c4881491f7"
+          },
+          "Version": "8.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 791,
+              "EndLine": 797
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.Logging.Configuration/8.0.0",
+          "Name": "Microsoft.Extensions.Logging.Configuration",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.Logging.Configuration@8.0.0",
+            "UID": "f8666b9c4e9a18de"
+          },
+          "Version": "8.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.Extensions.Logging/8.0.0",
+            "Microsoft.Extensions.Logging.Abstractions/8.0.0",
+            "Microsoft.Extensions.Options/8.0.0",
+            "Microsoft.Extensions.Options.ConfigurationExtensions/8.0.0",
+            "Microsoft.Extensions.Configuration/8.0.0",
+            "Microsoft.Extensions.Configuration.Abstractions/8.0.0",
+            "Microsoft.Extensions.Configuration.Binder/8.0.0",
+            "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 798,
+              "EndLine": 804
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.Logging.Debug/8.0.0",
+          "Name": "Microsoft.Extensions.Logging.Debug",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.Logging.Debug@8.0.0",
+            "UID": "9e62268e1b90d322"
+          },
+          "Version": "8.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0",
+            "Microsoft.Extensions.Logging/8.0.0",
+            "Microsoft.Extensions.Logging.Abstractions/8.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 812,
+              "EndLine": 818
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.Logging.EventLog/8.0.0",
+          "Name": "Microsoft.Extensions.Logging.EventLog",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.Logging.EventLog@8.0.0",
+            "UID": "8375d3934e6d2ff7"
+          },
+          "Version": "8.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "System.Diagnostics.EventLog/8.0.0",
+            "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0",
+            "Microsoft.Extensions.Logging/8.0.0",
+            "Microsoft.Extensions.Logging.Abstractions/8.0.0",
+            "Microsoft.Extensions.Options/8.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 819,
+              "EndLine": 825
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.Logging.EventSource/8.0.0",
+          "Name": "Microsoft.Extensions.Logging.EventSource",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.Logging.EventSource@8.0.0",
+            "UID": "83a4cc4c198cf64b"
+          },
+          "Version": "8.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.Extensions.Primitives/8.0.0",
+            "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0",
+            "Microsoft.Extensions.Logging/8.0.0",
+            "Microsoft.Extensions.Logging.Abstractions/8.0.0",
+            "Microsoft.Extensions.Options/8.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 826,
+              "EndLine": 832
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.Options/8.0.0",
+          "Name": "Microsoft.Extensions.Options",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.Options@8.0.0",
+            "UID": "479339731c250d4f"
+          },
+          "Version": "8.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0",
+            "Microsoft.Extensions.Primitives/8.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 833,
+              "EndLine": 839
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.Options.ConfigurationExtensions/8.0.0",
+          "Name": "Microsoft.Extensions.Options.ConfigurationExtensions",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.Options.ConfigurationExtensions@8.0.0",
+            "UID": "e31fa7aa5160be45"
+          },
+          "Version": "8.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.Extensions.Options/8.0.0",
+            "Microsoft.Extensions.Primitives/8.0.0",
+            "Microsoft.Extensions.Configuration.Abstractions/8.0.0",
+            "Microsoft.Extensions.Configuration.Binder/8.0.0",
+            "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 840,
+              "EndLine": 846
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Extensions.Primitives/8.0.0",
+          "Name": "Microsoft.Extensions.Primitives",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Extensions.Primitives@8.0.0",
+            "UID": "fc47c9927b81db29"
+          },
+          "Version": "8.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 847,
+              "EndLine": 853
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Identity.Client/4.65.0",
+          "Name": "Microsoft.Identity.Client",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Identity.Client@4.65.0",
+            "UID": "9ec11c924c79c4a"
+          },
+          "Version": "4.65.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.IdentityModel.Abstractions/6.35.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 854,
+              "EndLine": 860
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Identity.Client.Extensions.Msal/4.65.0",
+          "Name": "Microsoft.Identity.Client.Extensions.Msal",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Identity.Client.Extensions.Msal@4.65.0",
+            "UID": "d19761a473d20730"
+          },
+          "Version": "4.65.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.Identity.Client/4.65.0",
+            "System.Security.Cryptography.ProtectedData/4.7.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 861,
+              "EndLine": 867
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.IdentityModel.Abstractions/6.35.0",
+          "Name": "Microsoft.IdentityModel.Abstractions",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.IdentityModel.Abstractions@6.35.0",
+            "UID": "9e3ddd9be134da91"
+          },
+          "Version": "6.35.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 868,
+              "EndLine": 874
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "System.ClientModel/1.0.0",
+          "Name": "System.ClientModel",
+          "Identifier": {
+            "PURL": "pkg:nuget/System.ClientModel@1.0.0",
+            "UID": "bdb71b19886411e"
+          },
+          "Version": "1.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "System.Memory.Data/1.0.2"
+          ],
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 903,
+              "EndLine": 909
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "System.Diagnostics.EventLog/8.0.0",
+          "Name": "System.Diagnostics.EventLog",
+          "Identifier": {
+            "PURL": "pkg:nuget/System.Diagnostics.EventLog@8.0.0",
+            "UID": "64ce356c47ffde01"
+          },
+          "Version": "8.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 917,
+              "EndLine": 923
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "System.Memory.Data/1.0.2",
+          "Name": "System.Memory.Data",
+          "Identifier": {
+            "PURL": "pkg:nuget/System.Memory.Data@1.0.2",
+            "UID": "b332b762c9d2d0ca"
+          },
+          "Version": "1.0.2",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 931,
+              "EndLine": 937
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "System.Security.Cryptography.ProtectedData/4.7.0",
+          "Name": "System.Security.Cryptography.ProtectedData",
+          "Identifier": {
+            "PURL": "pkg:nuget/System.Security.Cryptography.ProtectedData@4.7.0",
+            "UID": "4170e38e3edb2696"
+          },
+          "Version": "4.7.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Layer": {
+            "DiffID": "sha256:ff28efd28e568677ce48854edaf760a3846cb33e1382589ca33ed81afedba808"
+          },
+          "Locations": [
+            {
+              "StartLine": 945,
+              "EndLine": 951
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "Target": "usr/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.25/Microsoft.AspNetCore.App.deps.json",
+      "Class": "lang-pkgs",
+      "Type": "dotnet-core",
+      "Packages": [
+        {
+          "ID": "Microsoft.AspNetCore.App.Runtime.linux-musl-x64/8.0.25",
+          "Name": "Microsoft.AspNetCore.App.Runtime.linux-musl-x64",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.AspNetCore.App.Runtime.linux-musl-x64@8.0.25",
+            "UID": "4ee2a2ce3c0e19e"
+          },
+          "Version": "8.0.25",
+          "Layer": {
+            "DiffID": "sha256:4d89a3f33f6b3e4aacf12cbd63e5960b19787be3db1211b25ba13e79a5792015"
+          },
+          "Locations": [
+            {
+              "StartLine": 573,
+              "EndLine": 578
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "Target": "usr/share/dotnet/shared/Microsoft.NETCore.App/8.0.25/Microsoft.NETCore.App.deps.json",
+      "Class": "lang-pkgs",
+      "Type": "dotnet-core",
+      "Packages": [
+        {
+          "ID": "Microsoft.NETCore.App.Runtime.linux-musl-x64/8.0.25",
+          "Name": "Microsoft.NETCore.App.Runtime.linux-musl-x64",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.NETCore.App.Runtime.linux-musl-x64@8.0.25",
+            "UID": "302f167e87a8d908"
+          },
+          "Version": "8.0.25",
+          "Layer": {
+            "DiffID": "sha256:357370a34278bea2dde73a60cf673a1bb950dfcf010135f7d21bb2348da6fd35"
+          },
+          "Locations": [
+            {
+              "StartLine": 730,
+              "EndLine": 735
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        }
+      ]
+    }
+  ]
+}

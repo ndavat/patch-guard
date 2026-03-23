@@ -1,0 +1,2220 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.69.3"
+  },
+  "ReportID": "019cf6cb-ab88-70c6-ac57-1373019e73ef",
+  "CreatedAt": "2026-03-16T13:17:48.808052122Z",
+  "ArtifactID": "sha256:1ad7017a41809fcca6771bd011ec44156677fc1ad3dfaf4ab645ee88c12b22f2",
+  "ArtifactName": "assettrackerapi:sonar-dev-api-20260316.5",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "Size": 143470080,
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.23.3"
+    },
+    "ImageID": "sha256:e6ab810e18f8ca51f9a9b6c6a27e83642f5fe15fe37c22f8bab24be52f9f4b35",
+    "DiffIDs": [
+      "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e",
+      "sha256:0aa7a08346e56185fac74891929ba7438087a9416bda042257e7e6eae403dae8",
+      "sha256:c4d7d05339aef4fe8eba6c66f6e258bd52540fed77f012d7a6642d4ea728843c",
+      "sha256:3de7021735886e87ea4591b5db49e2d92abd3725bf168704603ad8711adc7e52",
+      "sha256:604ef5673b499de0e5f76aa2c1cb5ffbf47a5e26d819adf11c660e27ed9032c2",
+      "sha256:156c0903f304f504ffc51895f3ccfd1f6d814c2e9a2866e35e27762684435de6",
+      "sha256:4ab1a4f54d6a082c564ee7584207a8725509b22176ad641602860589d021f14d",
+      "sha256:e1907e35189922caf71359660762d5d10617387d6aa371f6112558e4a3ac0073",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320",
+      "sha256:0088d95d674816e2d3c866d00a03bb03958a0a7388869ce349eed5f9d6e444f2"
+    ],
+    "RepoTags": [
+      "assettrackerapi:sonar-dev-api-20260316.5"
+    ],
+    "Reference": "assettrackerapi:sonar-dev-api-20260316.5",
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2026-03-16T13:17:06.918071777Z",
+      "history": [
+        {
+          "created": "2026-01-28T01:18:04Z",
+          "created_by": "ADD alpine-minirootfs-3.23.3-x86_64.tar.gz / # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-01-28T01:18:04Z",
+          "created_by": "CMD [\"/bin/sh\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-03-12T18:46:57Z",
+          "created_by": "ENV APP_UID=1654 ASPNETCORE_HTTP_PORTS=8080 DOTNET_RUNNING_IN_CONTAINER=true DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-03-12T18:46:57Z",
+          "created_by": "RUN /bin/sh -c apk add --upgrade --no-cache         ca-certificates-bundle                 libgcc         libssl3         libstdc++ # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-03-12T18:46:58Z",
+          "created_by": "RUN /bin/sh -c addgroup         --gid=$APP_UID         app     \u0026\u0026 adduser         --uid=$APP_UID         --ingroup=app         --disabled-password         app # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-03-12T18:47:19Z",
+          "created_by": "ENV DOTNET_VERSION=9.0.14",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-03-12T18:47:19Z",
+          "created_by": "COPY /dotnet /usr/share/dotnet # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-03-12T18:47:20Z",
+          "created_by": "RUN /bin/sh -c ln -s /usr/share/dotnet/dotnet /usr/bin/dotnet # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-03-12T18:47:46Z",
+          "created_by": "ENV ASPNET_VERSION=9.0.14",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-03-12T18:47:46Z",
+          "created_by": "COPY /dotnet /usr/share/dotnet # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-03-16T13:16:23Z",
+          "created_by": "WORKDIR /app",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-03-16T13:16:24Z",
+          "created_by": "EXPOSE map[8080/tcp:{}]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-03-16T13:16:24Z",
+          "created_by": "EXPOSE map[8081/tcp:{}]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-03-16T13:16:24Z",
+          "created_by": "RUN /bin/sh -c apk add --no-cache icu-libs # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-03-16T13:16:24Z",
+          "created_by": "ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-03-16T13:16:24Z",
+          "created_by": "ENV ASPNETCORE_ENVIRONMENT=Development",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-03-16T13:16:24Z",
+          "created_by": "WORKDIR /app",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-03-16T13:17:06Z",
+          "created_by": "COPY /app/publish . # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-03-16T13:17:06Z",
+          "created_by": "RUN /bin/sh -c apk add --no-cache icu-libs # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-03-16T13:17:06Z",
+          "created_by": "ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-03-16T13:17:06Z",
+          "created_by": "ENTRYPOINT [\"dotnet\" \"myChampionX.AssetTrackerAPI.dll\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e",
+          "sha256:0aa7a08346e56185fac74891929ba7438087a9416bda042257e7e6eae403dae8",
+          "sha256:c4d7d05339aef4fe8eba6c66f6e258bd52540fed77f012d7a6642d4ea728843c",
+          "sha256:3de7021735886e87ea4591b5db49e2d92abd3725bf168704603ad8711adc7e52",
+          "sha256:604ef5673b499de0e5f76aa2c1cb5ffbf47a5e26d819adf11c660e27ed9032c2",
+          "sha256:156c0903f304f504ffc51895f3ccfd1f6d814c2e9a2866e35e27762684435de6",
+          "sha256:4ab1a4f54d6a082c564ee7584207a8725509b22176ad641602860589d021f14d",
+          "sha256:e1907e35189922caf71359660762d5d10617387d6aa371f6112558e4a3ac0073",
+          "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+          "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320",
+          "sha256:0088d95d674816e2d3c866d00a03bb03958a0a7388869ce349eed5f9d6e444f2"
+        ]
+      },
+      "config": {
+        "Entrypoint": [
+          "dotnet",
+          "myChampionX.AssetTrackerAPI.dll"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "APP_UID=1654",
+          "ASPNETCORE_HTTP_PORTS=8080",
+          "DOTNET_RUNNING_IN_CONTAINER=true",
+          "DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false",
+          "DOTNET_VERSION=9.0.14",
+          "ASPNET_VERSION=9.0.14",
+          "ASPNETCORE_ENVIRONMENT=Development"
+        ],
+        "Labels": {
+          "com.azure.dev.image.build.buildnumber": "20260316.5",
+          "com.azure.dev.image.build.builduri": "vstfs:///Build/Build/135944",
+          "com.azure.dev.image.build.definitionname": "AssetTracker-WebAPI-Docker-TrivyScan",
+          "com.azure.dev.image.build.repository.name": "myChampionX.AssetTracker",
+          "com.azure.dev.image.build.repository.uri": "https://ChampionXEnterprise-DevOPS@dev.azure.com/ChampionXEnterprise-DevOPS/myChampionX%20Platform/_git/myChampionX.AssetTracker",
+          "com.azure.dev.image.build.sourcebranchname": "sonar-dev-api",
+          "com.azure.dev.image.build.sourceversion": "87b802d578f13409f82770529e2321d62fea3d84",
+          "com.azure.dev.image.system.teamfoundationcollectionuri": "https://dev.azure.com/ChampionXEnterprise-DevOPS/",
+          "com.azure.dev.image.system.teamproject": "myChampionX Platform",
+          "image.base.digest": "sha256:86883194752e8cb9c3914edea40961cc179da6804fcfe814f18f89ed6515d8cf",
+          "image.base.ref.name": "mcr.microsoft.com/dotnet/aspnet:9.0-alpine"
+        },
+        "WorkingDir": "/app",
+        "ExposedPorts": {
+          "8080/tcp": {},
+          "8081/tcp": {}
+        }
+      }
+    },
+    "Layers": [
+      {
+        "Size": 8724480,
+        "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+      },
+      {
+        "Size": 3008512,
+        "DiffID": "sha256:0aa7a08346e56185fac74891929ba7438087a9416bda042257e7e6eae403dae8"
+      },
+      {
+        "Size": 10752,
+        "DiffID": "sha256:c4d7d05339aef4fe8eba6c66f6e258bd52540fed77f012d7a6642d4ea728843c"
+      },
+      {
+        "Size": 78208000,
+        "DiffID": "sha256:3de7021735886e87ea4591b5db49e2d92abd3725bf168704603ad8711adc7e52"
+      },
+      {
+        "Size": 2560,
+        "DiffID": "sha256:604ef5673b499de0e5f76aa2c1cb5ffbf47a5e26d819adf11c660e27ed9032c2"
+      },
+      {
+        "Size": 24800256,
+        "DiffID": "sha256:156c0903f304f504ffc51895f3ccfd1f6d814c2e9a2866e35e27762684435de6"
+      },
+      {
+        "Size": 1536,
+        "DiffID": "sha256:4ab1a4f54d6a082c564ee7584207a8725509b22176ad641602860589d021f14d"
+      },
+      {
+        "Size": 7809024,
+        "DiffID": "sha256:e1907e35189922caf71359660762d5d10617387d6aa371f6112558e4a3ac0073"
+      },
+      {
+        "Size": 1024,
+        "DiffID": "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+      },
+      {
+        "Size": 20874240,
+        "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+      },
+      {
+        "Size": 29696,
+        "DiffID": "sha256:0088d95d674816e2d3c866d00a03bb03958a0a7388869ce349eed5f9d6e444f2"
+      }
+    ]
+  },
+  "Results": [
+    {
+      "Target": "assettrackerapi:sonar-dev-api-20260316.5 (alpine 3.23.3)",
+      "Class": "os-pkgs",
+      "Type": "alpine",
+      "Packages": [
+        {
+          "ID": "alpine-baselayout@3.7.1-r8",
+          "Name": "alpine-baselayout",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/alpine-baselayout@3.7.1-r8?arch=x86_64\u0026distro=3.23.3",
+            "UID": "dc092fc47b5d9e05"
+          },
+          "Version": "3.7.1-r8",
+          "Arch": "x86_64",
+          "SrcName": "alpine-baselayout",
+          "SrcVersion": "3.7.1-r8",
+          "Licenses": [
+            "GPL-2.0-only"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "alpine-baselayout-data@3.7.1-r8",
+            "busybox-binsh@1.37.0-r30"
+          ],
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:9a137c3c8e738bcabac13326c9fc5472fa58aaf4",
+          "InstalledFiles": [
+            "etc/motd",
+            "etc/crontabs/root",
+            "etc/modprobe.d/aliases.conf",
+            "etc/modprobe.d/blacklist.conf",
+            "etc/modprobe.d/i386.conf",
+            "etc/profile.d/20locale.sh",
+            "etc/profile.d/README",
+            "etc/profile.d/color_prompt.sh.disabled",
+            "usr/lib/sysctl.d/00-alpine.conf",
+            "var/lock",
+            "var/run",
+            "var/spool/mail",
+            "var/spool/cron/crontabs"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "alpine-baselayout-data@3.7.1-r8",
+          "Name": "alpine-baselayout-data",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/alpine-baselayout-data@3.7.1-r8?arch=x86_64\u0026distro=3.23.3",
+            "UID": "6542463feabe92df"
+          },
+          "Version": "3.7.1-r8",
+          "Arch": "x86_64",
+          "SrcName": "alpine-baselayout",
+          "SrcVersion": "3.7.1-r8",
+          "Licenses": [
+            "GPL-2.0-only"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:9a60b0edb4559ab279cf004b7e685cfd78dd0c15",
+          "InstalledFiles": [
+            "etc/fstab",
+            "etc/group",
+            "etc/hostname",
+            "etc/hosts",
+            "etc/inittab",
+            "etc/modules",
+            "etc/mtab",
+            "etc/nsswitch.conf",
+            "etc/passwd",
+            "etc/profile",
+            "etc/protocols",
+            "etc/services",
+            "etc/shadow",
+            "etc/shells",
+            "etc/sysctl.conf"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "alpine-keys@2.6-r0",
+          "Name": "alpine-keys",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/alpine-keys@2.6-r0?arch=x86_64\u0026distro=3.23.3",
+            "UID": "2c7cb90de388aa7d"
+          },
+          "Version": "2.6-r0",
+          "Arch": "x86_64",
+          "SrcName": "alpine-keys",
+          "SrcVersion": "2.6-r0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:5c45a821cd6b84d543bbd7ff12a7de1855c5cd13",
+          "InstalledFiles": [
+            "etc/apk/keys/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub",
+            "etc/apk/keys/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub",
+            "etc/apk/keys/alpine-devel@lists.alpinelinux.org-6165ee59.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58cbb476.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58e4f17d.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5e69ca50.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-60ac2099.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-6165ee59.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-61666e3f.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616a9724.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616abc23.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616ac3bc.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616adfeb.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616ae350.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616db30d.rsa.pub",
+            "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-66ba20fe.rsa.pub",
+            "usr/share/apk/keys/aarch64/alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub",
+            "usr/share/apk/keys/aarch64/alpine-devel@lists.alpinelinux.org-616ae350.rsa.pub",
+            "usr/share/apk/keys/armhf/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub",
+            "usr/share/apk/keys/armhf/alpine-devel@lists.alpinelinux.org-616a9724.rsa.pub",
+            "usr/share/apk/keys/armv7/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub",
+            "usr/share/apk/keys/armv7/alpine-devel@lists.alpinelinux.org-616adfeb.rsa.pub",
+            "usr/share/apk/keys/loongarch64/alpine-devel@lists.alpinelinux.org-66ba20fe.rsa.pub",
+            "usr/share/apk/keys/mips64/alpine-devel@lists.alpinelinux.org-5e69ca50.rsa.pub",
+            "usr/share/apk/keys/ppc64le/alpine-devel@lists.alpinelinux.org-58cbb476.rsa.pub",
+            "usr/share/apk/keys/ppc64le/alpine-devel@lists.alpinelinux.org-616abc23.rsa.pub",
+            "usr/share/apk/keys/riscv64/alpine-devel@lists.alpinelinux.org-60ac2099.rsa.pub",
+            "usr/share/apk/keys/riscv64/alpine-devel@lists.alpinelinux.org-616db30d.rsa.pub",
+            "usr/share/apk/keys/s390x/alpine-devel@lists.alpinelinux.org-58e4f17d.rsa.pub",
+            "usr/share/apk/keys/s390x/alpine-devel@lists.alpinelinux.org-616ac3bc.rsa.pub",
+            "usr/share/apk/keys/x86/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub",
+            "usr/share/apk/keys/x86/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub",
+            "usr/share/apk/keys/x86/alpine-devel@lists.alpinelinux.org-61666e3f.rsa.pub",
+            "usr/share/apk/keys/x86_64/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub",
+            "usr/share/apk/keys/x86_64/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub",
+            "usr/share/apk/keys/x86_64/alpine-devel@lists.alpinelinux.org-6165ee59.rsa.pub"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "alpine-release@3.23.3-r0",
+          "Name": "alpine-release",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/alpine-release@3.23.3-r0?arch=x86_64\u0026distro=3.23.3",
+            "UID": "4820d6f0afb6a834"
+          },
+          "Version": "3.23.3-r0",
+          "Arch": "x86_64",
+          "SrcName": "alpine-base",
+          "SrcVersion": "3.23.3-r0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "alpine-keys@2.6-r0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:e71144a1a35c4844507cd1a3281a7189049f3522",
+          "InstalledFiles": [
+            "etc/alpine-release",
+            "etc/issue",
+            "etc/os-release",
+            "etc/secfixes.d/alpine",
+            "usr/lib/os-release"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "apk-tools@3.0.3-r1",
+          "Name": "apk-tools",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/apk-tools@3.0.3-r1?arch=x86_64\u0026distro=3.23.3",
+            "UID": "135e6dc8dcafde4f"
+          },
+          "Version": "3.0.3-r1",
+          "Arch": "x86_64",
+          "SrcName": "apk-tools",
+          "SrcVersion": "3.0.3-r1",
+          "Licenses": [
+            "GPL-2.0-only"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "ca-certificates-bundle@20251003-r0",
+            "libapk@3.0.3-r1",
+            "libcrypto3@3.5.5-r0",
+            "musl@1.2.5-r21",
+            "zlib@1.3.1-r2"
+          ],
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:b2f877e6c9fb945c185cf36ed546064b8b374245",
+          "InstalledFiles": [
+            "sbin/apk"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "busybox@1.37.0-r30",
+          "Name": "busybox",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/busybox@1.37.0-r30?arch=x86_64\u0026distro=3.23.3",
+            "UID": "1701a73d4be0e35a"
+          },
+          "Version": "1.37.0-r30",
+          "Arch": "x86_64",
+          "SrcName": "busybox",
+          "SrcVersion": "1.37.0-r30",
+          "Licenses": [
+            "GPL-2.0-only"
+          ],
+          "Maintainer": "Sören Tempel \u003csoeren+alpine@soeren-tempel.net\u003e",
+          "DependsOn": [
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:f1347801bb96b1aa40d17f82237c3f4ff02a4725",
+          "InstalledFiles": [
+            "bin/busybox",
+            "etc/securetty",
+            "etc/busybox-paths.d/busybox",
+            "etc/logrotate.d/acpid",
+            "etc/network/if-up.d/dad",
+            "etc/udhcpc/udhcpc.conf",
+            "usr/share/udhcpc/default.script"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "busybox-binsh@1.37.0-r30",
+          "Name": "busybox-binsh",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/busybox-binsh@1.37.0-r30?arch=x86_64\u0026distro=3.23.3",
+            "UID": "3e18d05d46a6f46f"
+          },
+          "Version": "1.37.0-r30",
+          "Arch": "x86_64",
+          "SrcName": "busybox",
+          "SrcVersion": "1.37.0-r30",
+          "Licenses": [
+            "GPL-2.0-only"
+          ],
+          "Maintainer": "Sören Tempel \u003csoeren+alpine@soeren-tempel.net\u003e",
+          "DependsOn": [
+            "busybox@1.37.0-r30"
+          ],
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:188d2d0110afa58e8a3e3e5fd424b2d996df7a09",
+          "InstalledFiles": [
+            "bin/sh"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "ca-certificates-bundle@20251003-r0",
+          "Name": "ca-certificates-bundle",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/ca-certificates-bundle@20251003-r0?arch=x86_64\u0026distro=3.23.3",
+            "UID": "f667a2210d1d97c1"
+          },
+          "Version": "20251003-r0",
+          "Arch": "x86_64",
+          "SrcName": "ca-certificates",
+          "SrcVersion": "20251003-r0",
+          "Licenses": [
+            "MPL-2.0",
+            "MIT"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:63ebe72ba79f548b6cdc8a9894e16a90d80f42b0",
+          "InstalledFiles": [
+            "etc/ssl/cert.pem",
+            "etc/ssl/certs/ca-certificates.crt",
+            "etc/ssl1.1/cert.pem",
+            "etc/ssl1.1/certs"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "icu-data-en@76.1-r1",
+          "Name": "icu-data-en",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/icu-data-en@76.1-r1?arch=x86_64\u0026distro=3.23.3",
+            "UID": "9c424501ce7f5b21"
+          },
+          "Version": "76.1-r1",
+          "Arch": "x86_64",
+          "SrcName": "icu",
+          "SrcVersion": "76.1-r1",
+          "Licenses": [
+            "ICU"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "busybox-binsh@1.37.0-r30"
+          ],
+          "Layer": {
+            "DiffID": "sha256:e1907e35189922caf71359660762d5d10617387d6aa371f6112558e4a3ac0073"
+          },
+          "Digest": "sha1:077fbaa637052ddd8d6202831dc19a53b5fff70e",
+          "InstalledFiles": [
+            "usr/share/icu/76.1/icudt76l.dat"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "icu-libs@76.1-r1",
+          "Name": "icu-libs",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/icu-libs@76.1-r1?arch=x86_64\u0026distro=3.23.3",
+            "UID": "b3cc39a155ad4fec"
+          },
+          "Version": "76.1-r1",
+          "Arch": "x86_64",
+          "SrcName": "icu",
+          "SrcVersion": "76.1-r1",
+          "Licenses": [
+            "ICU"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "icu-data-en@76.1-r1",
+            "libgcc@15.2.0-r2",
+            "libstdc++@15.2.0-r2",
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:e1907e35189922caf71359660762d5d10617387d6aa371f6112558e4a3ac0073"
+          },
+          "Digest": "sha1:5b2e798ba20f831d64e54526431c52d98e3edf90",
+          "InstalledFiles": [
+            "usr/lib/libicudata.so.76",
+            "usr/lib/libicudata.so.76.1",
+            "usr/lib/libicui18n.so.76",
+            "usr/lib/libicui18n.so.76.1",
+            "usr/lib/libicuio.so.76",
+            "usr/lib/libicuio.so.76.1",
+            "usr/lib/libicuuc.so.76",
+            "usr/lib/libicuuc.so.76.1"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "libapk@3.0.3-r1",
+          "Name": "libapk",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/libapk@3.0.3-r1?arch=x86_64\u0026distro=3.23.3",
+            "UID": "d8a4dac06126e84f"
+          },
+          "Version": "3.0.3-r1",
+          "Arch": "x86_64",
+          "SrcName": "apk-tools",
+          "SrcVersion": "3.0.3-r1",
+          "Licenses": [
+            "GPL-2.0-only"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "libcrypto3@3.5.5-r0",
+            "libssl3@3.5.5-r0",
+            "musl@1.2.5-r21",
+            "zlib@1.3.1-r2"
+          ],
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:17d0c18e379eb411aaa3e07392343a2dd6e098cc",
+          "InstalledFiles": [
+            "usr/lib/libapk.so.3.0.0"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "libcrypto3@3.5.5-r0",
+          "Name": "libcrypto3",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/libcrypto3@3.5.5-r0?arch=x86_64\u0026distro=3.23.3",
+            "UID": "6778a588f2cebd48"
+          },
+          "Version": "3.5.5-r0",
+          "Arch": "x86_64",
+          "SrcName": "openssl",
+          "SrcVersion": "3.5.5-r0",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:9ebf6995e814bacff0c04a868b0b27c3e82090f4",
+          "InstalledFiles": [
+            "etc/ssl/ct_log_list.cnf",
+            "etc/ssl/ct_log_list.cnf.dist",
+            "etc/ssl/openssl.cnf",
+            "etc/ssl/openssl.cnf.dist",
+            "usr/lib/libcrypto.so.3",
+            "usr/lib/engines-3/afalg.so",
+            "usr/lib/engines-3/capi.so",
+            "usr/lib/engines-3/loader_attic.so",
+            "usr/lib/engines-3/padlock.so",
+            "usr/lib/ossl-modules/legacy.so"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "libgcc@15.2.0-r2",
+          "Name": "libgcc",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/libgcc@15.2.0-r2?arch=x86_64\u0026distro=3.23.3",
+            "UID": "fe01204cb80c388d"
+          },
+          "Version": "15.2.0-r2",
+          "Arch": "x86_64",
+          "SrcName": "gcc",
+          "SrcVersion": "15.2.0-r2",
+          "Licenses": [
+            "GPL-2.0-or-later",
+            "LGPL-2.1-or-later"
+          ],
+          "Maintainer": "Ariadne Conill \u003cariadne@dereferenced.org\u003e",
+          "DependsOn": [
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:0aa7a08346e56185fac74891929ba7438087a9416bda042257e7e6eae403dae8"
+          },
+          "Digest": "sha1:57fccbe9eebf23f2c4f38ee2a24f8b0bdd508ff7",
+          "InstalledFiles": [
+            "usr/lib/libgcc_s.so.1"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "libssl3@3.5.5-r0",
+          "Name": "libssl3",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/libssl3@3.5.5-r0?arch=x86_64\u0026distro=3.23.3",
+            "UID": "bca2260902e2ef48"
+          },
+          "Version": "3.5.5-r0",
+          "Arch": "x86_64",
+          "SrcName": "openssl",
+          "SrcVersion": "3.5.5-r0",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "libcrypto3@3.5.5-r0",
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:12234895b6577cddcbe3450406f357600e8a6951",
+          "InstalledFiles": [
+            "usr/lib/libssl.so.3"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "libstdc++@15.2.0-r2",
+          "Name": "libstdc++",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/libstdc%2B%2B@15.2.0-r2?arch=x86_64\u0026distro=3.23.3",
+            "UID": "45c1717355985287"
+          },
+          "Version": "15.2.0-r2",
+          "Arch": "x86_64",
+          "SrcName": "gcc",
+          "SrcVersion": "15.2.0-r2",
+          "Licenses": [
+            "GPL-2.0-or-later",
+            "LGPL-2.1-or-later"
+          ],
+          "Maintainer": "Ariadne Conill \u003cariadne@dereferenced.org\u003e",
+          "DependsOn": [
+            "libgcc@15.2.0-r2",
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:0aa7a08346e56185fac74891929ba7438087a9416bda042257e7e6eae403dae8"
+          },
+          "Digest": "sha1:528d77417a16706468af852f2859ad00f176e266",
+          "InstalledFiles": [
+            "usr/lib/libstdc++.so.6",
+            "usr/lib/libstdc++.so.6.0.34"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "musl@1.2.5-r21",
+          "Name": "musl",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/musl@1.2.5-r21?arch=x86_64\u0026distro=3.23.3",
+            "UID": "750ab06f52f2bfe9"
+          },
+          "Version": "1.2.5-r21",
+          "Arch": "x86_64",
+          "SrcName": "musl",
+          "SrcVersion": "1.2.5-r21",
+          "Licenses": [
+            "MIT"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:d05a75ec13e1a7a8bab56ce7cd3dc79bd727e698",
+          "InstalledFiles": [
+            "lib/ld-musl-x86_64.so.1",
+            "lib/libc.musl-x86_64.so.1"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "musl-utils@1.2.5-r21",
+          "Name": "musl-utils",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/musl-utils@1.2.5-r21?arch=x86_64\u0026distro=3.23.3",
+            "UID": "9dadd6d4093981ad"
+          },
+          "Version": "1.2.5-r21",
+          "Arch": "x86_64",
+          "SrcName": "musl",
+          "SrcVersion": "1.2.5-r21",
+          "Licenses": [
+            "MIT",
+            "BSD-2-Clause",
+            "GPL-2.0-or-later"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "musl@1.2.5-r21",
+            "scanelf@1.3.8-r2"
+          ],
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:daa79528d2cf877f6d656207a818d43c8dea9a30",
+          "InstalledFiles": [
+            "sbin/ldconfig",
+            "usr/bin/getconf",
+            "usr/bin/getent",
+            "usr/bin/iconv",
+            "usr/bin/ldd"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "scanelf@1.3.8-r2",
+          "Name": "scanelf",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/scanelf@1.3.8-r2?arch=x86_64\u0026distro=3.23.3",
+            "UID": "948b35f6525ae462"
+          },
+          "Version": "1.3.8-r2",
+          "Arch": "x86_64",
+          "SrcName": "pax-utils",
+          "SrcVersion": "1.3.8-r2",
+          "Licenses": [
+            "GPL-2.0-only"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:6ea36dd44ef9f6364f0cdfabe09ea15d2fdbe229",
+          "InstalledFiles": [
+            "usr/bin/scanelf"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "ssl_client@1.37.0-r30",
+          "Name": "ssl_client",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/ssl_client@1.37.0-r30?arch=x86_64\u0026distro=3.23.3",
+            "UID": "260f15056a81cadb"
+          },
+          "Version": "1.37.0-r30",
+          "Arch": "x86_64",
+          "SrcName": "busybox",
+          "SrcVersion": "1.37.0-r30",
+          "Licenses": [
+            "GPL-2.0-only"
+          ],
+          "Maintainer": "Sören Tempel \u003csoeren+alpine@soeren-tempel.net\u003e",
+          "DependsOn": [
+            "libcrypto3@3.5.5-r0",
+            "libssl3@3.5.5-r0",
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:5b6ec0939cfc9be47d9677a3152c547cc18b5edd",
+          "InstalledFiles": [
+            "usr/bin/ssl_client"
+          ],
+          "AnalyzedBy": "apk"
+        },
+        {
+          "ID": "zlib@1.3.1-r2",
+          "Name": "zlib",
+          "Identifier": {
+            "PURL": "pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64\u0026distro=3.23.3",
+            "UID": "792cdc69bc59d880"
+          },
+          "Version": "1.3.1-r2",
+          "Arch": "x86_64",
+          "SrcName": "zlib",
+          "SrcVersion": "1.3.1-r2",
+          "Licenses": [
+            "Zlib"
+          ],
+          "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+          "DependsOn": [
+            "musl@1.2.5-r21"
+          ],
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "Digest": "sha1:3e8e8e76dfefb4efd27658ada6d792e66ba2775e",
+          "InstalledFiles": [
+            "usr/lib/libz.so.1",
+            "usr/lib/libz.so.1.3.1"
+          ],
+          "AnalyzedBy": "apk"
+        }
+      ],
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2026-22184",
+          "PkgID": "zlib@1.3.1-r2",
+          "PkgName": "zlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64\u0026distro=3.23.3",
+            "UID": "792cdc69bc59d880"
+          },
+          "InstalledVersion": "1.3.1-r2",
+          "FixedVersion": "1.3.2-r0",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-22184",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Fingerprint": "sha256:c56791025f05af3449cbe4964a00d76db68bb71eba9bcf2a7860f95c8d8f07b8",
+          "Title": "zlib: zlib: Arbitrary code execution via buffer overflow in untgz utility",
+          "Description": "zlib versions up to and including 1.3.1.2 include a global buffer overflow in the untgz utility located under contrib/untgz. The vulnerability is limited to the standalone demonstration utility and does not affect the core zlib compression library. The flaw occurs when a user executes the untgz command with an excessively long archive name supplied via the command line, leading to an out-of-bounds write in a fixed-size global buffer.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "VendorSeverity": {
+            "nvd": 4,
+            "redhat": 3
+          },
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H",
+              "V3Score": 8.6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-22184",
+            "https://github.com/madler/zlib",
+            "https://github.com/madler/zlib/issues/1142",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-22184",
+            "https://seclists.org/fulldisclosure/2026/Jan/3",
+            "https://www.cve.org/CVERecord?id=CVE-2026-22184",
+            "https://www.vulncheck.com/advisories/zlib-untgz-global-buffer-overflow-in-tgzfname",
+            "https://zlib.net/"
+          ],
+          "PublishedDate": "2026-01-07T21:16:01.563Z",
+          "LastModifiedDate": "2026-01-15T14:16:27.047Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-27171",
+          "PkgID": "zlib@1.3.1-r2",
+          "PkgName": "zlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64\u0026distro=3.23.3",
+            "UID": "792cdc69bc59d880"
+          },
+          "InstalledVersion": "1.3.1-r2",
+          "FixedVersion": "1.3.2-r0",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-27171",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Fingerprint": "sha256:e40c2adc864d53f31583d2ae8465eb2e9a118e7b381e4dfbe34d6545360903ef",
+          "Title": "zlib: zlib: Denial of Service via infinite loop in CRC32 combine functions",
+          "Description": "zlib before 1.3.2 allows CPU consumption via crc32_combine64 and crc32_combine_gen64 because x2nmodp can do right shifts within a loop that has no termination condition.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-1284"
+          ],
+          "VendorSeverity": {
+            "azure": 1,
+            "nvd": 2,
+            "redhat": 1,
+            "ubuntu": 1
+          },
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 2.9
+            }
+          },
+          "References": [
+            "https://7asecurity.com/blog/2026/02/zlib-7asecurity-audit/",
+            "https://7asecurity.com/reports/pentest-report-zlib-RC1.1.pdf",
+            "https://access.redhat.com/security/cve/CVE-2026-27171",
+            "https://github.com/madler/zlib/issues/904",
+            "https://github.com/madler/zlib/releases/tag/v1.3.2",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-27171",
+            "https://ostif.org/zlib-audit-complete/",
+            "https://www.cve.org/CVERecord?id=CVE-2026-27171"
+          ],
+          "PublishedDate": "2026-02-18T04:16:01.263Z",
+          "LastModifiedDate": "2026-02-20T16:45:28.827Z"
+        }
+      ]
+    },
+    {
+      "Target": "app/myChampionX.AssetTrackerAPI.deps.json",
+      "Class": "lang-pkgs",
+      "Type": "dotnet-core",
+      "Packages": [
+        {
+          "ID": "myChampionX.AssetTracker.EntityLayer/1.0.0",
+          "Name": "myChampionX.AssetTracker.EntityLayer",
+          "Identifier": {
+            "PURL": "pkg:nuget/myChampionX.AssetTracker.EntityLayer@1.0.0",
+            "UID": "529572c0bcaee425"
+          },
+          "Version": "1.0.0",
+          "Relationship": "root",
+          "DependsOn": [
+            "myChampionx.EntityLayer/1.0.0.87"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 2279,
+              "EndLine": 2283
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "myChampionx.EntityLayer/1.0.0.87",
+          "Name": "myChampionx.EntityLayer",
+          "Identifier": {
+            "PURL": "pkg:nuget/myChampionx.EntityLayer@1.0.0.87",
+            "UID": "23176f6f40bb4bfa"
+          },
+          "Version": "1.0.0.87",
+          "Relationship": "direct",
+          "DependsOn": [
+            "Microsoft.EntityFrameworkCore.SqlServer/6.0.0",
+            "Microsoft.EntityFrameworkCore.SqlServer.Design/1.1.6"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1621,
+              "EndLine": 1627
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "AutoMapper/12.0.0",
+          "Name": "AutoMapper",
+          "Identifier": {
+            "PURL": "pkg:nuget/AutoMapper@12.0.0",
+            "UID": "464466b5176b2ce9"
+          },
+          "Version": "12.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1327,
+              "EndLine": 1333
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.0",
+          "Name": "AutoMapper.Extensions.Microsoft.DependencyInjection",
+          "Identifier": {
+            "PURL": "pkg:nuget/AutoMapper.Extensions.Microsoft.DependencyInjection@12.0.0",
+            "UID": "b639fcdd05268e0c"
+          },
+          "Version": "12.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "AutoMapper/12.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1334,
+              "EndLine": 1340
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Azure.Core/1.40.0",
+          "Name": "Azure.Core",
+          "Identifier": {
+            "PURL": "pkg:nuget/Azure.Core@1.40.0",
+            "UID": "4ed6a69059add94a"
+          },
+          "Version": "1.40.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.Bcl.AsyncInterfaces/1.1.1",
+            "System.ClientModel/1.0.0",
+            "System.Memory.Data/1.0.2"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1341,
+              "EndLine": 1347
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Azure.Identity/1.12.0",
+          "Name": "Azure.Identity",
+          "Identifier": {
+            "PURL": "pkg:nuget/Azure.Identity@1.12.0",
+            "UID": "6de26e5479d53155"
+          },
+          "Version": "1.12.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "System.Security.Cryptography.ProtectedData/4.7.0",
+            "Azure.Core/1.40.0",
+            "Microsoft.Identity.Client/4.61.3",
+            "Microsoft.Identity.Client.Extensions.Msal/4.61.3"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1348,
+              "EndLine": 1354
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Azure.Security.KeyVault.Secrets/4.6.0",
+          "Name": "Azure.Security.KeyVault.Secrets",
+          "Identifier": {
+            "PURL": "pkg:nuget/Azure.Security.KeyVault.Secrets@4.6.0",
+            "UID": "a2f250c042170504"
+          },
+          "Version": "4.6.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Azure.Core/1.40.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1355,
+              "EndLine": 1361
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.AspNetCore.Authentication.JwtBearer/9.0.0",
+          "Name": "Microsoft.AspNetCore.Authentication.JwtBearer",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.AspNetCore.Authentication.JwtBearer@9.0.0",
+            "UID": "5e95ab72bec4975e"
+          },
+          "Version": "9.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.IdentityModel.Protocols.OpenIdConnect/8.0.1"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1362,
+              "EndLine": 1368
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Bcl.AsyncInterfaces/1.1.1",
+          "Name": "Microsoft.Bcl.AsyncInterfaces",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Bcl.AsyncInterfaces@1.1.1",
+            "UID": "7c5a7c13c35a0e93"
+          },
+          "Version": "1.1.1",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1369,
+              "EndLine": 1375
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Data.SqlClient/2.1.4",
+          "Name": "Microsoft.Data.SqlClient",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Data.SqlClient@2.1.4",
+            "UID": "63b21047d214f941"
+          },
+          "Version": "2.1.4",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "System.Runtime.Caching/4.7.0",
+            "Microsoft.IdentityModel.JsonWebTokens/8.0.1",
+            "Microsoft.IdentityModel.Protocols.OpenIdConnect/8.0.1",
+            "System.Configuration.ConfigurationManager/4.7.0",
+            "Microsoft.Data.SqlClient.SNI.runtime/2.1.1",
+            "Microsoft.Identity.Client/4.61.3"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1383,
+              "EndLine": 1389
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Data.SqlClient.SNI.runtime/2.1.1",
+          "Name": "Microsoft.Data.SqlClient.SNI.runtime",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Data.SqlClient.SNI.runtime@2.1.1",
+            "UID": "e8673d3a7ed207d8"
+          },
+          "Version": "2.1.1",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1390,
+              "EndLine": 1396
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.EntityFrameworkCore/6.0.0",
+          "Name": "Microsoft.EntityFrameworkCore",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.EntityFrameworkCore@6.0.0",
+            "UID": "8b4d66ed075f2f88"
+          },
+          "Version": "6.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.EntityFrameworkCore.Abstractions/6.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1397,
+              "EndLine": 1403
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.EntityFrameworkCore.Abstractions/6.0.0",
+          "Name": "Microsoft.EntityFrameworkCore.Abstractions",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.EntityFrameworkCore.Abstractions@6.0.0",
+            "UID": "326f76153abd477"
+          },
+          "Version": "6.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1404,
+              "EndLine": 1410
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.EntityFrameworkCore.Relational/6.0.0",
+          "Name": "Microsoft.EntityFrameworkCore.Relational",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.EntityFrameworkCore.Relational@6.0.0",
+            "UID": "c18405686c475d89"
+          },
+          "Version": "6.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.EntityFrameworkCore/6.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1418,
+              "EndLine": 1424
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.EntityFrameworkCore.Relational.Design/1.1.6",
+          "Name": "Microsoft.EntityFrameworkCore.Relational.Design",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.EntityFrameworkCore.Relational.Design@1.1.6",
+            "UID": "d395ff8e9dcaa6"
+          },
+          "Version": "1.1.6",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.EntityFrameworkCore.Relational/6.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1425,
+              "EndLine": 1431
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.EntityFrameworkCore.SqlServer/6.0.0",
+          "Name": "Microsoft.EntityFrameworkCore.SqlServer",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.EntityFrameworkCore.SqlServer@6.0.0",
+            "UID": "2c6f8d879e4ab5cd"
+          },
+          "Version": "6.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.Data.SqlClient/2.1.4",
+            "Microsoft.EntityFrameworkCore.Relational/6.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1432,
+              "EndLine": 1438
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.EntityFrameworkCore.SqlServer.Design/1.1.6",
+          "Name": "Microsoft.EntityFrameworkCore.SqlServer.Design",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.EntityFrameworkCore.SqlServer.Design@1.1.6",
+            "UID": "58575c45d8e1658f"
+          },
+          "Version": "1.1.6",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.EntityFrameworkCore.Relational.Design/1.1.6",
+            "Microsoft.EntityFrameworkCore.SqlServer/6.0.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1439,
+              "EndLine": 1445
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Identity.Client/4.61.3",
+          "Name": "Microsoft.Identity.Client",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Identity.Client@4.61.3",
+            "UID": "d0ca0b380d80ac13"
+          },
+          "Version": "4.61.3",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.IdentityModel.Abstractions/8.0.1"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1516,
+              "EndLine": 1522
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Identity.Client.Extensions.Msal/4.61.3",
+          "Name": "Microsoft.Identity.Client.Extensions.Msal",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Identity.Client.Extensions.Msal@4.61.3",
+            "UID": "7b2a62523b9cccc1"
+          },
+          "Version": "4.61.3",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.Identity.Client/4.61.3",
+            "System.Security.Cryptography.ProtectedData/4.7.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1523,
+              "EndLine": 1529
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.IdentityModel.Abstractions/8.0.1",
+          "Name": "Microsoft.IdentityModel.Abstractions",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.IdentityModel.Abstractions@8.0.1",
+            "UID": "58c43cc5c3356387"
+          },
+          "Version": "8.0.1",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1530,
+              "EndLine": 1536
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.IdentityModel.JsonWebTokens/8.0.1",
+          "Name": "Microsoft.IdentityModel.JsonWebTokens",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.IdentityModel.JsonWebTokens@8.0.1",
+            "UID": "67d40594597ae18"
+          },
+          "Version": "8.0.1",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.IdentityModel.Tokens/8.0.1"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1537,
+              "EndLine": 1543
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.IdentityModel.Logging/8.0.1",
+          "Name": "Microsoft.IdentityModel.Logging",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.IdentityModel.Logging@8.0.1",
+            "UID": "fc6b0b5936fd1744"
+          },
+          "Version": "8.0.1",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.IdentityModel.Abstractions/8.0.1"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1544,
+              "EndLine": 1550
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.IdentityModel.Protocols/8.0.1",
+          "Name": "Microsoft.IdentityModel.Protocols",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.IdentityModel.Protocols@8.0.1",
+            "UID": "1ecfc2bd748dda8f"
+          },
+          "Version": "8.0.1",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.IdentityModel.Tokens/8.0.1"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1551,
+              "EndLine": 1557
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.IdentityModel.Protocols.OpenIdConnect/8.0.1",
+          "Name": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.IdentityModel.Protocols.OpenIdConnect@8.0.1",
+            "UID": "bc6c60faad97fbd0"
+          },
+          "Version": "8.0.1",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.IdentityModel.Protocols/8.0.1",
+            "System.IdentityModel.Tokens.Jwt/8.0.1"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1558,
+              "EndLine": 1564
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.IdentityModel.Tokens/8.0.1",
+          "Name": "Microsoft.IdentityModel.Tokens",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.IdentityModel.Tokens@8.0.1",
+            "UID": "c95f70ce23290079"
+          },
+          "Version": "8.0.1",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.IdentityModel.Logging/8.0.1"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1565,
+              "EndLine": 1571
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.OpenApi/1.2.3",
+          "Name": "Microsoft.OpenApi",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.OpenApi@1.2.3",
+            "UID": "7aac509a6db30282"
+          },
+          "Version": "1.2.3",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1586,
+              "EndLine": 1592
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Microsoft.Win32.SystemEvents/4.7.0",
+          "Name": "Microsoft.Win32.SystemEvents",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.Win32.SystemEvents@4.7.0",
+            "UID": "bba20454fcc11057"
+          },
+          "Version": "4.7.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1614,
+              "EndLine": 1620
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Newtonsoft.Json/13.0.3",
+          "Name": "Newtonsoft.Json",
+          "Identifier": {
+            "PURL": "pkg:nuget/Newtonsoft.Json@13.0.3",
+            "UID": "8fa09d94e62130f"
+          },
+          "Version": "13.0.3",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1635,
+              "EndLine": 1641
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Swashbuckle.AspNetCore.Swagger/6.5.0",
+          "Name": "Swashbuckle.AspNetCore.Swagger",
+          "Identifier": {
+            "PURL": "pkg:nuget/Swashbuckle.AspNetCore.Swagger@6.5.0",
+            "UID": "4d232d0feccdf2ad"
+          },
+          "Version": "6.5.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.OpenApi/1.2.3"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1761,
+              "EndLine": 1767
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Swashbuckle.AspNetCore.SwaggerGen/6.5.0",
+          "Name": "Swashbuckle.AspNetCore.SwaggerGen",
+          "Identifier": {
+            "PURL": "pkg:nuget/Swashbuckle.AspNetCore.SwaggerGen@6.5.0",
+            "UID": "1dd5c3fea85d0694"
+          },
+          "Version": "6.5.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Swashbuckle.AspNetCore.Swagger/6.5.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1768,
+              "EndLine": 1774
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "Swashbuckle.AspNetCore.SwaggerUI/6.5.0",
+          "Name": "Swashbuckle.AspNetCore.SwaggerUI",
+          "Identifier": {
+            "PURL": "pkg:nuget/Swashbuckle.AspNetCore.SwaggerUI@6.5.0",
+            "UID": "ac54518088896d75"
+          },
+          "Version": "6.5.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1775,
+              "EndLine": 1781
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "System.ClientModel/1.0.0",
+          "Name": "System.ClientModel",
+          "Identifier": {
+            "PURL": "pkg:nuget/System.ClientModel@1.0.0",
+            "UID": "15266d81a394655a"
+          },
+          "Version": "1.0.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "System.Memory.Data/1.0.2"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1796,
+              "EndLine": 1802
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "System.Configuration.ConfigurationManager/4.7.0",
+          "Name": "System.Configuration.ConfigurationManager",
+          "Identifier": {
+            "PURL": "pkg:nuget/System.Configuration.ConfigurationManager@4.7.0",
+            "UID": "d64d3fa454853c7f"
+          },
+          "Version": "4.7.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "System.Security.Cryptography.ProtectedData/4.7.0",
+            "System.Security.Permissions/4.7.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1824,
+              "EndLine": 1830
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "System.Drawing.Common/4.7.0",
+          "Name": "System.Drawing.Common",
+          "Identifier": {
+            "PURL": "pkg:nuget/System.Drawing.Common@4.7.0",
+            "UID": "710717c72a19f72"
+          },
+          "Version": "4.7.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.Win32.SystemEvents/4.7.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1866,
+              "EndLine": 1872
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "System.IdentityModel.Tokens.Jwt/8.0.1",
+          "Name": "System.IdentityModel.Tokens.Jwt",
+          "Identifier": {
+            "PURL": "pkg:nuget/System.IdentityModel.Tokens.Jwt@8.0.1",
+            "UID": "bb1a8597c44a4703"
+          },
+          "Version": "8.0.1",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "Microsoft.IdentityModel.JsonWebTokens/8.0.1",
+            "Microsoft.IdentityModel.Tokens/8.0.1"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1894,
+              "EndLine": 1900
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "System.Memory.Data/1.0.2",
+          "Name": "System.Memory.Data",
+          "Identifier": {
+            "PURL": "pkg:nuget/System.Memory.Data@1.0.2",
+            "UID": "bd19645a5cd8da6c"
+          },
+          "Version": "1.0.2",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 1957,
+              "EndLine": 1963
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "System.Runtime.Caching/4.7.0",
+          "Name": "System.Runtime.Caching",
+          "Identifier": {
+            "PURL": "pkg:nuget/System.Runtime.Caching@4.7.0",
+            "UID": "7247d8406d2c1ab0"
+          },
+          "Version": "4.7.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "System.Configuration.ConfigurationManager/4.7.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 2062,
+              "EndLine": 2068
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "System.Security.Cryptography.ProtectedData/4.7.0",
+          "Name": "System.Security.Cryptography.ProtectedData",
+          "Identifier": {
+            "PURL": "pkg:nuget/System.Security.Cryptography.ProtectedData@4.7.0",
+            "UID": "bd674883d02beacf"
+          },
+          "Version": "4.7.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 2160,
+              "EndLine": 2166
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "System.Security.Permissions/4.7.0",
+          "Name": "System.Security.Permissions",
+          "Identifier": {
+            "PURL": "pkg:nuget/System.Security.Permissions@4.7.0",
+            "UID": "992a977ab8583b38"
+          },
+          "Version": "4.7.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "System.Windows.Extensions/4.7.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 2174,
+              "EndLine": 2180
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        },
+        {
+          "ID": "System.Windows.Extensions/4.7.0",
+          "Name": "System.Windows.Extensions",
+          "Identifier": {
+            "PURL": "pkg:nuget/System.Windows.Extensions@4.7.0",
+            "UID": "319d5911e77240df"
+          },
+          "Version": "4.7.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "System.Drawing.Common/4.7.0"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "Locations": [
+            {
+              "StartLine": 2258,
+              "EndLine": 2264
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        }
+      ],
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "GHSA-rvv3-g6hj-g44x",
+          "PkgID": "AutoMapper/12.0.0",
+          "PkgName": "AutoMapper",
+          "PkgIdentifier": {
+            "PURL": "pkg:nuget/AutoMapper@12.0.0",
+            "UID": "464466b5176b2ce9"
+          },
+          "InstalledVersion": "12.0.0",
+          "FixedVersion": "16.1.1",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory NuGet",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anuget"
+          },
+          "Fingerprint": "sha256:99c10bdc997ca9ab4ace3f67c3a48db21092bdbbeccf30d99fd04818da722f8b",
+          "Title": "AutoMapper Vulnerable to Denial of Service (DoS) via Uncontrolled Recursion",
+          "Description": "### Summary\n\nAutoMapper is vulnerable to a Denial of Service (DoS) attack. When mapping deeply nested object graphs, the library uses recursive method calls without enforcing a default maximum depth limit. This allows an attacker to provide a specially crafted object graph that exhausts the thread's stack memory, triggering a `StackOverflowException` and causing the entire application process to terminate.\n\n### Description\n\nThe vulnerability exists in the core mapping engine. When a source object contains a property of the same type (or a type that eventually points back to itself), AutoMapper recursively attempts to map each level.\n\nBecause there is no default limit on how many levels deep this recursion can go, a sufficiently nested object (approximately 25,000+ levels in standard .NET environments) will exceed the stack size. Since `StackOverflowException` cannot be caught in modern .NET runtimes, the application cannot recover and will crash immediately.\n\n### Impact\n\n* **Availability:** An attacker can crash the application server, leading to a complete Denial of Service.\n* **Process Termination:** Unlike standard exceptions, this terminates the entire process, not just the individual request thread.\n\n### Proof of Concept (PoC)\n\nThe following C# code demonstrates the crash by creating a nested \"Circular\" object graph and attempting to map it:\n\n```csharp\nclass Circular { public Circular Self { get; set; } }\n\n// Setup configuration\nvar config = new MapperConfiguration(cfg =\u003e {\n    cfg.CreateMap\u003cCircular, Circular\u003e();\n});\nvar mapper = config.CreateMapper();\n\n// Create a deeply nested object (28,000+ levels)\nvar root = new Circular();\nvar current = root;\nfor (int i = 0; i \u003c 30000; i++) {\n    current.Self = new Circular();\n    current = current.Self;\n}\n\n// This call triggers the StackOverflowException and crashes the process\nmapper.Map\u003cCircular\u003e(root);\n\n```\n\n### Recommended Mitigation\n\n1. **Secure Defaults:** Implement a default `MaxDepth` (e.g., 32 or 64) for all mapping operations.\n2. **Configurable Limit:** Allow users to increase this limit if necessary, but ensure it is enabled by default to protect unsuspecting developers.",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "ghsa": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://github.com/LuckyPennySoftware/AutoMapper",
+            "https://github.com/LuckyPennySoftware/AutoMapper/commit/0afaf1e91648fca1a57512e94dd00a76ee016816",
+            "https://github.com/LuckyPennySoftware/AutoMapper/releases/tag/v16.1.1",
+            "https://github.com/LuckyPennySoftware/AutoMapper/security/advisories/GHSA-rvv3-g6hj-g44x"
+          ],
+          "PublishedDate": "2026-03-13T20:57:07Z",
+          "LastModifiedDate": "2026-03-13T20:57:07Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-0056",
+          "VendorIDs": [
+            "GHSA-98g6-xh36-x2p7"
+          ],
+          "PkgID": "Microsoft.Data.SqlClient/2.1.4",
+          "PkgName": "Microsoft.Data.SqlClient",
+          "PkgIdentifier": {
+            "PURL": "pkg:nuget/Microsoft.Data.SqlClient@2.1.4",
+            "UID": "63b21047d214f941"
+          },
+          "InstalledVersion": "2.1.4",
+          "FixedVersion": "2.1.7, 3.1.5, 4.0.5, 5.1.3",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-0056",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory NuGet",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anuget"
+          },
+          "Fingerprint": "sha256:93ac1c257421b173d0b737f5b001a2fa2a22ef5bea0269621bc0a78d53f49a2b",
+          "Title": "dotnet: Information Disclosure: MD.SqlClient(MDS) \u0026 System.data.SQLClient (SDS)",
+          "Description": "Microsoft.Data.SqlClient and System.Data.SqlClient SQL Data Provider Security Feature Bypass Vulnerability",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-319"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "bitnami": 3,
+            "ghsa": 3,
+            "oracle-oval": 3,
+            "photon": 3,
+            "redhat": 3,
+            "rocky": 3
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N",
+              "V3Score": 8.7
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N",
+              "V3Score": 8.7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:0158",
+            "https://access.redhat.com/security/cve/CVE-2024-0056",
+            "https://bugzilla.redhat.com/2255384",
+            "https://bugzilla.redhat.com/2255386",
+            "https://bugzilla.redhat.com/2257566",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2255384",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2255386",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2257566",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0056",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0057",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-21319",
+            "https://errata.almalinux.org/8/ALSA-2024-0158.html",
+            "https://errata.rockylinux.org/RLSA-2024:0158",
+            "https://github.com/dotnet/announcements/issues/292",
+            "https://github.com/dotnet/core/blob/ce802c56fde3abe2ae14ad09a1b8991b6709c18b/release-notes/6.0/6.0.26/6.0.26.md",
+            "https://linux.oracle.com/cve/CVE-2024-0056.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0158.html",
+            "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-0056",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-0056",
+            "https://www.cve.org/CVERecord?id=CVE-2024-0056"
+          ],
+          "PublishedDate": "2024-01-09T18:15:46.783Z",
+          "LastModifiedDate": "2024-11-21T08:45:49.18Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-24112",
+          "VendorIDs": [
+            "GHSA-rxg9-xrhp-64gj"
+          ],
+          "PkgID": "System.Drawing.Common/4.7.0",
+          "PkgName": "System.Drawing.Common",
+          "PkgIdentifier": {
+            "PURL": "pkg:nuget/System.Drawing.Common@4.7.0",
+            "UID": "710717c72a19f72"
+          },
+          "InstalledVersion": "4.7.0",
+          "FixedVersion": "4.7.2, 5.0.3",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:6b1cb525a07253abcb9cde91ae1be5fe8b0cf0382c20958870158a46f5cfe320"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-24112",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory NuGet",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anuget"
+          },
+          "Fingerprint": "sha256:59c72ff84140180a855bd569be2fb3dac0f80f7ba0fffba8e02122f0cbefc389",
+          "Title": "dotnet: Remote Code Execution Vulnerability",
+          "Description": ".NET Core Remote Code Execution Vulnerability",
+          "Severity": "CRITICAL",
+          "VendorSeverity": {
+            "bitnami": 4,
+            "ghsa": 4,
+            "nvd": 4,
+            "photon": 4,
+            "redhat": 3
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-24112",
+            "https://github.com/dotnet/announcements/issues/176",
+            "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-24112",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-24112",
+            "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2021-24112",
+            "https://www.cve.org/CVERecord?id=CVE-2021-24112"
+          ],
+          "PublishedDate": "2021-02-25T23:15:16.57Z",
+          "LastModifiedDate": "2024-11-21T05:52:22.857Z"
+        }
+      ]
+    },
+    {
+      "Target": "usr/share/dotnet/shared/Microsoft.AspNetCore.App/9.0.14/Microsoft.AspNetCore.App.deps.json",
+      "Class": "lang-pkgs",
+      "Type": "dotnet-core",
+      "Packages": [
+        {
+          "ID": "Microsoft.AspNetCore.App.Runtime.linux-musl-x64/9.0.14",
+          "Name": "Microsoft.AspNetCore.App.Runtime.linux-musl-x64",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.AspNetCore.App.Runtime.linux-musl-x64@9.0.14",
+            "UID": "f5c5ac0e131b2ebe"
+          },
+          "Version": "9.0.14",
+          "Layer": {
+            "DiffID": "sha256:156c0903f304f504ffc51895f3ccfd1f6d814c2e9a2866e35e27762684435de6"
+          },
+          "Locations": [
+            {
+              "StartLine": 573,
+              "EndLine": 578
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "Target": "usr/share/dotnet/shared/Microsoft.NETCore.App/9.0.14/Microsoft.NETCore.App.deps.json",
+      "Class": "lang-pkgs",
+      "Type": "dotnet-core",
+      "Packages": [
+        {
+          "ID": "Microsoft.NETCore.App.Runtime.linux-musl-x64/9.0.14",
+          "Name": "Microsoft.NETCore.App.Runtime.linux-musl-x64",
+          "Identifier": {
+            "PURL": "pkg:nuget/Microsoft.NETCore.App.Runtime.linux-musl-x64@9.0.14",
+            "UID": "fb3dcbb2db619127"
+          },
+          "Version": "9.0.14",
+          "Layer": {
+            "DiffID": "sha256:3de7021735886e87ea4591b5db49e2d92abd3725bf168704603ad8711adc7e52"
+          },
+          "Locations": [
+            {
+              "StartLine": 737,
+              "EndLine": 742
+            }
+          ],
+          "AnalyzedBy": "dotnet-core"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+Type = Bug
+Type = Vulnerability
+Severity = Blocker
+Severity = Critical
