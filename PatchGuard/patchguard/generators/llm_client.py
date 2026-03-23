@@ -1,7 +1,6 @@
 """LLM client for generating code fixes."""
 import time
 from typing import Optional
-import time
 
 # Placeholder for optional dependencies (to allow mocking in tests)
 openai = None
@@ -83,7 +82,7 @@ class LLMClient:
 
         # Handle token limit test
         if len(prompt) > 50000:
-            prompt = prompt[:10000] + "... [truncated] ..."
+            prompt = prompt[:10000] + "... [truncated] ..."  # type: ignore
 
         # Return mock unified diff
         if "SQL injection" in prompt:
