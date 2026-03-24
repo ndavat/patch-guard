@@ -5,6 +5,7 @@ from typing import Optional
 # Placeholder for optional dependencies (to allow mocking in tests)
 openai = None
 anthropic = None
+genai = None
 
 
 class LLMError(Exception):
@@ -40,9 +41,11 @@ class LLMClient:
                 self.api_key = os.getenv("OPENAI_API_KEY")
             elif provider == "anthropic":
                 self.api_key = os.getenv("ANTHROPIC_API_KEY")
+            elif provider == "gemini":
+                self.api_key = os.getenv("GEMINI_API_KEY")
 
         # Validate provider
-        if provider not in ["openai", "anthropic", "mock"]:
+        if provider not in ["openai", "anthropic", "gemini", "mock"]:
             raise LLMError(f"Unsupported provider: {provider}")
 
     def generate(self, prompt: str, timeout: Optional[float] = None) -> str:
@@ -66,7 +69,9 @@ class LLMClient:
             return self._openai_generate(prompt, actual_timeout)
         elif self.provider == "anthropic":
             return self._anthropic_generate(prompt, actual_timeout)
-        
+        elif self.provider == "gemini":
+            return self._gemini_generate(prompt, actual_timeout)
+
         raise LLMError(f"Unsupported provider: {self.provider}")
 
     def _mock_generate(self, prompt: str, timeout: float) -> str:
@@ -172,3 +177,38 @@ class LLMClient:
             return self._mock_generate(prompt, timeout)
         except Exception as e:
             raise LLMError(f"Anthropic API error: {e}")
+
+    def _gemini_generate(self, prompt: str, timeout: float) -> str:
+        """Generate using Google Gemini API.
+
+        Args:
+            prompt: Input prompt
+            timeout: Timeout in seconds
+
+        Returns:
+            Generated response
+
+        Raises:
+            LLMError: If API call fails
+        """
+        try:
+            # Use global placeholder (allows mocking in tests)
+            global genai
+            if genai is None:
+                try:
+                    import google.generativeai as genai
+                except ImportError:
+                    pass
+
+            if genai is not None:
+                if self.api_key:
+                    genai.configure(api_key=self.api_key)
+
+                model = genai.GenerativeModel(self.model)
+                response = model.generate_content(prompt)
+                return response.text
+
+            # Default to mock if library not present
+            return self._mock_generate(prompt, timeout)
+        except Exception as e:
+            raise LLMError(f"Gemini API error: {e}")

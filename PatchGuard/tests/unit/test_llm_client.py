@@ -94,3 +94,37 @@ class TestLLMClient:
 
         with pytest.raises(LLMError):
             client = LLMClient(provider="unsupported")
+
+    def test_gemini_provider(self):
+        from patchguard.generators.llm_client import LLMClient
+
+        client = LLMClient(provider="gemini", model="gemini-1.5-pro")
+
+        # Should initialize without error
+        assert client.provider == "gemini"
+        assert client.model == "gemini-1.5-pro"
+
+    @patch('patchguard.generators.llm_client.genai')
+    def test_generate_fix_with_mock_gemini(self, mock_genai):
+        from patchguard.generators.llm_client import LLMClient
+
+        # Mock Gemini response
+        mock_model = Mock()
+        mock_response = Mock()
+        mock_response.text = """```diff
+--- a/test.py
++++ b/test.py
+@@ -1,3 +1,3 @@
+-password = "hardcoded123"
++password = os.getenv("PASSWORD")
+```"""
+
+        mock_model.generate_content.return_value = mock_response
+        mock_genai.GenerativeModel.return_value = mock_model
+
+        client = LLMClient(provider="gemini", model="gemini-1.5-pro", api_key="test-key")
+        result = client.generate("Fix hardcoded password")
+
+        assert "--- a/test.py" in result
+        assert "+++ b/test.py" in result
+        assert "os.getenv" in result

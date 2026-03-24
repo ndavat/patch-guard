@@ -63,7 +63,7 @@ Examples:
     fix_parser.add_argument("--input", required=True, help="Path to the JSON scan report")
     fix_parser.add_argument("--repo", required=True, help="Path to the repository to fix")
     fix_parser.add_argument("--severity", nargs="+", help="Severity levels to include")
-    fix_parser.add_argument("--provider", default="mock", choices=["openai", "anthropic", "mock"], help="LLM provider")
+    fix_parser.add_argument("--provider", default="mock", choices=["openai", "anthropic", "gemini", "mock"], help="LLM provider")
     fix_parser.add_argument("--model", help="LLM model name (defaults based on provider)")
     fix_parser.add_argument("--api-key", help="LLM API key (or set OPENAI_API_KEY/ANTHROPIC_API_KEY env vars)")
 
@@ -121,6 +121,8 @@ Examples:
                     model = "gpt-4o"
                 elif args.provider == "anthropic":
                     model = "claude-3-5-sonnet-20241022"
+                elif args.provider == "gemini":
+                    model = "gemini-1.5-pro"
                 else:
                     model = "mock-model"
 
