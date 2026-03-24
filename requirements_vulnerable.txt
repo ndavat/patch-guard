@@ -1,0 +1,5 @@
+# Vulnerable dependencies for testing Mend and Trivy
+requests==2.25.1  # Has known CVEs
+urllib3==1.26.5   # Older version with issues
+pyjwt==1.7.1      # Older version
+cryptography==2.8 # Older version with vulnerabilities

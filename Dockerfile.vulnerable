@@ -1,0 +1,21 @@
+# Vulnerable Dockerfile for testing Trivy
+FROM ubuntu:18.04  # Old Ubuntu version with known vulnerabilities
+
+# Install vulnerable packages
+RUN apt-get update && apt-get install -y \
+    curl=7.58.0-2ubuntu3.10 \
+    openssl=1.1.1-1ubuntu2.1~18.04.20 \
+    libc6=2.27-3ubuntu1.4 \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy application
+COPY sample_vulnerable_app.py /app/
+
+# Run as root (security issue)
+USER root
+
+# Expose unnecessary port
+EXPOSE 22
+
+# Default command
+CMD ["python3", "/app/sample_vulnerable_app.py"]

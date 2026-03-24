@@ -1,0 +1,76 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "sample-vulnerable-app:latest",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "ubuntu",
+      "Name": "18.04"
+    }
+  },
+  "Results": [
+    {
+      "Target": "sample-vulnerable-app:latest (ubuntu 18.04)",
+      "Class": "os-pkgs",
+      "Type": "ubuntu",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2022-25883",
+          "PkgName": "ubuntu",
+          "InstalledVersion": "18.04.6",
+          "FixedVersion": "18.04.7",
+          "Severity": "HIGH",
+          "Title": "ubuntu: Privilege escalation vulnerability",
+          "Description": "A flaw was found in the way the overlayfs implementation in the Linux kernel handled user permissions.",
+          "CVSS": {
+            "nvd": {
+              "V3Score": 7.0
+            }
+          }
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3449",
+          "PkgName": "openssl",
+          "InstalledVersion": "1.1.1-1ubuntu2.1~18.04.20",
+          "FixedVersion": "1.1.1f-1ubuntu2.15",
+          "Severity": "HIGH",
+          "Title": "openssl: NULL pointer dereference",
+          "Description": "A flaw was found in the way OpenSSL handled certain ASN.1 object identifiers.",
+          "CVSS": {
+            "nvd": {
+              "V3Score": 7.5
+            }
+          }
+        },
+        {
+          "VulnerabilityID": "CVE-2022-23222",
+          "PkgName": "glibc",
+          "InstalledVersion": "2.27-3ubuntu1.4",
+          "FixedVersion": "2.27-3ubuntu1.5",
+          "Severity": "HIGH",
+          "Title": "glibc: Buffer overflow",
+          "Description": "A buffer overflow was found in the way glibc handled certain Unicode characters.",
+          "CVSS": {
+            "nvd": {
+              "V3Score": 7.5
+            }
+          }
+        },
+        {
+          "VulnerabilityID": "CVE-2021-33574",
+          "PkgName": "apt",
+          "InstalledVersion": "2.2.9",
+          "FixedVersion": "2.2.10",
+          "Severity": "MEDIUM",
+          "Title": "apt: Information disclosure",
+          "Description": "A flaw was found in apt in the way it handled signing certificates.",
+          "CVSS": {
+            "nvd": {
+              "V3Score": 5.5
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

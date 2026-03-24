@@ -1,0 +1,150 @@
+{
+  "total": 6,
+  "p": 1,
+  "ps": 100,
+  "paging": {
+    "pageIndex": 1,
+    "pageSize": 100,
+    "total": 6
+  },
+  "issues": [
+    {
+      "key": "sample_vulnerable_app.py:S1481-unused-import",
+      "rule": "python:S1481",
+      "severity": "MINOR",
+      "component": "sample_vulnerable_app.py",
+      "project": "sample_vulnerable_app",
+      "line": 6,
+      "hash": "unused_import_hashlib",
+      "textRange": {
+        "startLine": 6,
+        "endLine": 6
+      },
+      "status": "OPEN",
+      "message": "Remove this unused import of 'hashlib'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": ["unused"],
+      "type": "CODE_SMELL",
+      "branch": "main",
+      "scope": "MAIN",
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "sample_vulnerable_app.py:S2068-hardcoded-secret",
+      "rule": "python:S2068",
+      "severity": "BLOCKER",
+      "component": "sample_vulnerable_app.py",
+      "project": "sample_vulnerable_app",
+      "line": 12,
+      "hash": "hardcoded_api_key",
+      "textRange": {
+        "startLine": 12,
+        "endLine": 12
+      },
+      "status": "OPEN",
+      "message": "Hardcoded secret detected: 'API_KEY'.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "",
+      "tags": ["security", "credentials", "hardcoded-secret"],
+      "type": "VULNERABILITY",
+      "branch": "main",
+      "scope": "MAIN",
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "sample_vulnerable_app.py:S2068-hardcoded-secret-2",
+      "rule": "python:S2068",
+      "severity": "BLOCKER",
+      "component": "sample_vulnerable_app.py",
+      "project": "sample_vulnerable_app",
+      "line": 13,
+      "hash": "hardcoded_db_password",
+      "textRange": {
+        "startLine": 13,
+        "endLine": 13
+      },
+      "status": "OPEN",
+      "message": "Hardcoded secret detected: 'DB_PASSWORD'.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "",
+      "tags": ["security", "credentials", "hardcoded-secret"],
+      "type": "VULNERABILITY",
+      "branch": "main",
+      "scope": "MAIN",
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "sample_vulnerable_app.py:S2077-sql-injection",
+      "rule": "python:S2077",
+      "severity": "CRITICAL",
+      "component": "sample_vulnerable_app.py",
+      "project": "sample_vulnerable_app",
+      "line": 21,
+      "hash": "sql_injection_vulnerable_sql_query",
+      "textRange": {
+        "startLine": 21,
+        "endLine": 21
+      },
+      "status": "OPEN",
+      "message": "SQL Injection in 'vulnerable_sql_query'.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "",
+      "tags": ["injection", "sql", "owasp-a1", "sans-top25-insecure"],
+      "type": "VULNERABILITY",
+      "branch": "main",
+      "scope": "MAIN",
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "sample_vulnerable_app.py:S2078-command-injection",
+      "rule": "python:S2078",
+      "severity": "CRITICAL",
+      "component": "sample_vulnerable_app.py",
+      "project": "sample_vulnerable_app",
+      "line": 28,
+      "hash": "command_injection_filename",
+      "textRange": {
+        "startLine": 28,
+        "endLine": 28
+      },
+      "status": "OPEN",
+      "message": "OS Command Injection in 'command_injection'.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "",
+      "tags": ["injection", "command", "shell", "owasp-a1", "sans-top25-insecure"],
+      "type": "VULNERABILITY",
+      "branch": "main",
+      "scope": "MAIN",
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "sample_vulnerable_app.py:S2076-weak-cryptography",
+      "rule": "python:S2076",
+      "severity": "HIGH",
+      "component": "sample_vulnerable_app.py",
+      "project": "sample_vulnerable_app",
+      "line": 35,
+      "hash": "weak_hash_md5",
+      "textRange": {
+        "startLine": 35,
+        "endLine": 35
+      },
+      "status": "OPEN",
+      "message": "Weak hash: MD5.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "",
+      "tags": ["crypto", "weak-hash", "md5"],
+      "type": "VULNERABILITY",
+      "branch": "main",
+      "scope": "MAIN",
+      "issueStatus": "OPEN"
+    }
+  ]
+}
