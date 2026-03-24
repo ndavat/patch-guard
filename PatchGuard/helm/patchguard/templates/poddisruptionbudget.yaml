@@ -1,0 +1,22 @@
+{{- if .Values.podDisruptionBudget.enabled }}
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: {{ include "patchguard.fullname" . }}
+  labels:
+    {{- include "patchguard.labels" . | nindent 4 }}
+    {{- if .Values.additionalLabels }}
+    {{- toYaml .Values.additionalLabels | nindent 8 }}
+    {{- end }}
+spec:
+  minAvailable: {{ .Values.podDisruptionBudget.minAvailable }}
+  {{- if .Values.podDisruptionBudget.maxUnavailable }}
+  maxUnavailable: {{ .Values.podDisruptionBudget.maxUnavailable }}
+  {{- end }}
+  selector:
+    matchLabels:
+      {{- include "patchguard.selectorLabels" . | nindent 4 }}
+      {{- if .Values.additionalLabels }}
+      {{- toYaml .Values.additionalLabels | nindent 8 }}
+      {{- end }}
+{{- end }}

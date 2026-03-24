@@ -1,0 +1,170 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "patchguard.fullname" . }}
+  labels:
+    {{- include "patchguard.labels" . | nindent 4 }}
+spec:
+  {{- if not .Values.autoscaling.enabled }}
+  replicas: {{ .Values.replicaCount }}
+  {{- end }}
+  selector:
+    matchLabels:
+      {{- include "patchguard.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      {{- with .Values.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      labels:
+        {{- include "patchguard.selectorLabels" . | nindent 8 }}
+        {{- if .Values.additionalLabels }}
+        {{- toYaml .Values.additionalLabels | nindent 8 }}
+        {{- end }}
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      serviceAccountName: {{ include "patchguard.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.securityContext | nindent 8 }}
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: {{ .Values.service.port }}
+            - name: metrics
+              containerPort: {{ .Values.patchguard.monitoring.metricsPort }}
+          env:
+            - name: LOG_LEVEL
+              value: "{{ .Values.patchguard.logLevel }}"
+            - name: INGESTION_INTERVAL
+              value: "{{ .Values.patchguard.ingestionInterval }}"
+            - name: FEEDBACK_POLL_INTERVAL
+              value: "{{ .Values.patchguard.feedbackPollInterval }}"
+            - name: LLM_PROVIDER
+              value: "{{ .Values.patchguard.llmProvider }}"
+            - name: LLM_MODEL
+              value: "{{ .Values.patchguard.llmModel }}"
+            - name: LLM_TEMPERATURE
+              value: "{{ .Values.patchguard.llmTemperature }}"
+            # External service credentials
+            - name: GITHUB_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "patchguard.fullname" . }}-github
+                  key: token
+            - name: GITHUB_APP_ID
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "patchguard.fullname" . }}-github-app
+                  key: appId
+            - name: GITHUB_PRIVATE_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "patchguard.fullname" . }}-github-app
+                  key: privateKey
+            - name: AZURE_DEVOPS_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "patchguard.fullname" . }}-azuredevops
+                  key: token
+            - name: GITLAB_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "patchguard.fullname" . }}-gitlab
+                  key: token
+            - name: SONARQUBE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "patchguard.fullname" . }}-sonarqube
+                  key: url
+            - name: SONARQUBE_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "patchguard.fullname" . }}-sonarqube
+                  key: token
+            - name: MEND_URL
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "patchguard.fullname" . }}-mend
+                  key: url
+            - name: MEND_USER_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "patchguard.fullname" . }}-mend
+                  key: userKey
+            - name: MEND_ORG_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "patchguard.fullname" . }}-mend
+                  key: orgToken
+            - name: TRIVY_SERVER_URL
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "patchguard.fullname" . }}-trivy
+                  key: serverUrl
+            - name: TRIVY_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "patchguard.fullname" . }}-trivy
+                  key: token
+            - name: REDIS_HOST
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "patchguard.fullname" . }}-redis
+                  key: host
+            - name: REDIS_PORT
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "patchguard.fullname" . }}-redis
+                  key: port
+            - name: REDIS_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "patchguard.fullname" . }}-redis
+                  key: password
+            - name: VAULT_ADDR
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "patchguard.fullname" . }}-vault
+                  key: addr
+            - name: VAULT_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "patchguard.fullname" . }}-vault
+                  key: token
+          livenessProbe:
+            httpGet:
+              path: {{ .Values.patchguard.monitoring.healthCheckPath }}
+              port: http
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: {{ .Values.patchguard.monitoring.healthCheckPath }}
+              port: http
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+          {{- with .Values.nodeSelector }}
+          nodeSelector:
+            {{- toYaml .Values.nodeSelector | nindent 12 }}
+          {{- end }}
+          {{- with .Values.tolerations }}
+          tolerations:
+            {{- toYaml .Values.tolerations | nindent 12 }}
+          {{- end }}
+          {{- with .Values.affinity }}
+          affinity:
+            {{- toYaml .Values.affinity | nindent 12 }}
+          {{- end }}
+      {{- with .Values.podSecurityContext }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      {{- end }}

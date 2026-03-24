@@ -1,0 +1,22 @@
+apiVersion: v2
+name: patchguard
+description: A Helm chart for PatchGuard - Autonomous Security Remediation Agent
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
+home: https://github.com/your-org/patchguard
+sources:
+  - https://github.com/your-org/patchguard
+maintainers:
+  - name: PatchGuard Maintainers
+    email: maintainers@patchguard.io
+keywords:
+  - security
+  - remediation
+  - devops
+  - ai
+  - agent
+annotations:
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/changes: |
+    - Initial release of PatchGuard Helm chart

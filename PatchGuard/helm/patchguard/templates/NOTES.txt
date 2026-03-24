@@ -1,0 +1,55 @@
+{{- if .Values.serviceMonitor.enabled }}
+{{- include "patchguard.templates.servicemonitor.yaml" . | nindent 4 }}
+{{- end }}
+
+{{- if .Values.podDisruptionBudget.enabled }}
+{{- include "patchguard.templates.poddisruptionbudget.yaml" . | nindent 4 }}
+{{- end }}
+
+To get started with PatchGuard:
+
+1. Install the chart:
+   helm repo add patchguard https://your-org.github.io/patchguard-charts
+   helm install my-patchguard patchguard/patchguard
+
+2. Configure external services by creating Kubernetes secrets:
+   # GitHub
+   kubectl create secret generic my-patchguard-github \
+     --from-literal=token=your_github_token
+
+   # SonarQube
+   kubectl create secret generic my-patchguard-sonarqube \
+     --from-literal=url=https://sonarqube.example.com \
+     --from-literal=token=your_sonarqube_token
+
+   # Mend
+   kubectl create secret generic my-patchguard-mend \
+     --from-literal=url=https://api.mend.io \
+     --from-literal=userKey=your_mend_user_key \
+     --from-literal=orgToken=your_mend_org_token
+
+   # Trivy
+   kubectl create secret generic my-patchguard-trivy \
+     --from-literal=serverUrl=https://trivy.example.com \
+     --from-literal=token=your_trivy_token
+
+   # Redis
+   kubectl create secret generic my-patchguard-redis \
+     --from-literal=host=redis-host \
+     --from-literal=port=6379 \
+     --from-literal=password=your_redis_password
+
+   # Vault (if enabled)
+   kubectl create secret generic my-patchguard-vault \
+     --from-literal=addr=https://vault.example.com:8200 \
+     --from-literal=token=your_vault_token
+
+3. Access the application:
+   HTTP: http://{{ include "patchguard.fullname" . }}.{{ .Release.Namespace }}:{{ .Values.service.port }}
+   Metrics: http://{{ include "patchguard.fullname" . }}.{{ .Release.Namespace }}:{{ .Values.patchguard.monitoring.metricsPort }}/metrics
+
+{{- if .Values.service.enabled }}
+{{- with .Values.service.loadBalancerIP }}
+{{- $ip := .Values.service.loadBalancerIP }}
+{{- end }}
+{{- end }}

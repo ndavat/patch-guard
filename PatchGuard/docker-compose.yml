@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  patchguard:
+    build: .
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+    environment:
+      - LOG_LEVEL=INFO
+      - INGESTION_INTERVAL=300
+      - FEEDBACK_POLL_INTERVAL=60
+      - LLM_PROVIDER=anthropic
+      - LLM_MODEL=claude-3-5-sonnet-20241022
+      - LLM_TEMPERATURE=0.0
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+    depends_on:
+      - redis
+      - vault
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+  vault:
+    image: hashicorp/vault:1.15
+    ports:
+      - "8200:8200"
+    environment:
+      - VAULT_DEV_ROOT_TOKEN_ID=root
+      - VAULT_DEV_LISTEN_ADDRESS=0.0.0.0:8200
+    cap_add:
+      - IPC_LOCK
+    volumes:
+      - vault_data:/file
+
+volumes:
+  redis_data:
+  vault_data:

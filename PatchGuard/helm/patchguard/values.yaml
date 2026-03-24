@@ -1,0 +1,201 @@
+# Default values for patchguard.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: patchguard/patchguard
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "latest"
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: true
+  # Annotations to add to the service account
+  annotations: {}
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name: ""
+
+podAnnotations: {}
+podLabels: {}
+
+podSecurityContext: {}
+  # fsGroup: 2000
+
+securityContext: {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+service:
+  type: ClusterIP
+  port: 8080
+
+ingress:
+  enabled: false
+  className: ""
+  annotations: {}
+    # kubernetes.io/ingress.class: nginx
+    # kubernetes.io/tls-acme: "true"
+  hosts:
+    - host: patchguard.example.com
+      paths:
+        - path: /
+          pathType: Prefix
+  tls: []
+  # - secretName: chart-external-tls
+  #   hosts:
+  #     - chart-example.com
+
+resources: {}
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases the chance charts run on pods with little
+  # resources available.
+  # limits:
+  #   cpu: 100m
+  #   memory: 128Mi
+  # requests:
+  #   cpu: 100m
+  #   memory: 128Mi
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
+  # targetMemoryUtilizationPercentage: 80
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+# Configuration for PatchGuard agent
+patchguard:
+  # Logging level
+  logLevel: "INFO"
+
+  # Polling intervals (in seconds)
+  ingestionInterval: 300
+  feedbackPollInterval: 60
+
+  # LLM configuration
+  llmProvider: "anthropic"  # or "openai"
+  llmModel: "claude-3-5-sonnet-20241022"  # or "gpt-4o"
+  llmTemperature: 0.0
+
+  # Rate limiting
+  rateLimiting:
+    enabled: true
+    github: 10  # requests per second
+    sonarqube: 5
+    mend: 5
+    trivy: 10
+
+  # Risk classification
+  riskClassification:
+    enabled: true
+    safeToFixPolicy: "default"
+
+  # Context retrieval
+  contextRetrieval:
+    enabled: true
+    contextWindow: 50  # lines before/after
+
+  # Fix generation
+  fixGeneration:
+    enabled: true
+    maxRetries: 3
+    selfCorrection: true
+
+  # PR automation
+  prAutomation:
+    enabled: true
+    autoLabel: true
+    autoAssign: false
+
+  # Monitoring
+  monitoring:
+    enabled: true
+    metricsPort: 8080
+    healthCheckPath: "/health"
+
+# External service configurations
+externalServices:
+  # GitHub configuration
+  github:
+    token: ""
+    # Alternative: GitHub App configuration
+    appId: ""
+    privateKey: ""
+
+  # Azure DevOps configuration
+  azureDevops:
+    token: ""
+    organization: ""
+
+  # GitLab configuration
+  gitlab:
+    token: ""
+
+  # SonarQube configuration
+  sonarqube:
+    url: ""
+    token: ""
+
+  # Mend configuration
+  mend:
+    url: ""
+    userKey: ""
+    orgToken: ""
+
+  # Trivy configuration
+  trivy:
+    serverUrl: ""
+    token: ""
+
+  # Redis for state storage
+  redis:
+    host: "redis"
+    port: 6379
+    password: ""
+
+  # HashiCorp Vault for secrets
+  vault:
+    enabled: false
+    addr: ""
+    token: ""
+
+# Prometheus Operator ServiceMonitor
+serviceMonitor:
+  enabled: false
+  interval: 30s
+  scrapeTimeout: 10s
+  labels: {}
+  # namespace: monitoring
+  # Additional metrics relabel configs
+  relabelings: []
+  # metricRelabelings: []
+
+# Pod Disruption Budget
+podDisruptionBudget:
+  enabled: false
+  minAvailable: 1
+  # maxUnavailable: 0
+
+# Custom additional labels
+additionalLabels: {}
+
+# Custom additional annotations
+additionalAnnotations: {}
