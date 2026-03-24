@@ -151,14 +151,21 @@ class DiffParser:
         changes = []
         lines = diff_text.splitlines()
 
+        current_old = []
+        current_new = []
+
         for line in lines:
             if line.startswith("-") and not line.startswith("---"):
-                old_line = line[1:]  # Remove - prefix
-                # Find corresponding + line (simplified)
-                for next_line in lines:
-                    if next_line.startswith("+") and not next_line.startswith("+++"):
-                        new_line = next_line[1:]  # Remove + prefix
-                        changes.append((old_line, new_line))
-                        break
+                current_old.append(line[1:])
+            elif line.startswith("+") and not line.startswith("+++"):
+                current_new.append(line[1:])
+            elif line.startswith("@@"):
+                if current_old or current_new:
+                    changes.extend(zip(current_old, current_new))
+                    current_old = []
+                    current_new = []
+
+        if current_old or current_new:
+            changes.extend(zip(current_old, current_new))
 
         return changes
