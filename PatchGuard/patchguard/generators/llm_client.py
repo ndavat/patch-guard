@@ -1,4 +1,4 @@
-"""LLM client for generating code fixes."""
+import os
 import time
 from typing import Optional
 
@@ -15,7 +15,7 @@ class LLMError(Exception):
 class LLMClient:
     """Client for interacting with LLM providers to generate code fixes."""
 
-    def __init__(self, provider: str = "mock", model: str = "gpt-4o", timeout: float = 60.0, stream: bool = False):
+    def __init__(self, provider: str = "mock", model: str = "gpt-4o", timeout: float = 60.0, stream: bool = False, api_key: Optional[str] = None):
         """Initialize LLM client.
 
         Args:
@@ -23,6 +23,7 @@ class LLMClient:
             model: Model name (gpt-4o, claude-3-5-sonnet-20241022, etc.)
             timeout: Request timeout in seconds
             stream: Enable streaming response
+            api_key: Optional API key. If None, looks for OPENAI_API_KEY or ANTHROPIC_API_KEY env vars.
 
         Raises:
             LLMError: If provider is not supported
@@ -31,6 +32,14 @@ class LLMClient:
         self.model = model
         self.timeout = timeout
         self.stream = stream
+        self.api_key = api_key
+
+        # Set API key from environment if not provided
+        if not self.api_key:
+            if provider == "openai":
+                self.api_key = os.getenv("OPENAI_API_KEY")
+            elif provider == "anthropic":
+                self.api_key = os.getenv("ANTHROPIC_API_KEY")
 
         # Validate provider
         if provider not in ["openai", "anthropic", "mock"]:
@@ -122,7 +131,16 @@ class LLMClient:
         try:
             # Use global placeholder (allows mocking in tests)
             global openai
+            if openai is None:
+                try:
+                    import openai
+                except ImportError:
+                    pass
+
             if openai is not None:
+                if self.api_key:
+                    openai.api_key = self.api_key
+                
                 response = openai.ChatCompletion.create(
                     model=self.model,
                     messages=[{"role": "user", "content": prompt}],
