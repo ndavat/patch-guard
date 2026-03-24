@@ -44,6 +44,10 @@ Examples:
   $env:OPENAI_API_KEY="sk-..."
   python -m patchguard fix --tool trivy --input trivy_scan.json --repo ./my-project --provider openai
 
+  # Fix using Google Gemini
+  $env:GOOGLE_API_KEY="..."
+  python -m patchguard fix --tool sonarqube --input scan.json --repo ./ --provider gemini --model gemini-1.5-flash
+
   # Pass API key directly as an argument
   python -m patchguard fix --tool sonarqube --input scan.json --repo ./ --provider anthropic --api-key "ant-..."
         """
@@ -65,7 +69,7 @@ Examples:
     fix_parser.add_argument("--severity", nargs="+", help="Severity levels to include")
     fix_parser.add_argument("--provider", default="mock", choices=["openai", "anthropic", "gemini", "mock"], help="LLM provider")
     fix_parser.add_argument("--model", help="LLM model name (defaults based on provider)")
-    fix_parser.add_argument("--api-key", help="LLM API key (or set OPENAI_API_KEY/ANTHROPIC_API_KEY env vars)")
+    fix_parser.add_argument("--api-key", help="LLM API key (or set OPENAI_API_KEY/ANTHROPIC_API_KEY/GOOGLE_API_KEY env vars)")
 
     args = parser.parse_args()
 
