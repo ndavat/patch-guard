@@ -37,7 +37,8 @@ pip install -r requirements.txt
 ### 2. Test SonarQube Parser
 
 ```bash
-python -c "
+cd /workspaces/patch-guard
+PYTHONPATH=/workspaces/patch-guard/PatchGuard:$PYTHONPATH python3 << 'EOF'
 import json
 from patchguard.parsers.sonarqube.parser import SonarQubeParser
 
@@ -50,13 +51,14 @@ findings = parser.parse(json.dumps(data))
 print(f'Found {len(findings)} SonarQube findings:')
 for finding in findings:
     print(f'  - {finding.finding_id}: {finding.message} [{finding.severity.value}]')
-"
+EOF
 ```
 
 ### 3. Test Mend Parser
 
 ```bash
-python -c "
+cd /workspaces/patch-guard
+PYTHONPATH=/workspaces/patch-guard/PatchGuard:$PYTHONPATH python3 << 'EOF'
 import json
 from patchguard.parsers.mend.parser import MendParser
 
@@ -69,13 +71,14 @@ findings = parser.parse(json.dumps(data))
 print(f'Found {len(findings)} Mend findings:')
 for finding in findings:
     print(f'  - {finding.finding_id}: {finding.message} [{finding.severity.value}] Fix: {finding.fix_hint}')
-"
+EOF
 ```
 
 ### 4. Test Trivy Parser
 
 ```bash
-python -c "
+cd /workspaces/patch-guard
+PYTHONPATH=/workspaces/patch-guard/PatchGuard:$PYTHONPATH python3 << 'EOF'
 import json
 from patchguard.parsers.trivy.parser import TrivyParser
 
@@ -88,13 +91,14 @@ findings = parser.parse(json.dumps(data))
 print(f'Found {len(findings)} Trivy findings:')
 for finding in findings:
     print(f'  - {finding.finding_id}: {finding.message} [{finding.severity.value}] Fix: {finding.fix_hint}')
-"
+EOF
 ```
 
 ### 5. Test Severity Filtering
 
 ```bash
-python -c "
+cd /workspaces/patch-guard
+PYTHONPATH=/workspaces/patch-guard/PatchGuard:$PYTHONPATH python3 << 'EOF'
 import json
 from patchguard.parsers.sonarqube.parser import SonarQubeParser
 from patchguard.parsers.mend.parser import MendParser
@@ -129,7 +133,7 @@ critical_findings = filter.filter(all_findings, 'sonarqube') + \
 print(f'Findings after severity filtering: {len(critical_findings)}')
 for finding in critical_findings:
     print(f'  - {finding.finding_id}: {finding.message} [{finding.severity.value}]')
-"
+EOF
 ```
 
 ### 6. Test Risk Classification (Conceptual)
