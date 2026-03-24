@@ -126,7 +126,7 @@ Examples:
                 elif args.provider == "anthropic":
                     model = "claude-3-5-sonnet-20241022"
                 elif args.provider == "gemini":
-                    model = "gemini-1.5-pro"
+                    model = "gemini-2.5-flash"
                 else:
                     model = "mock-model"
 

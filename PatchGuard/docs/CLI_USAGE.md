@@ -57,7 +57,7 @@ python -m patchguard fix --tool {sonarqube,mend,trivy} --input <report_file> --r
 - `--repo`: Path to the local repository containing the source code to be fixed (required).
 - `--severity`: (Optional) Space-separated list of severity levels to target (e.g., `CRITICAL HIGH`).
 - `--provider`: (Optional) LLM provider to use (`openai`, `anthropic`, `gemini`, or `mock`). Default is `mock`.
-- `--model`: (Optional) Specific model to use (e.g., `gpt-4o`, `claude-3-5-sonnet-20241022`, `gemini-1.5-pro`).
+- `--model`: (Optional) Specific model to use (e.g., `gpt-4o`, `claude-3-5-sonnet-20241022`, `gemini-2.5-flash`).
 - `--api-key`: (Optional) LLM API key. If not provided, uses `OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, or `GEMINI_API_KEY` environment variables.
 
 ### Example: Fixing SonarQube findings with GPT-4
@@ -67,7 +67,7 @@ python -m patchguard fix --tool sonarqube --input sonarqube_scan.json --repo ./s
 
 ### Example: Fixing with Google Gemini
 ```bash
-python -m patchguard fix --tool trivy --input trivy_scan.json --repo ./ --provider gemini --model gemini-1.5-pro
+python -m patchguard fix --tool trivy --input trivy_scan.json --repo ./ --provider gemini --model gemini-2.5-flash
 ```
 
 ---
