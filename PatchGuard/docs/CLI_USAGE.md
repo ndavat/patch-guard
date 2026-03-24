@@ -27,7 +27,7 @@ Analyze a security report JSON file and display the findings in a unified format
 
 ### Syntax
 ```bash
-python -m patchguard.cli scan --tool {sonarqube,mend,trivy} --input <report_file> [--severity <levels...>]
+python -m patchguard scan --tool {sonarqube,mend,trivy} --input <report_file> [--severity <levels...>]
 ```
 
 ### Arguments
@@ -37,7 +37,7 @@ python -m patchguard.cli scan --tool {sonarqube,mend,trivy} --input <report_file
 
 ### Example: Scanning a Trivy Report
 ```bash
-python -m patchguard.cli scan --tool trivy --input sample_trivy_scan.json --severity CRITICAL
+python -m patchguard scan --tool trivy --input sample_trivy_scan.json --severity CRITICAL
 ```
 
 ---
@@ -48,20 +48,21 @@ Automatically generate and validate code fixes for vulnerabilities found in a re
 
 ### Syntax
 ```bash
-python -m patchguard.cli fix --tool {sonarqube,mend,trivy} --input <report_file> --repo <repo_path> [options]
+python -m patchguard fix --tool {sonarqube,mend,trivy} --input <report_file> --repo <repo_path> [options]
 ```
 
 ### Arguments
-- `--tool`: The source of the report.
-- `--input`: Path to the JSON scan report file.
-- `--repo`: Path to the local repository containing the source code to be fixed.
-- `--severity`: (Optional) Severity levels to target.
+- `--tool`: The source of the report (required).
+- `--input`: Path to the JSON scan report file (required).
+- `--repo`: Path to the local repository containing the source code to be fixed (required).
+- `--severity`: (Optional) Space-separated list of severity levels to target (e.g., `CRITICAL HIGH`).
 - `--provider`: (Optional) LLM provider to use (`openai`, `anthropic`, or `mock`). Default is `mock`.
-- `--model`: (Optional) Specific model to use (e.g., `gpt-4o`).
+- `--model`: (Optional) Specific model to use (e.g., `gpt-4o`, `claude-3-5-sonnet-20241022`).
+- `--api-key`: (Optional) LLM API key. If not provided, uses `OPENAI_API_KEY` or `ANTHROPIC_API_KEY` environment variables.
 
 ### Example: Fixing SonarQube findings with GPT-4
 ```bash
-python -m patchguard.cli fix --tool sonarqube --input sonarqube_scan.json --repo ./src --provider openai --model gpt-4o
+python -m patchguard fix --tool sonarqube --input sonarqube_scan.json --repo ./src --provider openai --model gpt-4o
 ```
 
 ---
@@ -130,7 +131,7 @@ graph TD
 You can safely test the pipeline without an LLM API key using the `mock` provider:
 
 ```bash
-python -m patchguard.cli fix --tool sonarqube --input sample_sonarqube_scan.json --repo ./ --provider mock
+python -m patchguard fix --tool sonarqube --input sample_sonarqube_scan.json --repo ./ --provider mock
 ```
 
 ---
