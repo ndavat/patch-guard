@@ -1,5 +1,6 @@
 """Finding model and Severity enum for normalized security findings."""
-from dataclasses import dataclass, asdict
+import dataclasses
+from dataclasses import dataclass
 from enum import Enum
 from typing import Optional
 
@@ -72,6 +73,6 @@ class Finding:
 
     def to_dict(self) -> dict:
         """Convert Finding to dictionary with severity as string value."""
-        result = asdict(self)
+        result = dataclasses.asdict(self)  # type: ignore[arg-type]
         result["severity"] = self.severity.value
         return result
